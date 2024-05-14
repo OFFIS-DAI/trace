@@ -45,6 +45,9 @@ You can run either all simple/complex use cases by executing
 [run_simple.sh](agent_communication_generation_tool/run_simple.sh) or you can also execute single scenarios from the 
 corresponding folders.
 
+## Additional information
+Additional information is provided as a uml class diagramm and sequence diagrams on the agent-based applications in [docs](docs). 
+
 ## Support
 For any questions or suggestions contact malin.radtke@offis.de.
 
