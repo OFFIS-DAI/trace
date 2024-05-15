@@ -136,7 +136,6 @@ for network_tech, dataframes_tech in dataframes.items():
     corr_dfs.append(corr.fillna(0))
 
 d = reduce(lambda x, y: x.add(y, fill_value=0), corr_dfs) / len(corr_dfs)
-print(d)
 sns.heatmap(d, vmin=-1, vmax=1, annot=True)
 plt.savefig(f'{WRITE_PLOTS_DIR_NAME}/correlation_total.pdf',
             format="pdf", bbox_inches="tight")
