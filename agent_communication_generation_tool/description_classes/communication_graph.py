@@ -6,7 +6,7 @@ from abc import ABC, abstractmethod
 
 import networkx as nx
 
-from agent_communication_generation_tool.description_classes.agent import Agent, CentralAgent, AggregatorAgent, \
+from agent_communication_generation_tool.description_classes.agent import Agent, CentralAgent, \
     LeafAgent
 
 
