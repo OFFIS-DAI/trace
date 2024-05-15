@@ -38,6 +38,7 @@ packet sizes and frequencies.
 3. **Setting up OMNeT++**:
    - Install OMNeT++ 6 and ensure inet4.5 and simu5G 1.2.2 are configured properly.
    - Import the project files from the `omnet_project_files` directory into OMNeT++.
+   - Change the INET path in the file [communication_scenario_description.py](agent_communication_generation_tool/description_classes/communication_scenario_description.py) to your local installation path.
 
 ## Usage
 You can run either all simple/complex use cases by executing 
