@@ -13,13 +13,13 @@ from agent_communication_generation_tool.description_classes.agent_communication
 from agent_communication_generation_tool.description_classes.communication_graph import StarCommunicationGraph
 from agent_communication_generation_tool.description_classes.communication_network_description import \
     SimbenchLTENetworkDescription, Simbench5GNetworkDescription
-from agent_communication_generation_tool.description_classes.simbench_codes import simbench_codes_low_voltage
+from agent_communication_generation_tool.description_classes.simbench_codes import simbench_codes_analysis
 
 SIMULATION_DURATION_MS = 30000  # 30 seconds
 
-for max_number_of_agents_ in [random.randint(2, 100) for _ in range(5)]:
+for max_number_of_agents_ in [random.randint(2, 100) for _ in range(2)]:
     for system_state in [SystemState.NORMAL, SystemState.LIMITED, SystemState.FAILED]:
-        simbench_codes = random.sample(simbench_codes_low_voltage, 2)
+        simbench_codes = simbench_codes_analysis
         for simbench_code in simbench_codes:
             for specification in [SimbenchLTENetworkDescription.Specification.LTE,
                                   SimbenchLTENetworkDescription.Specification.LTE450]:

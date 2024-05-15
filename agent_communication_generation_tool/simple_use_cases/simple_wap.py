@@ -6,7 +6,8 @@ from pathlib import Path
 sys.path.append(Path(__file__).parent.parent.parent.absolute().__str__())
 
 from network_generation.simbench_network_extractor import SystemState
-from agent_communication_generation_tool.description_classes.simbench_codes import simbench_codes_low_voltage
+from agent_communication_generation_tool.description_classes.simbench_codes import simbench_codes_low_voltage, \
+    simbench_codes_analysis
 from agent_communication_generation_tool.description_classes.communication_scenario_description import \
     CommunicationScenarioDescription
 from agent_communication_generation_tool.description_classes.agent_communication_pattern import WideAreaProtection
@@ -16,9 +17,9 @@ from agent_communication_generation_tool.description_classes.communication_netwo
 
 SIMULATION_DURATION_MS = 30000  # 30 seconds
 
-for max_number_of_agents_ in [random.randint(2, 100) for _ in range(5)]:
+for max_number_of_agents_ in [random.randint(2, 100) for _ in range(2)]:
     for system_state in [SystemState.NORMAL, SystemState.LIMITED, SystemState.FAILED]:
-        simbench_codes = random.sample(simbench_codes_low_voltage, 2)
+        simbench_codes = simbench_codes_analysis
         for simbench_code in simbench_codes:
             for specification in [SimbenchLTENetworkDescription.Specification.LTE,
                                   SimbenchLTENetworkDescription.Specification.LTE450]:
