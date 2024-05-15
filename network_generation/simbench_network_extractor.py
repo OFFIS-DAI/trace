@@ -159,7 +159,6 @@ class SimbenchNetworkExtractor(ABC):
         if not os.path.exists(ini_file_path):
             with open(ini_file_path, 'w') as f:
                 f.write(ini_config)
-        self.save_agent_configuration(config_name=config_name)
 
     def get_network_area(self, agents=None):
         if not agents:
@@ -178,10 +177,6 @@ class SimbenchNetworkExtractor(ABC):
             if agent.coordinates[1] > max_y:
                 max_y = agent.coordinates[1]
         return (min_x, min_y), (max_x, max_y)
-
-    def save_agent_configuration(self, config_name):
-        with open(f'network_generation/agent_configurations/{config_name}.pkl', 'wb') as output:
-            pickle.dump(self, output, pickle.HIGHEST_PROTOCOL)
 
     def rescale_network(self):
         (min_x, min_y), (max_x, max_y) = self.get_network_area()
