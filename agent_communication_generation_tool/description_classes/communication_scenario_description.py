@@ -20,7 +20,7 @@ from agent_communication_generation_tool.description_classes.communication_graph
 from agent_communication_generation_tool.util import merge_input_and_output_df, plot_traffic_pattern
 
 # set inet installation path
-INET_PATH = '/home/malin/diss_omnetpp_workspace/inet4.5/src'
+INET_PATH = '/home/malin/PycharmProjects/trace/inet4.5/src'
 # get root directory and change current path
 ROOT = str(Path(abspath(__file__)).parent.parent.parent)
 
