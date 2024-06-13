@@ -19,6 +19,8 @@ def plot_traffic_pattern(scenario_description,
     :param scenario_name: name of the scenario.
     :return: save plot in file.
     """
+    if 'delay_ms' not in result_df.columns:
+        return
     sns.set()
 
     with_replies = 'calculationStart_ms' in result_df.columns
