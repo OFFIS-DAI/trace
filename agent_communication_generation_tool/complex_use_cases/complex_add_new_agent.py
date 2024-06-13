@@ -8,7 +8,8 @@ sys.path.append(Path(__file__).parent.parent.parent.absolute().__str__())
 from network_generation.simbench_network_extractor import SystemState
 from agent_communication_generation_tool.complex_use_cases.simulation_run_variables import data_size_generators, \
     complexities, overlay_types
-from agent_communication_generation_tool.description_classes.simbench_codes import simbench_codes_low_voltage
+from agent_communication_generation_tool.description_classes.simbench_codes import simbench_codes_low_voltage, \
+    simbench_codes_analysis
 from agent_communication_generation_tool.description_classes.communication_scenario_description import \
     CommunicationScenarioDescription
 from agent_communication_generation_tool.description_classes.agent_communication_pattern import \
@@ -23,7 +24,7 @@ SIMULATION_DURATION_MS = 30 * 1000  # 30 seconds
 for system_state in [SystemState.NORMAL, SystemState.LIMITED, SystemState.FAILED]:
     for data_size_generator_n, data_size_generator in data_size_generators.items():
         for optimization_complexity, reply_after_times in complexities.items():
-            simbench_codes = random.sample(simbench_codes_low_voltage, 2)
+            simbench_codes = simbench_codes_analysis
             for simbench_code in simbench_codes:
                 for network_description_class in [Simbench5GNetworkDescription, SimbenchLTENetworkDescription]:
                     for specification in [SimbenchLTENetworkDescription.Specification.LTE,
