@@ -100,7 +100,7 @@ class CommunicationScenarioDescription:
 
         input_df = self.agent_communication_pattern.get_inputs()
         output_df, reply_df = self.get_outputs()
-        if isinstance(output_df, pd.DataFrame):
+        if isinstance(output_df, pd.DataFrame) and isinstance(input_df, pd.DataFrame):
 
             reply_df.rename({'sendingTime_ms': 'timeSend_ms'}, axis='columns', inplace=True)
 

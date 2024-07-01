@@ -119,6 +119,8 @@ class AgentCommunicationPattern(ABC):
             df = pd.DataFrame(data['messageList'])
             df['sender'] = client
             dfs.append(df)
+        if len(dfs) == 0:
+            return None
         return pd.concat(dfs)
 
     def get_control_center_agent(self):
