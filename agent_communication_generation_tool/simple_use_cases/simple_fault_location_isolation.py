@@ -5,6 +5,7 @@ from pathlib import Path
 # Add the parent directory of "agent_communication_generation_tool" to sys.path
 sys.path.append(Path(__file__).parent.parent.parent.absolute().__str__())
 
+from agent_communication_generation_tool.simulation_run_variables import num_agents, system_states
 from network_generation.simbench_network_extractor import SystemState
 from agent_communication_generation_tool.description_classes.simbench_codes import simbench_codes_low_voltage, \
     simbench_codes_analysis
@@ -19,8 +20,8 @@ SIMULATION_DURATION_MS = 300000  # 5 min
 
 for optimization_complexity, reply_after_times in {'low': (0, 1000), 'medium': (1000, 30000),
                                                    'high': (30000, 5 * 60 * 1000)}.items():
-    for max_number_of_agents_ in [random.randint(2, 100) for _ in range(2)]:
-        for system_state in [SystemState.NORMAL, SystemState.LIMITED, SystemState.FAILED]:
+    for max_number_of_agents_ in num_agents:
+        for system_state in system_states:
             simbench_codes = simbench_codes_analysis
             for simbench_code in simbench_codes:
                 for specification in [SimbenchLTENetworkDescription.Specification.LTE,
