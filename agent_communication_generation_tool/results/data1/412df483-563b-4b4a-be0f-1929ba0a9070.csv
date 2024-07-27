@@ -1,0 +1,106 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,receiverPort,packetSize_B_x,sender,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-07-24 19:18:48.046536,,,,,,,,,
+1,Simulation configuration ID,412df483-563b-4b4a-be0f-1929ba0a9070,,,,,,,,,
+2,Network,SimbenchNetwork_5G_1-LV-rural1--0-no_sw,,,,,,,,,
+3,Communication graph,Small World Overlay Topology with 23 agents and p = 0.5,,,,,,,,,
+4,Agent communication pattern,DemandSupplyBalancing,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"Increasing data size generator with lower bound = 8 B,upper bound = 50 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,HIERARCHICAL,,,,,,,,,
+0,,,0.0,4.0,aggregator_agent,1019.0,41.0,control_center_agent,19.0,41.0,23.0
+1,,,1.0,182.0,household_agent_9,1009.0,41.0,aggregator_agent,41.0,41.0,223.0
+2,,,30.0,17175.0,household_agent_1,1001.0,41.0,household_agent_0,45.0,41.0,17220.0
+3,,,31.0,17175.0,generation_agent_3,1016.0,41.0,household_agent_0,51.0,41.0,17226.0
+4,,,74.0,28406.0,household_agent_1,1001.0,41.0,household_agent_0,50.0,41.0,28456.0
+5,,,75.0,28406.0,generation_agent_3,1016.0,41.0,household_agent_0,43.0,41.0,28449.0
+6,,,19.0,17175.0,household_agent_0,1000.0,41.0,household_agent_1,46.0,41.0,17221.0
+7,,,20.0,17175.0,household_agent_2,1002.0,41.0,household_agent_1,53.0,41.0,17228.0
+8,,,21.0,17175.0,generation_agent_1,1014.0,41.0,household_agent_1,64.0,41.0,17239.0
+9,,,63.0,28406.0,household_agent_0,1000.0,41.0,household_agent_1,46.0,41.0,28452.0
+10,,,64.0,28406.0,household_agent_2,1002.0,41.0,household_agent_1,52.0,41.0,28458.0
+11,,,65.0,28406.0,generation_agent_1,1014.0,41.0,household_agent_1,57.0,41.0,28463.0
+12,,,11.0,17175.0,household_agent_1,1001.0,41.0,household_agent_2,48.0,41.0,17223.0
+13,,,12.0,17175.0,household_agent_3,1003.0,41.0,household_agent_2,41.0,41.0,17216.0
+14,,,13.0,17175.0,household_agent_8,1008.0,41.0,household_agent_2,52.0,41.0,17227.0
+15,,,55.0,28406.0,household_agent_1,1001.0,41.0,household_agent_2,51.0,41.0,28457.0
+16,,,56.0,28406.0,household_agent_3,1003.0,41.0,household_agent_2,42.0,41.0,28448.0
+17,,,57.0,28406.0,household_agent_8,1008.0,41.0,household_agent_2,53.0,41.0,28459.0
+18,,,22.0,17175.0,household_agent_2,1002.0,41.0,household_agent_3,42.0,41.0,17217.0
+19,,,23.0,17175.0,household_agent_4,1004.0,41.0,household_agent_3,48.0,41.0,17223.0
+20,,,24.0,17175.0,generation_agent_0,1013.0,41.0,household_agent_3,54.0,41.0,17229.0
+21,,,25.0,17175.0,household_agent_11,1011.0,41.0,household_agent_3,63.0,41.0,17238.0
+22,,,66.0,28406.0,household_agent_2,1002.0,41.0,household_agent_3,41.0,41.0,28447.0
+23,,,67.0,28406.0,household_agent_4,1004.0,41.0,household_agent_3,48.0,41.0,28454.0
+24,,,68.0,28406.0,generation_agent_0,1013.0,41.0,household_agent_3,52.0,41.0,28458.0
+25,,,69.0,28406.0,household_agent_11,1011.0,41.0,household_agent_3,63.0,41.0,28469.0
+26,,,35.0,17175.0,household_agent_3,1003.0,41.0,household_agent_4,43.0,41.0,17218.0
+27,,,36.0,17175.0,household_agent_5,1005.0,41.0,household_agent_4,48.0,41.0,17223.0
+28,,,37.0,17175.0,generation_agent_0,1013.0,41.0,household_agent_4,53.0,41.0,17228.0
+29,,,79.0,28406.0,household_agent_3,1003.0,41.0,household_agent_4,43.0,41.0,28449.0
+30,,,80.0,28406.0,household_agent_5,1005.0,41.0,household_agent_4,49.0,41.0,28455.0
+31,,,81.0,28406.0,generation_agent_0,1013.0,41.0,household_agent_4,54.0,41.0,28460.0
+32,,,42.0,17175.0,household_agent_4,1004.0,41.0,household_agent_5,43.0,41.0,17218.0
+33,,,43.0,17175.0,household_agent_6,1006.0,41.0,household_agent_5,49.0,41.0,17224.0
+34,,,86.0,28406.0,household_agent_4,1004.0,41.0,household_agent_5,41.0,41.0,28447.0
+35,,,87.0,28406.0,household_agent_6,1006.0,41.0,household_agent_5,47.0,41.0,28453.0
+36,,,26.0,17175.0,household_agent_5,1005.0,41.0,household_agent_6,42.0,41.0,17217.0
+37,,,27.0,17175.0,household_agent_7,1007.0,41.0,household_agent_6,48.0,41.0,17223.0
+38,,,70.0,28406.0,household_agent_5,1005.0,41.0,household_agent_6,43.0,41.0,28449.0
+39,,,71.0,28406.0,household_agent_7,1007.0,41.0,household_agent_6,49.0,41.0,28455.0
+40,,,14.0,17175.0,household_agent_6,1006.0,41.0,household_agent_7,42.0,41.0,17217.0
+41,,,15.0,17175.0,household_agent_8,1008.0,41.0,household_agent_7,48.0,41.0,17223.0
+42,,,58.0,28406.0,household_agent_6,1006.0,41.0,household_agent_7,42.0,41.0,28448.0
+43,,,59.0,28406.0,household_agent_8,1008.0,41.0,household_agent_7,49.0,41.0,28455.0
+44,,,6.0,17175.0,household_agent_2,1002.0,41.0,household_agent_8,43.0,41.0,17218.0
+45,,,7.0,17175.0,household_agent_7,1007.0,41.0,household_agent_8,49.0,41.0,17224.0
+46,,,8.0,17175.0,household_agent_9,1009.0,41.0,household_agent_8,54.0,41.0,17229.0
+47,,,50.0,28406.0,household_agent_2,1002.0,41.0,household_agent_8,43.0,41.0,28449.0
+48,,,51.0,28406.0,household_agent_7,1007.0,41.0,household_agent_8,50.0,41.0,28456.0
+49,,,52.0,28406.0,household_agent_9,1009.0,41.0,household_agent_8,54.0,41.0,28460.0
+50,,,2.0,17333.0,household_agent_8,1008.0,41.0,household_agent_9,41.0,41.0,17374.0
+51,,,3.0,17333.0,household_agent_10,1010.0,41.0,household_agent_9,47.0,41.0,17380.0
+52,,,4.0,17175.0,household_agent_8,1008.0,41.0,household_agent_9,47.0,41.0,17222.0
+53,,,5.0,17175.0,household_agent_10,1010.0,41.0,household_agent_9,42.0,41.0,17217.0
+54,,,48.0,28406.0,household_agent_8,1008.0,41.0,household_agent_9,48.0,41.0,28454.0
+55,,,49.0,28406.0,household_agent_10,1010.0,41.0,household_agent_9,53.0,41.0,28459.0
+56,,,92.0,16379.0,aggregator_agent,1019.0,41.0,household_agent_9,41.0,41.0,16420.0
+57,,,9.0,17175.0,household_agent_9,1009.0,41.0,household_agent_10,44.0,41.0,17219.0
+58,,,10.0,17175.0,household_agent_11,1011.0,41.0,household_agent_10,50.0,41.0,17225.0
+59,,,53.0,28406.0,household_agent_9,1009.0,41.0,household_agent_10,43.0,41.0,28449.0
+60,,,54.0,28406.0,household_agent_11,1011.0,41.0,household_agent_10,49.0,41.0,28455.0
+61,,,16.0,17175.0,household_agent_10,1010.0,41.0,household_agent_11,43.0,41.0,17218.0
+62,,,17.0,17175.0,household_agent_12,1012.0,41.0,household_agent_11,49.0,41.0,17224.0
+63,,,18.0,17175.0,household_agent_3,1003.0,41.0,household_agent_11,54.0,41.0,17229.0
+64,,,60.0,28406.0,household_agent_10,1010.0,41.0,household_agent_11,44.0,41.0,28450.0
+65,,,61.0,28406.0,household_agent_12,1012.0,41.0,household_agent_11,50.0,41.0,28456.0
+66,,,62.0,28406.0,household_agent_3,1003.0,41.0,household_agent_11,62.0,41.0,28468.0
+67,,,28.0,17175.0,household_agent_11,1011.0,41.0,household_agent_12,45.0,41.0,17220.0
+68,,,29.0,17175.0,generation_agent_0,1013.0,41.0,household_agent_12,51.0,41.0,17226.0
+69,,,72.0,28406.0,household_agent_11,1011.0,41.0,household_agent_12,44.0,41.0,28450.0
+70,,,73.0,28406.0,generation_agent_0,1013.0,41.0,household_agent_12,50.0,41.0,28456.0
+71,,,38.0,17175.0,household_agent_3,1003.0,41.0,generation_agent_0,42.0,41.0,17217.0
+72,,,39.0,17175.0,household_agent_4,1004.0,41.0,generation_agent_0,47.0,41.0,17222.0
+73,,,40.0,17175.0,household_agent_12,1012.0,41.0,generation_agent_0,52.0,41.0,17227.0
+74,,,41.0,17175.0,generation_agent_1,1014.0,41.0,generation_agent_0,58.0,41.0,17233.0
+75,,,82.0,28406.0,household_agent_3,1003.0,41.0,generation_agent_0,41.0,41.0,28447.0
+76,,,83.0,28406.0,household_agent_4,1004.0,41.0,generation_agent_0,47.0,41.0,28453.0
+77,,,84.0,28406.0,household_agent_12,1012.0,41.0,generation_agent_0,52.0,41.0,28458.0
+78,,,85.0,28406.0,generation_agent_1,1014.0,41.0,generation_agent_0,58.0,41.0,28464.0
+79,,,32.0,17175.0,generation_agent_0,1013.0,41.0,generation_agent_1,45.0,41.0,17220.0
+80,,,33.0,17175.0,generation_agent_2,1015.0,41.0,generation_agent_1,54.0,41.0,17229.0
+81,,,34.0,17175.0,household_agent_1,1001.0,41.0,generation_agent_1,56.0,41.0,17231.0
+82,,,76.0,28406.0,generation_agent_0,1013.0,41.0,generation_agent_1,48.0,41.0,28454.0
+83,,,77.0,28406.0,generation_agent_2,1015.0,41.0,generation_agent_1,53.0,41.0,28459.0
+84,,,78.0,28406.0,household_agent_1,1001.0,41.0,generation_agent_1,59.0,41.0,28465.0
+85,,,46.0,17175.0,generation_agent_1,1014.0,41.0,generation_agent_2,51.0,41.0,17226.0
+86,,,47.0,17175.0,generation_agent_3,1016.0,41.0,generation_agent_2,56.0,41.0,17231.0
+87,,,90.0,28406.0,generation_agent_1,1014.0,41.0,generation_agent_2,51.0,41.0,28457.0
+88,,,91.0,28406.0,generation_agent_3,1016.0,41.0,generation_agent_2,56.0,41.0,28462.0
+89,,,44.0,17175.0,generation_agent_2,1015.0,41.0,generation_agent_3,43.0,41.0,17218.0
+90,,,45.0,17175.0,household_agent_0,1000.0,41.0,generation_agent_3,48.0,41.0,17223.0
+91,,,88.0,28406.0,generation_agent_2,1015.0,41.0,generation_agent_3,50.0,41.0,28456.0
+92,,,89.0,28406.0,household_agent_0,1000.0,41.0,generation_agent_3,43.0,41.0,28449.0

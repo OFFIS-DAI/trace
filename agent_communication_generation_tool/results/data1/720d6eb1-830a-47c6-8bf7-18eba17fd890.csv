@@ -1,0 +1,31 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-07-26 12:16:50.522661,,,,,,,,,
+1,Simulation configuration ID,720d6eb1-830a-47c6-8bf7-18eba17fd890,,,,,,,,,
+2,Network,SimbenchNetwork_LTE_1-LV-rural1--0-no_sw,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 23 agents,,,,,,,,,
+4,Agent communication pattern,DemandSupplyBalancing,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"Increasing data size generator with lower bound = 8 B,upper bound = 50 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,CENTRALIZED,,,,,,,,,
+0,,,0.0,86.0,control_center_agent,41.0,generation_agent_3,0.0,28.0,41.0,114.0
+1,,,1.0,186.0,household_agent_0,41.0,control_center_agent,0.0,21.0,41.0,207.0
+2,,,2.0,186.0,household_agent_1,41.0,control_center_agent,0.0,22.0,41.0,208.0
+3,,,3.0,186.0,household_agent_2,41.0,control_center_agent,0.0,20.0,41.0,206.0
+4,,,4.0,186.0,household_agent_3,41.0,control_center_agent,0.0,19.0,41.0,205.0
+5,,,5.0,186.0,household_agent_4,41.0,control_center_agent,0.0,20.0,41.0,206.0
+6,,,6.0,186.0,household_agent_5,41.0,control_center_agent,0.0,19.0,41.0,205.0
+7,,,7.0,186.0,household_agent_6,41.0,control_center_agent,0.0,23.0,41.0,209.0
+8,,,8.0,186.0,household_agent_7,41.0,control_center_agent,0.0,23.0,41.0,209.0
+9,,,9.0,186.0,household_agent_8,41.0,control_center_agent,0.0,22.0,41.0,208.0
+10,,,10.0,186.0,household_agent_9,41.0,control_center_agent,0.0,22.0,41.0,208.0
+11,,,11.0,186.0,household_agent_10,41.0,control_center_agent,0.0,23.0,41.0,209.0
+12,,,12.0,186.0,household_agent_11,41.0,control_center_agent,0.0,21.0,41.0,207.0
+13,,,13.0,186.0,household_agent_12,41.0,control_center_agent,0.0,20.0,41.0,206.0
+14,,,14.0,186.0,generation_agent_0,41.0,control_center_agent,0.0,21.0,41.0,207.0
+15,,,15.0,186.0,generation_agent_1,41.0,control_center_agent,0.0,25.0,41.0,211.0
+16,,,16.0,186.0,generation_agent_2,41.0,control_center_agent,0.0,19.0,41.0,205.0
+17,,,101700.0,196.0,generation_agent_3,41.0,control_center_agent,114.0,19.0,41.0,215.0

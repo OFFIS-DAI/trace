@@ -1,0 +1,51 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,receiverPort,packetSize_B_x,sender,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-07-24 22:24:31.553050,,,,,,,,,
+1,Simulation configuration ID,456dbce9-cfe9-45a5-bda0-85e5300d12e9,,,,,,,,,
+2,Network,SimbenchNetwork_5G_1-LV-rural1--0-no_sw,,,,,,,,,
+3,Communication graph,Ring Overlay Topology with 23 agents,,,,,,,,,
+4,Agent communication pattern,DemandSupplyBalancing,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"Increasing data size generator with lower bound = 50 B,upper bound = 200 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,DECENTRALIZED,,,,,,,,,
+0,,,0.0,75.0,household_agent_0,1000.0,191.0,control_center_agent,19.0,191.0,94.0
+1,,,1.0,2533.0,household_agent_1,1001.0,191.0,household_agent_0,47.0,191.0,2580.0
+2,,,2.0,2533.0,aggregator_agent,1019.0,191.0,household_agent_0,58.0,191.0,2591.0
+3,,,3.0,2533.0,pdc_agent,1020.0,191.0,household_agent_0,69.0,191.0,2602.0
+4,,,4.0,2533.0,substation_agent,1022.0,191.0,household_agent_0,80.0,191.0,2613.0
+5,,,5.0,15758.0,household_agent_1,1001.0,191.0,household_agent_0,53.0,191.0,15811.0
+6,,,37.0,16767.0,control_center_agent,1017.0,191.0,household_agent_0,28.0,191.0,16795.0
+7,,,6.0,15758.0,household_agent_0,1000.0,191.0,household_agent_1,51.0,191.0,15809.0
+8,,,7.0,15758.0,household_agent_2,1002.0,191.0,household_agent_1,56.0,191.0,15814.0
+9,,,8.0,15758.0,household_agent_1,1001.0,191.0,household_agent_2,50.0,191.0,15808.0
+10,,,9.0,15758.0,household_agent_3,1003.0,191.0,household_agent_2,61.0,191.0,15819.0
+11,,,10.0,15758.0,household_agent_2,1002.0,191.0,household_agent_3,47.0,191.0,15805.0
+12,,,11.0,15758.0,household_agent_4,1004.0,191.0,household_agent_3,58.0,191.0,15816.0
+13,,,12.0,15758.0,household_agent_3,1003.0,191.0,household_agent_4,47.0,191.0,15805.0
+14,,,13.0,15758.0,household_agent_5,1005.0,191.0,household_agent_4,58.0,191.0,15816.0
+15,,,14.0,15758.0,household_agent_4,1004.0,191.0,household_agent_5,49.0,191.0,15807.0
+16,,,15.0,15758.0,household_agent_6,1006.0,191.0,household_agent_5,60.0,191.0,15818.0
+17,,,16.0,15758.0,household_agent_5,1005.0,191.0,household_agent_6,48.0,191.0,15806.0
+18,,,17.0,15758.0,household_agent_7,1007.0,191.0,household_agent_6,59.0,191.0,15817.0
+19,,,18.0,15758.0,household_agent_6,1006.0,191.0,household_agent_7,47.0,191.0,15805.0
+20,,,19.0,15758.0,household_agent_8,1008.0,191.0,household_agent_7,58.0,191.0,15816.0
+21,,,20.0,15758.0,household_agent_7,1007.0,191.0,household_agent_8,47.0,191.0,15805.0
+22,,,21.0,15758.0,household_agent_9,1009.0,191.0,household_agent_8,52.0,191.0,15810.0
+23,,,22.0,15758.0,household_agent_8,1008.0,191.0,household_agent_9,47.0,191.0,15805.0
+24,,,23.0,15758.0,household_agent_10,1010.0,191.0,household_agent_9,52.0,191.0,15810.0
+25,,,24.0,15758.0,household_agent_9,1009.0,191.0,household_agent_10,49.0,191.0,15807.0
+26,,,25.0,15758.0,household_agent_11,1011.0,191.0,household_agent_10,54.0,191.0,15812.0
+27,,,26.0,15758.0,household_agent_10,1010.0,191.0,household_agent_11,49.0,191.0,15807.0
+28,,,27.0,15758.0,household_agent_12,1012.0,191.0,household_agent_11,53.0,191.0,15811.0
+29,,,28.0,15758.0,household_agent_11,1011.0,191.0,household_agent_12,50.0,191.0,15808.0
+30,,,29.0,15758.0,generation_agent_0,1013.0,191.0,household_agent_12,61.0,191.0,15819.0
+31,,,30.0,15758.0,household_agent_12,1012.0,191.0,generation_agent_0,49.0,191.0,15807.0
+32,,,31.0,15758.0,generation_agent_1,1014.0,191.0,generation_agent_0,53.0,191.0,15811.0
+33,,,32.0,15758.0,generation_agent_0,1013.0,191.0,generation_agent_1,51.0,191.0,15809.0
+34,,,33.0,15758.0,generation_agent_2,1015.0,191.0,generation_agent_1,56.0,191.0,15814.0
+35,,,34.0,15758.0,generation_agent_1,1014.0,191.0,generation_agent_2,50.0,191.0,15808.0
+36,,,35.0,15758.0,generation_agent_3,1016.0,191.0,generation_agent_2,61.0,191.0,15819.0
+37,,,36.0,15758.0,generation_agent_2,1015.0,191.0,generation_agent_3,52.0,191.0,15810.0

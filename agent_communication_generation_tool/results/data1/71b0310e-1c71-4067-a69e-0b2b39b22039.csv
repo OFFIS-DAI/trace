@@ -1,0 +1,15 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-07-26 13:55:32.704134,,,,,,,,,
+1,Simulation configuration ID,71b0310e-1c71-4067-a69e-0b2b39b22039,,,,,,,,,
+2,Network,SimbenchNetwork_LTE_1-LV-rural1--0-no_sw,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 23 agents,,,,,,,,,
+4,Agent communication pattern,DemandSupplyBalancing,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"Increasing data size generator with lower bound = 8 B,upper bound = 50 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,CENTRALIZED,,,,,,,,,
+0,,,0.0,94.0,control_center_agent,41.0,generation_agent_0,0.0,28.0,41.0,122.0
+1,,,101700.0,14707.0,generation_agent_0,41.0,control_center_agent,122.0,19.0,41.0,14726.0
