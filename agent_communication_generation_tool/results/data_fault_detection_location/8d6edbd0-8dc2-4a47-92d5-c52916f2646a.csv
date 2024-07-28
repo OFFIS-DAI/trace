@@ -1,0 +1,53 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-07-28 15:25:16.262738,,,,,,,,,
+1,Simulation configuration ID,8d6edbd0-8dc2-4a47-92d5-c52916f2646a,,,,,,,,,
+2,Network,SimbenchNetwork_LTE450_1-LV-rural1--0-no_sw,,,,,,,,,
+3,Communication graph,Complete Overlay Topology with 23 agents,,,,,,,,,
+4,Agent communication pattern,FaultDetectionAndLocation,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 50 B,upper bound = 200 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,DECENTRALIZED,,,,,,,,,
+0,,,0.0,39.0,household_agent_0,72.0,household_agent_8,0.0,46.0,72.0,85.0
+1,,,0.0,39.0,household_agent_0,72.0,household_agent_8,0.0,48.0,97.0,109.0
+2,,,0.0,39.0,household_agent_0,72.0,household_agent_8,0.0,47.0,194.0,146.0
+3,,,1.0,39.0,household_agent_1,151.0,household_agent_8,0.0,52.0,151.0,91.0
+4,,,1.0,39.0,household_agent_1,151.0,household_agent_8,0.0,59.0,130.0,120.0
+5,,,1.0,39.0,household_agent_1,151.0,household_agent_8,0.0,58.0,91.0,157.0
+6,,,2.0,39.0,household_agent_2,196.0,household_agent_8,0.0,63.0,196.0,102.0
+7,,,3.0,39.0,household_agent_3,188.0,household_agent_8,0.0,74.0,188.0,113.0
+8,,,4.0,39.0,household_agent_4,96.0,household_agent_8,0.0,85.0,96.0,124.0
+9,,,5.0,39.0,household_agent_5,156.0,household_agent_8,0.0,96.0,156.0,135.0
+10,,,6.0,39.0,household_agent_6,136.0,household_agent_8,0.0,107.0,136.0,146.0
+11,,,7.0,39.0,household_agent_7,150.0,household_agent_8,0.0,118.0,150.0,157.0
+12,,,8.0,39.0,household_agent_9,137.0,household_agent_8,0.0,129.0,137.0,168.0
+13,,,9.0,39.0,household_agent_10,64.0,household_agent_8,0.0,162.0,64.0,201.0
+14,,,10.0,39.0,household_agent_11,71.0,household_agent_8,0.0,179.0,71.0,218.0
+15,,,11.0,39.0,household_agent_12,183.0,household_agent_8,0.0,195.0,183.0,234.0
+16,,,12.0,39.0,generation_agent_0,179.0,household_agent_8,0.0,206.0,179.0,245.0
+17,,,13.0,39.0,generation_agent_1,159.0,household_agent_8,0.0,222.0,159.0,261.0
+18,,,14.0,39.0,generation_agent_2,90.0,household_agent_8,0.0,228.0,90.0,267.0
+19,,,15.0,39.0,generation_agent_3,135.0,household_agent_8,0.0,262.0,135.0,301.0
+20,,,100000.0,128.0,household_agent_8,72.0,household_agent_0,85.0,44.0,72.0,172.0
+21,,,100100.0,168.0,household_agent_8,151.0,household_agent_1,91.0,47.0,151.0,215.0
+22,,,100200.0,184.0,household_agent_8,196.0,household_agent_2,102.0,49.0,196.0,233.0
+23,,,100201.0,131.0,household_agent_3,97.0,household_agent_2,109.0,47.0,97.0,178.0
+24,,,100300.0,198.0,household_agent_8,188.0,household_agent_3,113.0,46.0,188.0,244.0
+25,,,100400.0,178.0,household_agent_3,130.0,household_agent_4,120.0,47.0,130.0,225.0
+26,,,100401.0,160.0,household_agent_8,96.0,household_agent_4,124.0,50.0,96.0,210.0
+27,,,100500.0,195.0,household_agent_8,156.0,household_agent_5,135.0,48.0,156.0,243.0
+28,,,100600.0,215.0,household_agent_8,136.0,household_agent_6,146.0,45.0,136.0,260.0
+29,,,100700.0,257.0,household_agent_8,150.0,household_agent_7,157.0,45.0,150.0,302.0
+30,,,100900.0,176.0,household_agent_8,137.0,household_agent_9,168.0,45.0,137.0,221.0
+31,,,101000.0,254.0,household_agent_8,64.0,household_agent_10,201.0,53.0,64.0,307.0
+32,,,101100.0,203.0,household_agent_12,194.0,household_agent_11,146.0,50.0,194.0,253.0
+33,,,101101.0,283.0,household_agent_8,71.0,household_agent_11,218.0,48.0,71.0,331.0
+34,,,101200.0,287.0,household_agent_8,183.0,household_agent_12,234.0,55.0,183.0,342.0
+35,,,101300.0,177.0,household_agent_12,91.0,generation_agent_0,157.0,47.0,91.0,224.0
+36,,,101301.0,295.0,household_agent_8,179.0,generation_agent_0,245.0,48.0,179.0,343.0
+37,,,101400.0,325.0,household_agent_8,159.0,generation_agent_1,261.0,53.0,159.0,378.0
+38,,,101500.0,353.0,household_agent_8,90.0,generation_agent_2,267.0,47.0,90.0,400.0
+39,,,101600.0,341.0,household_agent_8,135.0,generation_agent_3,301.0,47.0,135.0,388.0
