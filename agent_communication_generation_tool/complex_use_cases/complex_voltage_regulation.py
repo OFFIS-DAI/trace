@@ -70,7 +70,7 @@ for max_number_of_agents_ in num_agents:
                             """
                             communication_graph = (
                                 StarCommunicationGraph(agents=communication_network_description.agents,
-                                                       central_agent=communication_network_description.substation_agent,
+                                                       central_agent=random.choice(communication_network_description.substation_agents),
                                                        aggregator_agent=communication_network_description.pdc_agent,
                                                        max_number_of_agents_per_type=max_number_of_agents_))
                             communication_pattern = VoltageRegulation(simulation_duration_ms=SIMULATION_DURATION_MS,
