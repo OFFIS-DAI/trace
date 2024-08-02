@@ -1,0 +1,20 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-07-30 19:25:32.497294,,,,,,,,,
+1,Simulation configuration ID,40da5cb9-d61c-43d0-8f24-84b293381781,,,,,,,,,
+2,Network,SimbenchNetwork_LTE450_1-LV-rural1--0-no_sw,,,,,,,,,
+3,Communication graph,Ring Overlay Topology with 15 agents,,,,,,,,,
+4,Agent communication pattern,MarketParticipation,,,,,,,,,
+5,Trigger Type,TIME_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 50 B,upper bound = 200 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,3600000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,DECENTRALIZED,,,,,,,,,
+0,,,1.0,14.0,generation_agent_2,174.0,generation_agent_1,0.0,58.0,138.0,148.0
+1,,,2.0,14.0,generation_agent_0,72.0,generation_agent_1,0.0,69.0,157.0,159.0
+2,,,3.0,14.0,generation_agent_2,193.0,generation_agent_1,0.0,80.0,91.0,170.0
+3,,,8.0,14.0,generation_agent_0,132.0,generation_agent_1,0.0,58.0,132.0,72.0
+4,,,9.0,14.0,generation_agent_2,137.0,generation_agent_1,0.0,69.0,137.0,83.0
+5,,,101300.0,20977.0,generation_agent_1,132.0,generation_agent_0,72.0,47.0,132.0,21024.0
+6,,,101500.0,23481.0,generation_agent_1,137.0,generation_agent_2,83.0,47.0,137.0,23528.0

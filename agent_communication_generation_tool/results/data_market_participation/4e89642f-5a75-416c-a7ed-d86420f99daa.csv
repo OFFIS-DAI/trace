@@ -1,0 +1,19 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-07-30 18:18:22.230446,,,,,,,,,
+1,Simulation configuration ID,4e89642f-5a75-416c-a7ed-d86420f99daa,,,,,,,,,
+2,Network,SimbenchNetwork_LTE_1-LV-rural1--0-no_sw,,,,,,,,,
+3,Communication graph,Small World Overlay Topology with 15 agents and p = 0.5,,,,,,,,,
+4,Agent communication pattern,MarketParticipation,,,,,,,,,
+5,Trigger Type,TIME_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 50 B,upper bound = 200 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,3600000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,DECENTRALIZED,,,,,,,,,
+0,,,12.0,20.0,household_agent_4,159.0,household_agent_12,0.0,58.0,159.0,78.0
+1,,,13.0,20.0,household_agent_0,132.0,household_agent_12,0.0,69.0,132.0,89.0
+2,,,14.0,20.0,household_agent_3,102.0,household_agent_12,0.0,80.0,102.0,100.0
+3,,,100300.0,18829.0,household_agent_12,102.0,household_agent_3,100.0,47.0,102.0,18876.0
+4,,,100400.0,23597.0,household_agent_12,159.0,household_agent_4,78.0,47.0,159.0,23644.0
+5,,,100000.0,24212.0,household_agent_12,132.0,household_agent_0,89.0,47.0,132.0,24259.0
