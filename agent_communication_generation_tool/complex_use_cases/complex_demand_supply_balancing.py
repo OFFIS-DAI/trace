@@ -27,7 +27,7 @@ for max_number_of_agents_ in num_agents:
                 for p_agree_to_power_supply in probabilities_agree_to_supply:
                     simbench_codes = simbench_codes_analysis
                     for simbench_code in simbench_codes:
-                        for network_description_class in [SimbenchLTENetworkDescription]:
+                        for network_description_class in [SimbenchLTENetworkDescription, Simbench5GNetworkDescription]:
                             if network_description_class == SimbenchLTENetworkDescription:
                                 specifications = [SimbenchLTENetworkDescription.Specification.LTE450]
                             else:
