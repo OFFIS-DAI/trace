@@ -27,16 +27,16 @@ for max_number_of_agents_ in num_agents:
                 for p_agree_to_power_supply in probabilities_agree_to_supply:
                     simbench_codes = simbench_codes_analysis
                     for simbench_code in simbench_codes:
-                        for network_description_class in [Simbench5GNetworkDescription, SimbenchLTENetworkDescription]:
+                        for network_description_class in [SimbenchLTENetworkDescription]:
                             if network_description_class == SimbenchLTENetworkDescription:
-                                specifications = [SimbenchLTENetworkDescription.Specification.LTE,
-                                                  SimbenchLTENetworkDescription.Specification.LTE450]
+                                specifications = [SimbenchLTENetworkDescription.Specification.LTE450]
                             else:
                                 specifications = [None]
                             for specification in specifications:
                                 communication_network_description = network_description_class(
                                     simbench_code=simbench_code,
-                                    system_state=system_state)
+                                    system_state=system_state,
+                                    specification=specification)
                                 """
                                 Centralized
                                 """

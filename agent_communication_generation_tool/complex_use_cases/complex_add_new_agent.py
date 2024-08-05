@@ -25,8 +25,12 @@ for system_state in system_states:
             simbench_codes = simbench_codes_analysis
             for simbench_code in simbench_codes:
                 for network_description_class in [Simbench5GNetworkDescription, SimbenchLTENetworkDescription]:
-                    for specification in [SimbenchLTENetworkDescription.Specification.LTE,
-                                          SimbenchLTENetworkDescription.Specification.LTE450]:
+                    if network_description_class == SimbenchLTENetworkDescription:
+                        specifications = [SimbenchLTENetworkDescription.Specification.LTE,
+                                          SimbenchLTENetworkDescription.Specification.LTE450]
+                    else:
+                        specifications = None
+                    for specification in specifications:
                         communication_network_description = network_description_class(simbench_code=simbench_code,
                                                                                       system_state=system_state,
                                                                                       specification=specification)
