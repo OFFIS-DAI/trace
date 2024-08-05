@@ -18,7 +18,7 @@ from agent_communication_generation_tool.description_classes.communication_netwo
 SIMULATION_DURATION_MS = 30 * 1000  # 30 seconds
 
 probabilities_agree_to_supply = [0, 0.5, 1]
-negotiation_times = [100, 1000, 5000]
+negotiation_times = [100, 500]
 
 for max_number_of_agents_ in num_agents:
     for system_state in system_states:
