@@ -1,0 +1,20 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-07-30 16:36:44.903769,,,,,,,,,
+1,Simulation configuration ID,41760097-316f-4746-b2f0-0d22ec41347b,,,,,,,,,
+2,Network,SimbenchNetwork_5G_1-LV-rural1--0-no_sw,,,,,,,,,
+3,Communication graph,Small World Overlay Topology with 15 agents and p = 0.5,,,,,,,,,
+4,Agent communication pattern,MarketParticipation,,,,,,,,,
+5,Trigger Type,TIME_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 50 B,upper bound = 200 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,3600000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,DECENTRALIZED,,,,,,,,,
+0,,,9.0,46.0,household_agent_1,145.0,generation_agent_0,0.0,64.0,64.0,157.0
+1,,,12.0,46.0,household_agent_1,140.0,generation_agent_0,0.0,53.0,140.0,99.0
+2,,,13.0,46.0,generation_agent_1,143.0,generation_agent_0,0.0,64.0,143.0,110.0
+3,,,14.0,46.0,household_agent_4,164.0,generation_agent_0,0.0,75.0,164.0,121.0
+4,,,100400.0,13575.0,generation_agent_0,164.0,household_agent_4,121.0,47.0,164.0,13622.0
+5,,,100100.0,22004.0,generation_agent_0,140.0,household_agent_1,99.0,47.0,140.0,22051.0
+6,,,101400.0,29247.0,generation_agent_0,143.0,generation_agent_1,110.0,47.0,143.0,29294.0

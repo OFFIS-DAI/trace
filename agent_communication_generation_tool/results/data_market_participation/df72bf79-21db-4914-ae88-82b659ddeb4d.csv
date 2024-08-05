@@ -1,0 +1,29 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-08-01 20:58:47.115376,,,,,,,,,
+1,Simulation configuration ID,df72bf79-21db-4914-ae88-82b659ddeb4d,,,,,,,,,
+2,Network,SimbenchNetwork_LTE450_1-LV-rural1--0-no_sw,,,,,,,,,
+3,Communication graph,Complete Overlay Topology with 15 agents,,,,,,,,,
+4,Agent communication pattern,MarketParticipation,,,,,,,,,
+5,Trigger Type,TIME_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 8 B,upper bound = 50 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,3600000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,DECENTRALIZED,,,,,,,,,
+0,,,0.0,78.0,household_agent_11,17.0,generation_agent_1,0.0,47.0,17.0,125.0
+1,,,1.0,78.0,household_agent_0,38.0,generation_agent_1,0.0,52.0,38.0,130.0
+2,,,2.0,78.0,household_agent_3,39.0,generation_agent_1,0.0,58.0,39.0,136.0
+3,,,3.0,78.0,household_agent_7,10.0,generation_agent_1,0.0,63.0,10.0,141.0
+4,,,4.0,78.0,household_agent_4,21.0,generation_agent_1,0.0,69.0,21.0,147.0
+5,,,5.0,78.0,generation_agent_0,9.0,generation_agent_1,0.0,74.0,9.0,152.0
+6,,,6.0,78.0,generation_agent_2,38.0,generation_agent_1,0.0,80.0,38.0,158.0
+7,,,7.0,78.0,generation_agent_3,45.0,generation_agent_1,0.0,91.0,45.0,169.0
+8,,,101100.0,901.0,generation_agent_1,17.0,household_agent_11,125.0,47.0,17.0,948.0
+9,,,100000.0,958.0,generation_agent_1,38.0,household_agent_0,130.0,47.0,38.0,1005.0
+10,,,100300.0,710.0,generation_agent_1,39.0,household_agent_3,136.0,47.0,39.0,757.0
+11,,,100700.0,445.0,generation_agent_1,10.0,household_agent_7,141.0,47.0,10.0,492.0
+12,,,100400.0,1084.0,generation_agent_1,21.0,household_agent_4,147.0,47.0,21.0,1131.0
+13,,,101300.0,295.0,generation_agent_1,9.0,generation_agent_0,152.0,47.0,9.0,342.0
+14,,,101500.0,307.0,generation_agent_1,38.0,generation_agent_2,158.0,47.0,38.0,354.0
+15,,,101600.0,541.0,generation_agent_1,45.0,generation_agent_3,169.0,47.0,45.0,588.0

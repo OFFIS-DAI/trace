@@ -119,6 +119,8 @@ class AgentCommunicationPattern(ABC):
             df = pd.DataFrame(data['messageList'])
             df['sender'] = client
             dfs.append(df)
+        if len(dfs) == 0:
+            return None
         return pd.concat(dfs)
 
     def get_control_center_agent(self):
@@ -932,7 +934,7 @@ class VoltageRegulation(ComplexAgentCommunicationPattern):
         self.fill_config_for_non_sending_agents()
 
     def generate_traffic_configuration_files_decentralized(self):
-        bus_agents = self.communication_graph.get_agents_by_type(LeafAgent.LeafAgentType.GRID_INFRASTRUCTURE_AGENT)
+        bus_agents = self.communication_graph.get_agents_by_class(LeafAgent) #TODO: should be bus agents again
 
         # send measurements from pmu/pdc agents to control center agent
         time_send = random.randint(0, 100)

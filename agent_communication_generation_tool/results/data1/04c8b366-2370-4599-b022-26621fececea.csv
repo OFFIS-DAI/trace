@@ -1,0 +1,23 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-07-23 11:49:29.775023,,,,,,,,,
+1,Simulation configuration ID,04c8b366-2370-4599-b022-26621fececea,,,,,,,,,
+2,Network,SimbenchNetwork_LTE_1-LV-rural1--0-no_sw,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 15 agents,,,,,,,,,
+4,Agent communication pattern,DemandSupplyBalancing,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"Increasing data size generator with lower bound = 8 B,upper bound = 50 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,CENTRALIZED,,,,,,,,,
+0,,,0.0,49.0,control_center_agent,41.0,generation_agent_2,0.0,28.0,41.0,77.0
+1,,,1.0,149.0,household_agent_9,41.0,control_center_agent,0.0,21.0,41.0,170.0
+2,,,2.0,149.0,household_agent_6,41.0,control_center_agent,0.0,20.0,41.0,169.0
+3,,,3.0,149.0,household_agent_3,41.0,control_center_agent,0.0,19.0,41.0,168.0
+4,,,4.0,149.0,household_agent_5,41.0,control_center_agent,0.0,21.0,41.0,170.0
+5,,,5.0,149.0,household_agent_0,41.0,control_center_agent,0.0,19.0,41.0,168.0
+6,,,6.0,149.0,generation_agent_0,41.0,control_center_agent,0.0,20.0,41.0,169.0
+7,,,7.0,149.0,generation_agent_1,41.0,control_center_agent,0.0,20.0,41.0,169.0
+8,,,8.0,149.0,generation_agent_3,41.0,control_center_agent,0.0,19.0,41.0,168.0
+9,,,101700.0,93.0,generation_agent_2,41.0,control_center_agent,77.0,19.0,41.0,112.0

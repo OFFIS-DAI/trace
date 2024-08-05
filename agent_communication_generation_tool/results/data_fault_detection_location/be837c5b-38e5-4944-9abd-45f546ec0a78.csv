@@ -1,0 +1,17 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-07-28 18:15:32.488201,,,,,,,,,
+1,Simulation configuration ID,be837c5b-38e5-4944-9abd-45f546ec0a78,,,,,,,,,
+2,Network,SimbenchNetwork_5G_1-LV-rural1--0-no_sw,,,,,,,,,
+3,Communication graph,Ring Overlay Topology with 23 agents,,,,,,,,,
+4,Agent communication pattern,FaultDetectionAndLocation,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 50 B,upper bound = 200 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,DECENTRALIZED,,,,,,,,,
+0,,,0.0,32.0,generation_agent_2,136.0,generation_agent_3,0.0,47.0,136.0,79.0
+1,,,1.0,32.0,control_center_agent,88.0,generation_agent_3,0.0,28.0,88.0,60.0
+2,,,101500.0,154.0,generation_agent_3,136.0,generation_agent_2,79.0,47.0,136.0,201.0
+3,,,101700.0,120.0,generation_agent_3,88.0,control_center_agent,60.0,19.0,88.0,139.0

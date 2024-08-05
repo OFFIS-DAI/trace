@@ -1,0 +1,17 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-07-28 18:28:31.050396,,,,,,,,,
+1,Simulation configuration ID,fa60ded1-241a-4d27-95ec-737e4953245b,,,,,,,,,
+2,Network,SimbenchNetwork_LTE450_1-LV-rural1--0-no_sw,,,,,,,,,
+3,Communication graph,Ring Overlay Topology with 23 agents,,,,,,,,,
+4,Agent communication pattern,FaultDetectionAndLocation,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 50 B,upper bound = 200 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,DECENTRALIZED,,,,,,,,,
+0,,,0.0,32.0,household_agent_7,168.0,household_agent_8,0.0,47.0,168.0,79.0
+1,,,1.0,32.0,household_agent_9,163.0,household_agent_8,0.0,58.0,163.0,90.0
+2,,,100700.0,23566.0,household_agent_8,168.0,household_agent_7,79.0,47.0,168.0,23613.0
+3,,,100900.0,28003.0,household_agent_8,163.0,household_agent_9,90.0,47.0,163.0,28050.0

@@ -1,3 +1,4 @@
+simbench_codes_analysis = ['1-LV-rural1--0-no_sw']
 simbench_codes_low_voltage = [
     '1-LV-rural1--0-no_sw',
     '1-LV-rural1--1-no_sw',

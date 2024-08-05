@@ -1,13 +1,12 @@
-import random
 import sys
 from pathlib import Path
 # Add the parent directory of "agent_communication_generation_tool" to sys.path
 sys.path.append(Path(__file__).parent.parent.parent.absolute().__str__())
 
-from network_generation.simbench_network_extractor import SystemState
-from agent_communication_generation_tool.complex_use_cases.simulation_run_variables import \
+from agent_communication_generation_tool.simulation_run_variables import num_agents, system_states
+from agent_communication_generation_tool.simulation_run_variables import \
     complexities, overlay_types, data_size_generators_increasing
-from agent_communication_generation_tool.description_classes.simbench_codes import simbench_codes_low_voltage
+from agent_communication_generation_tool.description_classes.simbench_codes import simbench_codes_analysis
 from agent_communication_generation_tool.description_classes.communication_scenario_description import \
     CommunicationScenarioDescription
 from agent_communication_generation_tool.description_classes.agent_communication_pattern import \
@@ -19,25 +18,25 @@ from agent_communication_generation_tool.description_classes.communication_netwo
 SIMULATION_DURATION_MS = 30 * 1000  # 30 seconds
 
 probabilities_agree_to_supply = [0, 0.5, 1]
-negotiation_times = [100, 1000, 5000]
+negotiation_times = [100, 500]
 
-for max_number_of_agents_ in [random.randint(2, 100) for _ in range(5)]:
-    for system_state in [SystemState.NORMAL, SystemState.LIMITED, SystemState.FAILED]:
+for max_number_of_agents_ in num_agents:
+    for system_state in system_states:
         for data_size_generator_n, data_size_generator in data_size_generators_increasing.items():
             for optimization_complexity, reply_after_times in complexities.items():
                 for p_agree_to_power_supply in probabilities_agree_to_supply:
-                    simbench_codes = random.sample(simbench_codes_low_voltage, 2)
+                    simbench_codes = simbench_codes_analysis
                     for simbench_code in simbench_codes:
-                        for network_description_class in [Simbench5GNetworkDescription, SimbenchLTENetworkDescription]:
+                        for network_description_class in [SimbenchLTENetworkDescription]:
                             if network_description_class == SimbenchLTENetworkDescription:
-                                specifications = [SimbenchLTENetworkDescription.Specification.LTE,
-                                                  SimbenchLTENetworkDescription.Specification.LTE450]
+                                specifications = [SimbenchLTENetworkDescription.Specification.LTE450]
                             else:
                                 specifications = [None]
                             for specification in specifications:
                                 communication_network_description = network_description_class(
                                     simbench_code=simbench_code,
-                                    system_state=system_state)
+                                    system_state=system_state,
+                                    specification=specification)
                                 """
                                 Centralized
                                 """
