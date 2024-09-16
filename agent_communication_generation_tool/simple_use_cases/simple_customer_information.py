@@ -48,7 +48,6 @@ for max_number_of_agents_ in num_agents:
                                              f'simbench_network_'
                                              f'{communication_network_description.simbench_code},'
                                              f'_{communication_network_description.technology}'
-                                             f'{specification.name}'
                                              f'system_state_{system_state.name}',
                             communication_graph=communication_graph,
                             communication_network_description=communication_network_description,

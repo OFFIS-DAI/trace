@@ -53,7 +53,6 @@ for communication_mode in [CommunicationMode.UNICAST, CommunicationMode.MULTICAS
                                                      f'_num_agents_{max_number_of_agents_}_'
                                                      f'simbench_network_'
                                                      f'{communication_network_description.simbench_code},'
-                                                     f'{specification.name}'
                                                      f'system_state_{system_state.name}',
                                     communication_graph=communication_graph,
                                     communication_network_description=communication_network_description,

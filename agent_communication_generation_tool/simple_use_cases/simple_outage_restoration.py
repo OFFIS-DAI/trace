@@ -50,7 +50,6 @@ for optimization_complexity, reply_after_times in {'low': (0, 1000), 'medium': (
                                                  f'_num_agents_{max_number_of_agents_}_'
                                                  f'simbench_network_'
                                                  f'{communication_network_description.simbench_code},'
-                                                 f'_{specification.name}'
                                                  f'system_state_{system_state.name}',
                                 communication_graph=communication_graph,
                                 communication_network_description=communication_network_description,

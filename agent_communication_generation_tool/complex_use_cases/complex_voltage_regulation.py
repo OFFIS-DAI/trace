@@ -16,7 +16,7 @@ from agent_communication_generation_tool.description_classes.agent_communication
     VoltageRegulation, OrganizationalStructure
 from agent_communication_generation_tool.description_classes.communication_graph import StarCommunicationGraph
 from agent_communication_generation_tool.description_classes.communication_network_description import \
-    Simbench5GNetworkDescription, SimbenchLTENetworkDescription
+    SimbenchLTENetworkDescription
 
 SIMULATION_DURATION_MS = 30 * 1000  # 30 seconds
 

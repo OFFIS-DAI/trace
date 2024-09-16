@@ -52,7 +52,6 @@ for market_interval in market_intervals:
                                                                               f'_num_agents_{max_number_of_agents_}_'
                                                                               f'simbench_network_'
                                                                               f'{communication_network_description.simbench_code},'
-                                                                              f'{specification.name}_'
                                                                               f'system_state_{system_state.name}',
                                                              communication_graph=communication_graph,
                                                              communication_network_description=communication_network_description,
