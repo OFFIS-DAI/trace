@@ -1,0 +1,28 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-09-16 12:57:07.970340,,,,,,,,,
+1,Simulation configuration ID,c12ba09d-df58-462b-af16-e9a25e7a5cce,,,,,,,,,
+2,Network,SimbenchNetwork_Ethernet_1-LV-rural1--0-no_sw,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 25 agents,,,,,,,,,
+4,Agent communication pattern,DemandResponse,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,Fixed data size generator with data size = 100 B,,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,300000,,,,,,,,,
+9,Communication mode,MULTICAST,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+0,,,0.0,85.0,household_agent_9,100.0,control_center_agent,0.0,0.0,100.0,85.0
+1,,,1.0,85.0,household_agent_1,100.0,control_center_agent,0.0,0.0,100.0,85.0
+2,,,2.0,85.0,household_agent_10,100.0,control_center_agent,0.0,1.0,100.0,86.0
+3,,,3.0,85.0,household_agent_3,100.0,control_center_agent,0.0,1.0,100.0,86.0
+4,,,4.0,85.0,household_agent_12,100.0,control_center_agent,0.0,1.0,100.0,86.0
+5,,,5.0,85.0,household_agent_6,100.0,control_center_agent,0.0,1.0,100.0,86.0
+6,,,6.0,85.0,household_agent_4,100.0,control_center_agent,0.0,1.0,100.0,86.0
+7,,,7.0,85.0,household_agent_5,100.0,control_center_agent,0.0,1.0,100.0,86.0
+8,,,100100.0,797.0,control_center_agent,100.0,household_agent_1,85.0,0.0,100.0,797.0
+9,,,100300.0,935.0,control_center_agent,100.0,household_agent_3,86.0,0.0,100.0,935.0
+10,,,100400.0,435.0,control_center_agent,100.0,household_agent_4,86.0,0.0,100.0,435.0
+11,,,100500.0,284.0,control_center_agent,100.0,household_agent_5,86.0,0.0,100.0,284.0
+12,,,100600.0,813.0,control_center_agent,100.0,household_agent_6,86.0,0.0,100.0,813.0
+13,,,100900.0,445.0,control_center_agent,100.0,household_agent_9,85.0,0.0,100.0,445.0
+14,,,101000.0,604.0,control_center_agent,100.0,household_agent_10,86.0,0.0,100.0,604.0
+15,,,101200.0,853.0,control_center_agent,100.0,household_agent_12,86.0,0.0,100.0,853.0
