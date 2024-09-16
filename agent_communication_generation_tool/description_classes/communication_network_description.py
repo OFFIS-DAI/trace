@@ -133,8 +133,8 @@ class Simbench5GNetworkDescription(SimbenchNetworkDescription):
 
 
 class SimbenchEthernetNetworkDescription(SimbenchNetworkDescription):
-    def __init__(self, simbench_code):
-        network_extractor = SimbenchEthernetNetworkExtractor(simbench_code, SystemState.NORMAL)
+    def __init__(self, simbench_code, specification=None, system_state=SystemState.NORMAL):
+        network_extractor = SimbenchEthernetNetworkExtractor(simbench_code, system_state)
         self.simbench_code = simbench_code
         self.system_state = SystemState.NORMAL
         super().__init__(network_extractor, technology='Ethernet', simbench_code=simbench_code)
