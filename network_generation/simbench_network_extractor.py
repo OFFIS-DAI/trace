@@ -558,8 +558,9 @@ class SimbenchEthernetNetworkExtractor(SimbenchNetworkExtractor):
         super().__init__(simbench_code, system_state)
 
     def place_communication_infrastructure(self):
+        non_central_agents = [agent for agent in self.agents if not isinstance(agent, CentralAgent)]
 
-        agent_coordinates = np.array([agent.coordinates for agent in self.agents])
+        agent_coordinates = np.array([agent.coordinates for agent in non_central_agents])
 
         central_agents = [agent for agent in self.agents if isinstance(agent, CentralAgent)]
 
@@ -571,12 +572,21 @@ class SimbenchEthernetNetworkExtractor(SimbenchNetworkExtractor):
         )
         self.communication_infrastructure.append(router_central)
 
+        # place configurator
+        self.communication_infrastructure.append(
+            CommunicationInfrastructure(
+                class_name='Ipv4NetworkConfigurator',
+                identifier='configurator',
+                position=(100, 100)
+            )
+        )
+
         for agent in central_agents:
             self.communication_connections.append(
                 CommunicationConnection(
                     connector_1=(router_central, 'pppg++'),
                     connector_2=(agent, 'pppg++'),
-                    conn_type='Eth100M'
+                    conn_type='Eth10M'
                 )
             )
 
@@ -591,7 +601,7 @@ class SimbenchEthernetNetworkExtractor(SimbenchNetworkExtractor):
             clusters[i] = []
 
         for idx, label in enumerate(labels):
-            clusters[label].append(self.agents[idx])
+            clusters[label].append(non_central_agents[idx])
 
         # Step 2: Place one router per cluster at the centroid
         for cluster_id, agents_in_cluster in clusters.items():
@@ -614,7 +624,7 @@ class SimbenchEthernetNetworkExtractor(SimbenchNetworkExtractor):
                 CommunicationConnection(
                     connector_1=(router, 'pppg++'),
                     connector_2=(router_central, 'pppg++'),
-                    conn_type='Eth100M'
+                    conn_type='Eth10M'
                 )
             )
 
@@ -624,14 +634,14 @@ class SimbenchEthernetNetworkExtractor(SimbenchNetworkExtractor):
                     CommunicationConnection(
                         connector_1=(router, 'pppg++'),
                         connector_2=(agent, 'pppg++'),
-                        conn_type='Eth100M'
+                        conn_type='Eth10M'
                     )
                 )
 
     def get_omnet_network_description(self) -> str:
         imports = ('import inet.networklayer.configurator.ipv4.Ipv4NetworkConfigurator;\n'
                    'import inet.networklayer.ipv4.RoutingTableRecorder;\n'
-                   'import inet.node.ethernet.Eth100M;\n'
+                   'import inet.node.ethernet.Eth10M;\n'
                    'import inet.node.inet.Router;\n'
                    'import inet.node.inet.StandardHost;\n')
 
@@ -663,9 +673,9 @@ class SimbenchEthernetNetworkExtractor(SimbenchNetworkExtractor):
     def get_omnet_ini_config(self):
         config_string = (f'[Config SimbenchNetwork]\n'
                          f'network = SimbenchNetwork\n'
-                         f'extends = General\n')
+                         f'extends = Ethernet\n')
 
-        for i, agent in enumerate(self.agents):  # TODO: if multiple agents: assign to antenna
+        for i, agent in enumerate(self.agents):
             config_string += f'**.{agent.omnet_name}.app[0].localPort = {agent.omnet_port}\n'
             config_string += \
                 (f'**.{agent.omnet_name}.app[0].trafficConfigPath = '
