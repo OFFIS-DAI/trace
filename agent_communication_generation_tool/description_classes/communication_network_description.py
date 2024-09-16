@@ -5,7 +5,7 @@ from abc import ABC
 from enum import Enum
 
 from network_generation.simbench_network_extractor import SimbenchNetworkExtractor, SimbenchLTENetworkExtractor, \
-    Simbench5GNetworkExtractor, SystemState
+    Simbench5GNetworkExtractor, SystemState, SimbenchEthernetNetworkExtractor
 
 import warnings
 
@@ -130,3 +130,12 @@ class Simbench5GNetworkDescription(SimbenchNetworkDescription):
         self.simbench_code = simbench_code
         network_extractor = Simbench5GNetworkExtractor(simbench_code, system_state)
         super().__init__(network_extractor, technology='5G', simbench_code=simbench_code)
+
+
+class SimbenchEthernetNetworkDescription(SimbenchNetworkDescription):
+    def __init__(self, simbench_code):
+        network_extractor = SimbenchEthernetNetworkExtractor(simbench_code, SystemState.NORMAL)
+        self.simbench_code = simbench_code
+        self.system_state = SystemState.NORMAL
+        super().__init__(network_extractor, technology='Ethernet', simbench_code=simbench_code)
+

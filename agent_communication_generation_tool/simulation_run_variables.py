@@ -1,6 +1,8 @@
 import sys
 from pathlib import Path
 
+from agent_communication_generation_tool.description_classes.communication_network_description import \
+    Simbench5GNetworkDescription, SimbenchLTENetworkDescription, SimbenchEthernetNetworkDescription
 from network_generation.simbench_network_extractor import SystemState
 
 # Add the parent directory of "agent_communication_generation_tool" to sys.path
@@ -10,6 +12,9 @@ from agent_communication_generation_tool.description_classes.communication_graph
     SmallWorldOverlayGraph, CompleteOverlayGraph
 from agent_communication_generation_tool.description_classes.data_size_generator import InIntervalDataSizeGenerator, \
     IncreasingInIntervalDataSizeGenerator
+
+network_description_classes = [#Simbench5GNetworkDescription, SimbenchLTENetworkDescription,
+                               SimbenchEthernetNetworkDescription]
 
 data_size_generators = {
     '8-50B': InIntervalDataSizeGenerator(8, 50),

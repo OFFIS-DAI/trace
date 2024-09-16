@@ -3,7 +3,8 @@ from pathlib import Path
 # Add the parent directory of "agent_communication_generation_tool" to sys.path
 sys.path.append(Path(__file__).parent.parent.parent.absolute().__str__())
 
-from agent_communication_generation_tool.simulation_run_variables import num_agents, system_states
+from agent_communication_generation_tool.simulation_run_variables import num_agents, system_states, \
+    network_description_classes
 from agent_communication_generation_tool.simulation_run_variables import \
     complexities, overlay_types, data_size_generators_increasing
 from agent_communication_generation_tool.description_classes.simbench_codes import simbench_codes_analysis
@@ -27,11 +28,12 @@ for max_number_of_agents_ in num_agents:
                 for p_agree_to_power_supply in probabilities_agree_to_supply:
                     simbench_codes = simbench_codes_analysis
                     for simbench_code in simbench_codes:
-                        for network_description_class in [SimbenchLTENetworkDescription, Simbench5GNetworkDescription]:
+                        for network_description_class in network_description_classes:
                             if network_description_class == SimbenchLTENetworkDescription:
-                                specifications = [SimbenchLTENetworkDescription.Specification.LTE450]
+                                specifications = [SimbenchLTENetworkDescription.Specification.LTE,
+                                                  SimbenchLTENetworkDescription.Specification.LTE450]
                             else:
-                                specifications = [None]
+                                specifications = [True]
                             for specification in specifications:
                                 communication_network_description = network_description_class(
                                     simbench_code=simbench_code,

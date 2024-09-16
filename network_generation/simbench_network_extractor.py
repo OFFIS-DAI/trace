@@ -6,9 +6,10 @@ from abc import ABC, abstractmethod
 from enum import Enum
 from os.path import abspath
 from pathlib import Path
-import pickle
 import simbench as sb
 import utm
+from sklearn.cluster import KMeans
+import numpy as np
 
 from agent_communication_generation_tool.description_classes.agent import LeafAgent, CentralAgent, AggregatorAgent, \
     Agent
@@ -293,10 +294,32 @@ class SimbenchNetworkExtractor(ABC):
             position=(random.randint(10, 100), random.randint(10, 100))
         ) for i in range(num_traffic_devices)])
 
+    def add_aggregator_level_agents(self, centroid: tuple, cluster_id: int):
+        new_agents = []
+        # per cluster
+        self.pdc_agent = (
+            AggregatorAgent(omnet_name=f'pdc_agent_{cluster_id}', omnet_port=self.get_port(),
+                            agent_type=AggregatorAgent.AggregatorAgentType.PDC_AGENT, coordinates=centroid)
+        )
+        new_agents.append(self.pdc_agent)
+
+        if len(self.substation_agents) == 0:
+            substation_agent = AggregatorAgent(omnet_name=f'substation_agent_{cluster_id}', omnet_port=self.get_port(),
+                                               agent_type=AggregatorAgent.AggregatorAgentType.SUBSTATION_AGENT,
+                                               coordinates=centroid)
+            self.substation_agents.append(substation_agent)
+            new_agents.append(substation_agent)
+        self.agents.extend(new_agents)
+        return new_agents
 
     def add_control_agents(self):
-        position_middle = int(self.network_size[0]) / 2, int(self.network_size[1]) / 2
         # generated agents
+        self.aggregator_agent = (
+            AggregatorAgent(omnet_name='aggregator_agent', omnet_port=self.get_port(),
+                            agent_type=AggregatorAgent.AggregatorAgentType.AGGREGATOR_AGENT,
+                            coordinates=(100, 100))
+        )
+        self.agents.append(self.aggregator_agent)
         self.control_center_agent = (
             CentralAgent(omnet_name='control_center_agent', omnet_port=self.get_port(),
                          agent_type=CentralAgent.CentralAgentType.CONTROL_CENTER_AGENT, coordinates=(100, 100))
@@ -308,30 +331,14 @@ class SimbenchNetworkExtractor(ABC):
                          agent_type=CentralAgent.CentralAgentType.MARKET_AGENT, coordinates=(100, 100)))
         self.agents.append(self.market_agent)
 
-        self.aggregator_agent = (
-            AggregatorAgent(omnet_name='aggregator_agent', omnet_port=self.get_port(),
-                            agent_type=AggregatorAgent.AggregatorAgentType.AGGREGATOR_AGENT,
-                            coordinates=position_middle)
-        )
-        self.agents.append(self.aggregator_agent)
-
-        self.pdc_agent = (
-            AggregatorAgent(omnet_name='pdc_agent', omnet_port=self.get_port(),
-                            agent_type=AggregatorAgent.AggregatorAgentType.PDC_AGENT, coordinates=position_middle)
-        )
-        self.agents.append(self.pdc_agent)
-
         self.grid_operator_agent = (
             CentralAgent(omnet_name='grid_operator_agent', omnet_port=self.get_port(),
                          agent_type=CentralAgent.CentralAgentType.GRID_OPERATOR_AGENT, coordinates=(100, 100)))
         self.agents.append(self.grid_operator_agent)
 
-        if len(self.substation_agents) == 0:
-            substation_agent = AggregatorAgent(omnet_name='substation_agent', omnet_port=self.get_port(),
-                                               agent_type=AggregatorAgent.AggregatorAgentType.SUBSTATION_AGENT,
-                                               coordinates=position_middle)
-            self.substation_agents.append(substation_agent)
-            self.agents.append(substation_agent)
+        if not isinstance(self, SimbenchEthernetNetworkExtractor):
+            position_middle = int(self.network_size[0]) / 2, int(self.network_size[1]) / 2
+            self.add_aggregator_level_agents(position_middle, 0)
 
     @abstractmethod
     def place_communication_infrastructure(self):
@@ -542,6 +549,131 @@ class Simbench5GNetworkExtractor(SimbenchNetworkExtractor):
 
         for traffic_device in self.traffic_devices:
             config_string += f'*.{traffic_device.identifier}.app[*].destAddress = "{random.choice(self.agents).omnet_name}"\n'
+        return config_string
+
+
+class SimbenchEthernetNetworkExtractor(SimbenchNetworkExtractor):
+
+    def __init__(self, simbench_code, system_state):
+        super().__init__(simbench_code, system_state)
+
+    def place_communication_infrastructure(self):
+
+        agent_coordinates = np.array([agent.coordinates for agent in self.agents])
+
+        central_agents = [agent for agent in self.agents if isinstance(agent, CentralAgent)]
+
+        # Place a router at the centroid of the cluster
+        router_central = CommunicationInfrastructure(
+            class_name='Router',
+            identifier=f'router_central',
+            position=(100, 100)
+        )
+        self.communication_infrastructure.append(router_central)
+
+        for agent in central_agents:
+            self.communication_connections.append(
+                CommunicationConnection(
+                    connector_1=(router_central, 'pppg++'),
+                    connector_2=(agent, 'pppg++'),
+                    conn_type='Eth100M'
+                )
+            )
+
+        # Step 1: Cluster agents with similar coordinates
+        num_clusters = 3  # This can be dynamic or based on some heuristics
+        kmeans = KMeans(n_clusters=num_clusters, random_state=0).fit(agent_coordinates)
+        labels = kmeans.labels_
+
+        # Store clusters information
+        clusters = {}
+        for i in range(num_clusters):
+            clusters[i] = []
+
+        for idx, label in enumerate(labels):
+            clusters[label].append(self.agents[idx])
+
+        # Step 2: Place one router per cluster at the centroid
+        for cluster_id, agents_in_cluster in clusters.items():
+            # Calculate the centroid of the cluster
+            cluster_coordinates = np.array([agent.coordinates for agent in agents_in_cluster])
+            centroid = cluster_coordinates.mean(axis=0)
+
+            new_agents = self.add_aggregator_level_agents(tuple(centroid), cluster_id)
+
+            # Place a router at the centroid of the cluster
+            router = CommunicationInfrastructure(
+                class_name='Router',
+                identifier=f'router_{cluster_id}',
+                position=tuple(centroid)
+            )
+            self.communication_infrastructure.append(router)
+
+            # connect router to central router
+            self.communication_connections.append(
+                CommunicationConnection(
+                    connector_1=(router, 'pppg++'),
+                    connector_2=(router_central, 'pppg++'),
+                    conn_type='Eth100M'
+                )
+            )
+
+            # Step 3: Define connections between agents and the router
+            for agent in agents_in_cluster + new_agents:
+                self.communication_connections.append(
+                    CommunicationConnection(
+                        connector_1=(router, 'pppg++'),
+                        connector_2=(agent, 'pppg++'),
+                        conn_type='Eth100M'
+                    )
+                )
+
+    def get_omnet_network_description(self) -> str:
+        imports = ('import inet.networklayer.configurator.ipv4.Ipv4NetworkConfigurator;\n'
+                   'import inet.networklayer.ipv4.RoutingTableRecorder;\n'
+                   'import inet.node.ethernet.Eth100M;\n'
+                   'import inet.node.inet.Router;\n'
+                   'import inet.node.inet.StandardHost;\n')
+
+        network = f'network SimbenchNetwork ' + '{\n'
+
+        # add some margin (10m) in network display
+        parameters = ('parameters: @display("i=block/network2;bgb=' +
+                      f'{self.network_size[0] + 10},{self.network_size[1] + 10}");\n')
+
+        submodules = 'submodules:\n\n'
+
+        for module in self.communication_infrastructure:
+            submodules += (f'\t{module.identifier}: {module.class_name}' + '{' +
+                           f'@display("p={int(module.position[0])},{int(module.position[1])}");' + '}\n')
+        for agent in self.agents:
+            submodules += (
+                    f'\t{agent.omnet_name}: StandardHost ' +
+                    '{@display("p=' + f'{int(agent.coordinates[0])},{int(agent.coordinates[1])}' + '");}\n')
+
+        for traffic_device in self.traffic_devices:
+            submodules += (f'\t{traffic_device.identifier}: Ue ' +
+                           '{@display("p=' + f'{int(traffic_device.position[0])},{int(traffic_device.position[1])}' + '");}\n')
+        connections = 'connections:\n'
+        for connection in self.communication_connections:
+            connections += '\t' + connection.get_connection_string() + ';\n'
+
+        return imports + network + parameters + submodules + connections + '}'
+
+    def get_omnet_ini_config(self):
+        config_string = (f'[Config SimbenchNetwork]\n'
+                         f'network = SimbenchNetwork\n'
+                         f'extends = General\n')
+
+        for i, agent in enumerate(self.agents):  # TODO: if multiple agents: assign to antenna
+            config_string += f'**.{agent.omnet_name}.app[0].localPort = {agent.omnet_port}\n'
+            config_string += \
+                (f'**.{agent.omnet_name}.app[0].trafficConfigPath = '
+                 f'"modules/traffic_configurations/traffic_config_{agent.omnet_name}.json"\n')
+        config_string += '*.server.numApps=0\n'
+        for traffic_device in self.traffic_devices:
+            config_string += (f'*.{traffic_device.identifier}.app[*].destAddress = '
+                              f'"{random.choice(self.agents).omnet_name}"\n')
         return config_string
 
 
