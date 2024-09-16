@@ -56,28 +56,3 @@ for optimization_complexity, reply_after_times in {'low': (0, 1000), 'medium': (
                                 agent_communication_pattern=fault_location_isolation_comm_pattern))
 
                         communication_scenario_description.run_simulation()
-
-                    communication_network_description = Simbench5GNetworkDescription(simbench_code=simbench_code,
-                                                                                     system_state=system_state)
-                    communication_graph = (
-                        StarCommunicationGraph(agents=communication_network_description.agents,
-                                               central_agent=communication_network_description.get_central_agent(),
-                                               max_number_of_agents_per_type=max_number_of_agents_))
-
-                    fault_location_isolation_comm_pattern = FaultLocationIsolation(
-                        simulation_duration_ms=SIMULATION_DURATION_MS,
-                        communication_graph=communication_graph,
-                        reply_after_range=reply_after_times)
-                    communication_scenario_description = (
-                        CommunicationScenarioDescription(
-                            description_text=f'fault_location_isolation_complexity_{optimization_complexity}'
-                                             f'_num_agents_{max_number_of_agents_}_'
-                                             f'simbench_network_'
-                                             f'{communication_network_description.simbench_code},'
-                                             f'_{communication_network_description.technology}_'
-                                             f'system_state_{system_state.name}',
-                            communication_graph=communication_graph,
-                            communication_network_description=communication_network_description,
-                            agent_communication_pattern=fault_location_isolation_comm_pattern))
-
-                    communication_scenario_description.run_simulation()
