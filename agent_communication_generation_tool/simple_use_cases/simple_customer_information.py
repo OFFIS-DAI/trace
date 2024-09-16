@@ -6,7 +6,8 @@ from pathlib import Path
 sys.path.append(Path(__file__).parent.parent.parent.absolute().__str__())
 
 from network_generation.simbench_network_extractor import SystemState
-from agent_communication_generation_tool.simulation_run_variables import num_agents, system_states
+from agent_communication_generation_tool.simulation_run_variables import num_agents, system_states, \
+    network_description_classes
 
 from agent_communication_generation_tool.description_classes.simbench_codes import simbench_codes_low_voltage, \
     simbench_codes_analysis
