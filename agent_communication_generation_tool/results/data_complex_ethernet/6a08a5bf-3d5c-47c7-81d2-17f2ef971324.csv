@@ -1,0 +1,29 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-09-17 08:40:30.581829,,,,,,,,,
+1,Simulation configuration ID,6a08a5bf-3d5c-47c7-81d2-17f2ef971324,,,,,,,,,
+2,Network,SimbenchNetwork_Ethernet_1-LV-rural1--0-no_sw,,,,,,,,,
+3,Communication graph,Complete Overlay Topology with 17 agents,,,,,,,,,
+4,Agent communication pattern,MarketParticipation,,,,,,,,,
+5,Trigger Type,TIME_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 8 B,upper bound = 50 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,3600000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,DECENTRALIZED,,,,,,,,,
+0,,,0.0,45.0,household_agent_0,24.0,household_agent_4,0.0,0.0,24.0,45.0
+1,,,1.0,45.0,household_agent_11,45.0,household_agent_4,0.0,0.0,45.0,45.0
+2,,,2.0,45.0,household_agent_12,8.0,household_agent_4,0.0,0.0,8.0,45.0
+3,,,3.0,45.0,household_agent_8,13.0,household_agent_4,0.0,0.0,13.0,45.0
+4,,,4.0,45.0,generation_agent_0,25.0,household_agent_4,0.0,1.0,25.0,46.0
+5,,,5.0,45.0,generation_agent_1,29.0,household_agent_4,0.0,1.0,29.0,46.0
+6,,,6.0,45.0,generation_agent_2,8.0,household_agent_4,0.0,1.0,8.0,46.0
+7,,,7.0,45.0,generation_agent_3,38.0,household_agent_4,0.0,0.0,38.0,45.0
+8,,,100000.0,21912.0,household_agent_4,24.0,household_agent_0,45.0,0.0,24.0,21912.0
+9,,,101100.0,29902.0,household_agent_4,45.0,household_agent_11,45.0,0.0,45.0,29902.0
+10,,,101200.0,20006.0,household_agent_4,8.0,household_agent_12,45.0,0.0,8.0,20006.0
+11,,,100800.0,19616.0,household_agent_4,13.0,household_agent_8,45.0,0.0,13.0,19616.0
+12,,,101300.0,17492.0,household_agent_4,25.0,generation_agent_0,46.0,0.0,25.0,17492.0
+13,,,101400.0,15858.0,household_agent_4,29.0,generation_agent_1,46.0,0.0,29.0,15858.0
+14,,,101500.0,24472.0,household_agent_4,8.0,generation_agent_2,46.0,0.0,8.0,24472.0
+15,,,101600.0,27935.0,household_agent_4,38.0,generation_agent_3,45.0,0.0,38.0,27935.0

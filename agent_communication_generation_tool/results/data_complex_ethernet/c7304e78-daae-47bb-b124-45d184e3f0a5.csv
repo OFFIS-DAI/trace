@@ -1,0 +1,24 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-09-17 03:13:27.215099,,,,,,,,,
+1,Simulation configuration ID,c7304e78-daae-47bb-b124-45d184e3f0a5,,,,,,,,,
+2,Network,SimbenchNetwork_Ethernet_1-LV-rural1--0-no_sw,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 17 agents,,,,,,,,,
+4,Agent communication pattern,EVManagementSystem,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 50 B,upper bound = 200 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,CENTRALIZED,,,,,,,,,
+0,,,0.0,40.0,grid_operator_agent,174.0,household_agent_1,0.0,0.0,174.0,40.0
+1,,,1.0,40.0,grid_operator_agent,195.0,household_agent_7,0.0,0.0,180.0,108.0
+2,,,1.0,40.0,grid_operator_agent,195.0,household_agent_7,0.0,1.0,195.0,41.0
+3,,,2.0,40.0,grid_operator_agent,58.0,household_agent_2,0.0,0.0,58.0,40.0
+4,,,3.0,40.0,grid_operator_agent,178.0,household_agent_8,0.0,1.0,178.0,41.0
+5,,,4.0,40.0,grid_operator_agent,115.0,household_agent_4,0.0,0.0,115.0,40.0
+6,,,102000.0,13331.0,household_agent_2,58.0,grid_operator_agent,40.0,0.0,58.0,13331.0
+7,,,102001.0,12079.0,household_agent_4,115.0,grid_operator_agent,40.0,0.0,115.0,12079.0
+8,,,102002.0,13149.0,household_agent_1,174.0,grid_operator_agent,40.0,0.0,174.0,13149.0
+9,,,102003.0,20220.0,household_agent_8,178.0,grid_operator_agent,41.0,0.0,178.0,20220.0
+10,,,102004.0,9875.0,household_agent_7,195.0,grid_operator_agent,41.0,0.0,195.0,9875.0

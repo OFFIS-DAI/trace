@@ -1,0 +1,81 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-09-17 13:13:47.551347,,,,,,,,,
+1,Simulation configuration ID,278c26e0-aa14-48b5-a6a5-042735325443,,,,,,,,,
+2,Network,SimbenchNetwork_Ethernet_1-LV-rural1--0-no_sw,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 25 agents,,,,,,,,,
+4,Agent communication pattern,MarketParticipation,,,,,,,,,
+5,Trigger Type,TIME_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 50 B,upper bound = 200 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,3600000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,CENTRALIZED,,,,,,,,,
+0,,,0.0,63.0,household_agent_0,172.0,market_agent,0.0,1.0,172.0,64.0
+1,,,1.0,63.0,household_agent_1,57.0,market_agent,0.0,1.0,57.0,64.0
+2,,,2.0,63.0,household_agent_2,114.0,market_agent,0.0,1.0,114.0,64.0
+3,,,3.0,63.0,household_agent_3,77.0,market_agent,0.0,1.0,77.0,64.0
+4,,,4.0,63.0,household_agent_4,181.0,market_agent,0.0,1.0,181.0,64.0
+5,,,5.0,63.0,household_agent_5,160.0,market_agent,0.0,2.0,160.0,65.0
+6,,,6.0,63.0,household_agent_6,53.0,market_agent,0.0,2.0,53.0,65.0
+7,,,7.0,63.0,household_agent_7,196.0,market_agent,0.0,2.0,196.0,65.0
+8,,,8.0,63.0,household_agent_8,73.0,market_agent,0.0,2.0,73.0,65.0
+9,,,9.0,63.0,household_agent_9,108.0,market_agent,0.0,2.0,108.0,65.0
+10,,,10.0,63.0,household_agent_10,148.0,market_agent,0.0,2.0,148.0,65.0
+11,,,11.0,63.0,household_agent_11,178.0,market_agent,0.0,3.0,178.0,66.0
+12,,,12.0,63.0,household_agent_12,119.0,market_agent,0.0,3.0,119.0,66.0
+13,,,13.0,63.0,generation_agent_0,92.0,market_agent,0.0,3.0,92.0,66.0
+14,,,14.0,63.0,generation_agent_1,164.0,market_agent,0.0,3.0,164.0,66.0
+15,,,15.0,63.0,generation_agent_2,74.0,market_agent,0.0,3.0,74.0,66.0
+16,,,16.0,63.0,generation_agent_3,92.0,market_agent,0.0,3.0,92.0,66.0
+17,,,17.0,1800063.0,household_agent_0,97.0,market_agent,0.0,1.0,97.0,1800064.0
+18,,,18.0,1800063.0,household_agent_1,115.0,market_agent,0.0,1.0,115.0,1800064.0
+19,,,19.0,1800063.0,household_agent_2,94.0,market_agent,0.0,1.0,94.0,1800064.0
+20,,,20.0,1800063.0,household_agent_3,106.0,market_agent,0.0,1.0,106.0,1800064.0
+21,,,21.0,1800063.0,household_agent_4,110.0,market_agent,0.0,1.0,110.0,1800064.0
+22,,,22.0,1800063.0,household_agent_5,163.0,market_agent,0.0,2.0,163.0,1800065.0
+23,,,23.0,1800063.0,household_agent_6,166.0,market_agent,0.0,2.0,166.0,1800065.0
+24,,,24.0,1800063.0,household_agent_7,53.0,market_agent,0.0,2.0,53.0,1800065.0
+25,,,25.0,1800063.0,household_agent_8,84.0,market_agent,0.0,2.0,84.0,1800065.0
+26,,,26.0,1800063.0,household_agent_9,101.0,market_agent,0.0,2.0,101.0,1800065.0
+27,,,27.0,1800063.0,household_agent_10,67.0,market_agent,0.0,2.0,67.0,1800065.0
+28,,,28.0,1800063.0,household_agent_11,187.0,market_agent,0.0,3.0,187.0,1800066.0
+29,,,29.0,1800063.0,household_agent_12,177.0,market_agent,0.0,3.0,177.0,1800066.0
+30,,,30.0,1800063.0,generation_agent_0,118.0,market_agent,0.0,3.0,118.0,1800066.0
+31,,,31.0,1800063.0,generation_agent_1,198.0,market_agent,0.0,3.0,198.0,1800066.0
+32,,,32.0,1800063.0,generation_agent_2,144.0,market_agent,0.0,3.0,144.0,1800066.0
+33,,,33.0,1800063.0,generation_agent_3,91.0,market_agent,0.0,3.0,91.0,1800066.0
+34,,,100000.0,710.0,market_agent,172.0,household_agent_0,64.0,0.0,172.0,710.0
+35,,,100001.0,1800607.0,market_agent,97.0,household_agent_0,1800064.0,0.0,97.0,1800607.0
+36,,,100100.0,918.0,market_agent,57.0,household_agent_1,64.0,0.0,57.0,918.0
+37,,,100101.0,1800569.0,market_agent,115.0,household_agent_1,1800064.0,0.0,115.0,1800569.0
+38,,,100200.0,196.0,market_agent,114.0,household_agent_2,64.0,0.0,114.0,196.0
+39,,,100201.0,1800603.0,market_agent,94.0,household_agent_2,1800064.0,0.0,94.0,1800603.0
+40,,,100300.0,955.0,market_agent,77.0,household_agent_3,64.0,0.0,77.0,955.0
+41,,,100301.0,1800847.0,market_agent,106.0,household_agent_3,1800064.0,0.0,106.0,1800847.0
+42,,,100400.0,411.0,market_agent,181.0,household_agent_4,64.0,0.0,181.0,411.0
+43,,,100401.0,1800886.0,market_agent,110.0,household_agent_4,1800064.0,0.0,110.0,1800886.0
+44,,,100500.0,1017.0,market_agent,160.0,household_agent_5,65.0,0.0,160.0,1017.0
+45,,,100501.0,1800902.0,market_agent,163.0,household_agent_5,1800065.0,0.0,163.0,1800902.0
+46,,,100600.0,1043.0,market_agent,53.0,household_agent_6,65.0,0.0,53.0,1043.0
+47,,,100601.0,1800211.0,market_agent,166.0,household_agent_6,1800065.0,0.0,166.0,1800211.0
+48,,,100700.0,267.0,market_agent,196.0,household_agent_7,65.0,0.0,196.0,267.0
+49,,,100701.0,1800451.0,market_agent,53.0,household_agent_7,1800065.0,0.0,53.0,1800451.0
+50,,,100800.0,727.0,market_agent,73.0,household_agent_8,65.0,0.0,73.0,727.0
+51,,,100801.0,1801005.0,market_agent,84.0,household_agent_8,1800065.0,0.0,84.0,1801005.0
+52,,,100900.0,422.0,market_agent,108.0,household_agent_9,65.0,0.0,108.0,422.0
+53,,,100901.0,1800606.0,market_agent,101.0,household_agent_9,1800065.0,0.0,101.0,1800606.0
+54,,,101000.0,734.0,market_agent,148.0,household_agent_10,65.0,0.0,148.0,734.0
+55,,,101001.0,1800175.0,market_agent,67.0,household_agent_10,1800065.0,0.0,67.0,1800175.0
+56,,,101100.0,648.0,market_agent,178.0,household_agent_11,66.0,0.0,178.0,648.0
+57,,,101101.0,1800851.0,market_agent,187.0,household_agent_11,1800066.0,0.0,187.0,1800851.0
+58,,,101200.0,306.0,market_agent,119.0,household_agent_12,66.0,0.0,119.0,306.0
+59,,,101201.0,1800187.0,market_agent,177.0,household_agent_12,1800066.0,0.0,177.0,1800187.0
+60,,,101300.0,1005.0,market_agent,92.0,generation_agent_0,66.0,0.0,92.0,1005.0
+61,,,101301.0,1800304.0,market_agent,118.0,generation_agent_0,1800066.0,0.0,118.0,1800304.0
+62,,,101400.0,594.0,market_agent,164.0,generation_agent_1,66.0,0.0,164.0,594.0
+63,,,101401.0,1800468.0,market_agent,198.0,generation_agent_1,1800066.0,0.0,198.0,1800468.0
+64,,,101500.0,376.0,market_agent,74.0,generation_agent_2,66.0,0.0,74.0,376.0
+65,,,101501.0,1800403.0,market_agent,144.0,generation_agent_2,1800066.0,0.0,144.0,1800403.0
+66,,,101600.0,269.0,market_agent,92.0,generation_agent_3,66.0,0.0,92.0,269.0
+67,,,101601.0,1800671.0,market_agent,91.0,generation_agent_3,1800066.0,0.0,91.0,1800671.0

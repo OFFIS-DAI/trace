@@ -1,0 +1,55 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-09-16 15:14:57.698712,,,,,,,,,
+1,Simulation configuration ID,1451228e-1906-4622-bd49-fd9f2c0a29f2,,,,,,,,,
+2,Network,SimbenchNetwork_Ethernet_1-LV-rural1--0-no_sw,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 25 agents,,,,,,,,,
+4,Agent communication pattern,AddNewAgent,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 200 B,upper bound = 1000 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,HIERARCHICAL,,,,,,,,,
+0,,,0.0,84.0,aggregator_agent,670.0,household_agent_3,0.0,2.0,536.0,86.0
+1,,,0.0,84.0,aggregator_agent,670.0,household_agent_3,0.0,2.0,134.0,86.0
+2,,,1.0,94.0,control_center_agent,854.0,aggregator_agent,0.0,1.0,536.0,95.0
+3,,,1.0,94.0,control_center_agent,854.0,aggregator_agent,0.0,2.0,318.0,96.0
+4,,,2.0,194.0,household_agent_0,598.0,aggregator_agent,0.0,3.0,536.0,197.0
+5,,,2.0,194.0,household_agent_0,598.0,aggregator_agent,0.0,9.0,62.0,203.0
+6,,,3.0,194.0,household_agent_1,598.0,aggregator_agent,0.0,4.0,536.0,198.0
+7,,,3.0,194.0,household_agent_1,598.0,aggregator_agent,0.0,10.0,62.0,204.0
+8,,,4.0,194.0,household_agent_2,598.0,aggregator_agent,0.0,1.0,536.0,195.0
+9,,,4.0,194.0,household_agent_2,598.0,aggregator_agent,0.0,9.0,62.0,203.0
+10,,,5.0,194.0,household_agent_3,598.0,aggregator_agent,0.0,5.0,536.0,199.0
+11,,,5.0,194.0,household_agent_3,598.0,aggregator_agent,0.0,10.0,62.0,204.0
+12,,,6.0,194.0,household_agent_4,598.0,aggregator_agent,0.0,5.0,536.0,199.0
+13,,,6.0,194.0,household_agent_4,598.0,aggregator_agent,0.0,10.0,62.0,204.0
+14,,,7.0,194.0,household_agent_5,598.0,aggregator_agent,0.0,2.0,536.0,196.0
+15,,,7.0,194.0,household_agent_5,598.0,aggregator_agent,0.0,9.0,62.0,203.0
+16,,,8.0,194.0,household_agent_6,598.0,aggregator_agent,0.0,3.0,536.0,197.0
+17,,,8.0,194.0,household_agent_6,598.0,aggregator_agent,0.0,9.0,62.0,203.0
+18,,,9.0,194.0,household_agent_7,598.0,aggregator_agent,0.0,6.0,536.0,200.0
+19,,,9.0,194.0,household_agent_7,598.0,aggregator_agent,0.0,10.0,62.0,204.0
+20,,,10.0,194.0,household_agent_8,598.0,aggregator_agent,0.0,7.0,536.0,201.0
+21,,,10.0,194.0,household_agent_8,598.0,aggregator_agent,0.0,10.0,62.0,204.0
+22,,,11.0,194.0,household_agent_9,598.0,aggregator_agent,0.0,7.0,536.0,201.0
+23,,,11.0,194.0,household_agent_9,598.0,aggregator_agent,0.0,10.0,62.0,204.0
+24,,,12.0,194.0,household_agent_10,598.0,aggregator_agent,0.0,8.0,536.0,202.0
+25,,,12.0,194.0,household_agent_10,598.0,aggregator_agent,0.0,10.0,62.0,204.0
+26,,,13.0,194.0,household_agent_11,598.0,aggregator_agent,0.0,8.0,536.0,202.0
+27,,,13.0,194.0,household_agent_11,598.0,aggregator_agent,0.0,10.0,62.0,204.0
+28,,,14.0,194.0,household_agent_12,598.0,aggregator_agent,0.0,5.0,536.0,199.0
+29,,,14.0,194.0,household_agent_12,598.0,aggregator_agent,0.0,9.0,62.0,203.0
+30,,,15.0,194.0,generation_agent_0,598.0,aggregator_agent,0.0,9.0,536.0,203.0
+31,,,15.0,194.0,generation_agent_0,598.0,aggregator_agent,0.0,10.0,62.0,204.0
+32,,,16.0,194.0,generation_agent_1,598.0,aggregator_agent,0.0,9.0,536.0,203.0
+33,,,16.0,194.0,generation_agent_1,598.0,aggregator_agent,0.0,10.0,62.0,204.0
+34,,,17.0,194.0,generation_agent_2,598.0,aggregator_agent,0.0,10.0,536.0,204.0
+35,,,17.0,194.0,generation_agent_2,598.0,aggregator_agent,0.0,10.0,62.0,204.0
+36,,,18.0,194.0,generation_agent_3,598.0,aggregator_agent,0.0,10.0,536.0,204.0
+37,,,18.0,194.0,generation_agent_3,598.0,aggregator_agent,0.0,11.0,62.0,205.0
+38,,,101800.0,177.0,aggregator_agent,854.0,control_center_agent,95.0,1.0,536.0,178.0
+39,,,101800.0,177.0,aggregator_agent,854.0,control_center_agent,95.0,2.0,318.0,179.0
+40,,,101801.0,178.0,aggregator_agent,854.0,control_center_agent,96.0,2.0,536.0,180.0
+41,,,101801.0,178.0,aggregator_agent,854.0,control_center_agent,96.0,3.0,318.0,181.0
