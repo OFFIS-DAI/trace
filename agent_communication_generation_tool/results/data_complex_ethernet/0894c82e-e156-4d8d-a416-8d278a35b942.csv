@@ -1,0 +1,19 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-09-17 23:58:59.740874,,,,,,,,,
+1,Simulation configuration ID,0894c82e-e156-4d8d-a416-8d278a35b942,,,,,,,,,
+2,Network,SimbenchNetwork_Ethernet_1-LV-rural1--0-no_sw,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 25 agents,,,,,,,,,
+4,Agent communication pattern,VoltageRegulation,,,,,,,,,
+5,Trigger Type,TIME_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 8 B,upper bound = 50 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,HIERARCHICAL,,,,,,,,,
+0,,,0.0,25.0,substation_agent_0,18.0,pdc_agent_0,0.0,0.0,18.0,25.0
+1,,,1.0,25.0,substation_agent_0,10.0,pdc_agent_1,0.0,0.0,10.0,25.0
+2,,,2.0,25.0,substation_agent_0,21.0,pdc_agent_2,0.0,0.0,21.0,25.0
+3,,,102200.0,51.0,pdc_agent_0,18.0,substation_agent_0,25.0,0.0,18.0,51.0
+4,,,102201.0,39.0,pdc_agent_1,10.0,substation_agent_0,25.0,0.0,10.0,39.0
+5,,,102202.0,47.0,pdc_agent_2,21.0,substation_agent_0,25.0,0.0,21.0,47.0

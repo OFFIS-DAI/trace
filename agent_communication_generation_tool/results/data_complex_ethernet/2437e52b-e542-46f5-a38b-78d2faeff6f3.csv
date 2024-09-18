@@ -1,0 +1,27 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-09-17 11:02:08.556184,,,,,,,,,
+1,Simulation configuration ID,2437e52b-e542-46f5-a38b-78d2faeff6f3,,,,,,,,,
+2,Network,SimbenchNetwork_Ethernet_1-LV-rural1--0-no_sw,,,,,,,,,
+3,Communication graph,Small World Overlay Topology with 22 agents and p = 0.5,,,,,,,,,
+4,Agent communication pattern,MarketParticipation,,,,,,,,,
+5,Trigger Type,TIME_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 200 B,upper bound = 1000 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,3600000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,DECENTRALIZED,,,,,,,,,
+0,,,12.0,15.0,household_agent_8,879.0,generation_agent_2,0.0,1.0,536.0,16.0
+1,,,12.0,15.0,household_agent_8,879.0,generation_agent_2,0.0,2.0,343.0,17.0
+2,,,13.0,15.0,generation_agent_1,308.0,generation_agent_2,0.0,2.0,308.0,17.0
+3,,,14.0,15.0,generation_agent_3,916.0,generation_agent_2,0.0,3.0,536.0,18.0
+4,,,14.0,15.0,generation_agent_3,916.0,generation_agent_2,0.0,5.0,380.0,20.0
+5,,,100800.0,235669.0,generation_agent_2,879.0,household_agent_8,16.0,1.0,536.0,235670.0
+6,,,100800.0,235669.0,generation_agent_2,879.0,household_agent_8,16.0,1.0,343.0,235670.0
+7,,,100801.0,235670.0,generation_agent_2,879.0,household_agent_8,17.0,1.0,536.0,235671.0
+8,,,100801.0,235670.0,generation_agent_2,879.0,household_agent_8,17.0,2.0,343.0,235672.0
+9,,,101400.0,67424.0,generation_agent_2,308.0,generation_agent_1,17.0,0.0,308.0,67424.0
+10,,,101600.0,138650.0,generation_agent_2,916.0,generation_agent_3,18.0,2.0,536.0,138652.0
+11,,,101600.0,138650.0,generation_agent_2,916.0,generation_agent_3,18.0,3.0,380.0,138653.0
+12,,,101601.0,138652.0,generation_agent_2,916.0,generation_agent_3,20.0,2.0,536.0,138654.0
+13,,,101601.0,138652.0,generation_agent_2,916.0,generation_agent_3,20.0,4.0,380.0,138656.0

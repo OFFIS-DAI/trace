@@ -1,0 +1,29 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-09-17 07:56:08.358042,,,,,,,,,
+1,Simulation configuration ID,ad493a6c-965d-4c98-a440-7dcb362f9461,,,,,,,,,
+2,Network,SimbenchNetwork_Ethernet_1-LV-rural1--0-no_sw,,,,,,,,,
+3,Communication graph,Complete Overlay Topology with 17 agents,,,,,,,,,
+4,Agent communication pattern,MarketParticipation,,,,,,,,,
+5,Trigger Type,TIME_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 8 B,upper bound = 50 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,3600000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,DECENTRALIZED,,,,,,,,,
+0,,,0.0,3.0,household_agent_4,21.0,generation_agent_2,0.0,0.0,21.0,3.0
+1,,,1.0,3.0,household_agent_7,35.0,generation_agent_2,0.0,1.0,35.0,4.0
+2,,,2.0,3.0,household_agent_8,24.0,generation_agent_2,0.0,0.0,24.0,3.0
+3,,,3.0,3.0,household_agent_0,17.0,generation_agent_2,0.0,0.0,17.0,3.0
+4,,,4.0,3.0,household_agent_6,42.0,generation_agent_2,0.0,1.0,42.0,4.0
+5,,,5.0,3.0,generation_agent_0,47.0,generation_agent_2,0.0,0.0,47.0,3.0
+6,,,6.0,3.0,generation_agent_1,17.0,generation_agent_2,0.0,0.0,17.0,3.0
+7,,,7.0,3.0,generation_agent_3,19.0,generation_agent_2,0.0,1.0,19.0,4.0
+8,,,100400.0,19.0,generation_agent_2,21.0,household_agent_4,3.0,0.0,21.0,19.0
+9,,,100700.0,78.0,generation_agent_2,35.0,household_agent_7,4.0,0.0,35.0,78.0
+10,,,100800.0,102.0,generation_agent_2,24.0,household_agent_8,3.0,0.0,24.0,102.0
+11,,,100000.0,74.0,generation_agent_2,17.0,household_agent_0,3.0,0.0,17.0,74.0
+12,,,100600.0,5.0,generation_agent_2,42.0,household_agent_6,4.0,0.0,42.0,5.0
+13,,,101300.0,40.0,generation_agent_2,47.0,generation_agent_0,3.0,0.0,47.0,40.0
+14,,,101400.0,59.0,generation_agent_2,17.0,generation_agent_1,3.0,0.0,17.0,59.0
+15,,,101600.0,93.0,generation_agent_2,19.0,generation_agent_3,4.0,0.0,19.0,93.0

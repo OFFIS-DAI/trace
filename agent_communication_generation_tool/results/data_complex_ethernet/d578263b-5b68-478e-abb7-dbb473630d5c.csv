@@ -1,0 +1,30 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-09-17 09:17:39.276625,,,,,,,,,
+1,Simulation configuration ID,d578263b-5b68-478e-abb7-dbb473630d5c,,,,,,,,,
+2,Network,SimbenchNetwork_Ethernet_1-LV-rural1--0-no_sw,,,,,,,,,
+3,Communication graph,Complete Overlay Topology with 17 agents,,,,,,,,,
+4,Agent communication pattern,MarketParticipation,,,,,,,,,
+5,Trigger Type,TIME_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 8 B,upper bound = 50 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,3600000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,DECENTRALIZED,,,,,,,,,
+0,,,0.0,43.0,household_agent_6,23.0,household_agent_5,0.0,0.0,10.0,52.0
+1,,,32.0,43.0,household_agent_6,34.0,household_agent_5,0.0,2.0,34.0,45.0
+2,,,33.0,43.0,household_agent_11,45.0,household_agent_5,0.0,3.0,45.0,46.0
+3,,,34.0,43.0,household_agent_10,26.0,household_agent_5,0.0,3.0,26.0,46.0
+4,,,35.0,43.0,household_agent_7,25.0,household_agent_5,0.0,3.0,25.0,46.0
+5,,,36.0,43.0,generation_agent_0,39.0,household_agent_5,0.0,3.0,39.0,46.0
+6,,,37.0,43.0,generation_agent_1,35.0,household_agent_5,0.0,3.0,35.0,46.0
+7,,,38.0,43.0,generation_agent_2,38.0,household_agent_5,0.0,3.0,38.0,46.0
+8,,,39.0,43.0,generation_agent_3,43.0,household_agent_5,0.0,3.0,43.0,46.0
+9,,,100600.0,11206.0,household_agent_5,34.0,household_agent_6,45.0,0.0,34.0,11206.0
+10,,,101100.0,16137.0,household_agent_5,45.0,household_agent_11,46.0,0.0,45.0,16137.0
+11,,,101000.0,8697.0,household_agent_5,26.0,household_agent_10,46.0,0.0,26.0,8697.0
+12,,,100700.0,23572.0,household_agent_5,25.0,household_agent_7,46.0,0.0,25.0,23572.0
+13,,,101300.0,7556.0,household_agent_5,39.0,generation_agent_0,46.0,0.0,39.0,7556.0
+14,,,101400.0,2262.0,household_agent_5,35.0,generation_agent_1,46.0,0.0,35.0,2262.0
+15,,,101500.0,6946.0,household_agent_5,38.0,generation_agent_2,46.0,0.0,38.0,6946.0
+16,,,101600.0,14158.0,household_agent_5,43.0,generation_agent_3,46.0,0.0,43.0,14158.0
