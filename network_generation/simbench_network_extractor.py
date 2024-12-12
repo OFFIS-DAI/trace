@@ -203,12 +203,15 @@ class SimbenchNetworkExtractor(ABC):
         i = 0
 
         for index, row in measurements_with_coordinates.iterrows():
+            if np.isnan(row['y']) or np.isnan(row['x']):
+                continue
+
             self.grid_infrastructure_agents.append(
                 LeafAgent(
                     omnet_name=f'grid_infrastructure_agent_{i}',
                     omnet_port=self.get_port(),
                     agent_type=LeafAgent.LeafAgentType.GRID_INFRASTRUCTURE_AGENT,
-                    coordinates=utm.from_latlon(row['x'], row['y'])
+                    coordinates=utm.from_latlon(row['y'], row['x'])
                 )
             )
             i += 1
@@ -225,7 +228,7 @@ class SimbenchNetworkExtractor(ABC):
                     omnet_name=f'household_agent_{i}',
                     omnet_port=self.get_port(),
                     agent_type=LeafAgent.LeafAgentType.HOUSEHOLD_AGENT,
-                    coordinates=utm.from_latlon(row['x'], row['y'])
+                    coordinates=utm.from_latlon(latitude=row['y'], longitude=row['x'])
                 )
             )
             i += 1
@@ -242,7 +245,7 @@ class SimbenchNetworkExtractor(ABC):
                     omnet_name=f'generation_agent_{i}',
                     omnet_port=self.get_port(),
                     agent_type=LeafAgent.LeafAgentType.GENERATION_AGENT,
-                    coordinates=utm.from_latlon(row['x'], row['y'])
+                    coordinates=utm.from_latlon(latitude=row['y'], longitude=row['x'])
                 )
             )
             i += 1
@@ -259,7 +262,7 @@ class SimbenchNetworkExtractor(ABC):
                     omnet_name=f'storage_agent_{i}',
                     omnet_port=self.get_port(),
                     agent_type=LeafAgent.LeafAgentType.STORAGE_AGENT,
-                    coordinates=utm.from_latlon(row['x'], row['y'])
+                    coordinates=utm.from_latlon(latitude=row['y'], longitude=row['x'])
                 )
             )
             i += 1
