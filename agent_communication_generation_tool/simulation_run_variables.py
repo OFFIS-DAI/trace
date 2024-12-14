@@ -13,7 +13,7 @@ from agent_communication_generation_tool.description_classes.communication_graph
 from agent_communication_generation_tool.description_classes.data_size_generator import InIntervalDataSizeGenerator, \
     IncreasingInIntervalDataSizeGenerator
 
-network_description_classes = [#Simbench5GNetworkDescription, SimbenchLTENetworkDescription,
+network_description_classes = [Simbench5GNetworkDescription, SimbenchLTENetworkDescription,
                                SimbenchEthernetNetworkDescription]
 
 data_size_generators = {
@@ -30,7 +30,7 @@ data_size_generators_increasing = {
 
 system_states = [SystemState.NORMAL]
 
-num_agents = [5, 10, 15, 20, 25, 30, 50, 100]
+num_agents = [100]
 
 complexities = {'immediate': (0, 100), 'low': (100, 1000),
                 'medium': (1000, 30000), 'high': (30000, 5 * 60 * 1000)}
