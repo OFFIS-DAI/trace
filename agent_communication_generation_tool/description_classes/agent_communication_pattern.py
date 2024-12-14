@@ -1163,7 +1163,7 @@ class ScheduledAutomatedMeterReading(SimpleAgentCommunicationPattern):
 class OnDemandAutomatedMeterReading(SimpleAgentCommunicationPattern):
     def __init__(self, simulation_duration_ms: int, communication_graph: CommunicationGraph):
         data_size_generator = FixedDataSizeGenerator(data_size_byte=100)
-        super().__init__(simulation_duration_ms, communication_graph, TriggerType.EVENT_TRIGGERED, 0,
+        super().__init__(simulation_duration_ms, communication_graph, TriggerType.EVENT_TRIGGERED, 10000,
                          data_size_generator, CommunicationMode.MANY_TO_ONE)
 
     def generate_traffic_configuration_files(self):
@@ -1173,7 +1173,7 @@ class OnDemandAutomatedMeterReading(SimpleAgentCommunicationPattern):
         meter_agents = random.sample(meter_agents, int(len(meter_agents) / 2))
         self.generate_many_to_one_communication(one=control_center_agent,
                                                 many=meter_agents,
-                                                send_only_once=True)
+                                                send_only_once=False)
 
 
 class PricingApplication(SimpleAgentCommunicationPattern):
