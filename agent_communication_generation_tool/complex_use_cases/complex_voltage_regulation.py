@@ -9,7 +9,7 @@ from agent_communication_generation_tool.simulation_run_variables import num_age
     network_description_classes
 from agent_communication_generation_tool.simulation_run_variables import \
     complexities, overlay_types, data_size_generators
-from agent_communication_generation_tool.description_classes.simbench_codes import simbench_codes_analysis
+from agent_communication_generation_tool.description_classes.simbench_codes import codes_nan_filtered
 from agent_communication_generation_tool.description_classes.communication_scenario_description import \
     CommunicationScenarioDescription
 from agent_communication_generation_tool.description_classes.agent_communication_pattern import \
@@ -20,14 +20,14 @@ from agent_communication_generation_tool.description_classes.communication_netwo
 
 SIMULATION_DURATION_MS = 30 * 1000  # 30 seconds
 
-probabilities_agree_to_supply = [0, 0.5, 1]
-negotiation_times = [100, 1000, 5000]
+probabilities_agree_to_supply = [random.random()]
+negotiation_times = [random.randint(100,500)]
 
 for max_number_of_agents_ in num_agents:
     for system_state in system_states:
         for data_size_generator_n, data_size_generator in data_size_generators.items():
             for optimization_complexity, reply_after_times in complexities.items():
-                simbench_codes = simbench_codes_analysis
+                simbench_codes = codes_nan_filtered
                 for simbench_code in simbench_codes:
                     for network_description_class in network_description_classes:
                         if network_description_class == SimbenchLTENetworkDescription:

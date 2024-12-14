@@ -9,22 +9,22 @@ from agent_communication_generation_tool.simulation_run_variables import num_age
     network_description_classes
 from agent_communication_generation_tool.simulation_run_variables import \
     complexities, overlay_types, data_size_generators
-from agent_communication_generation_tool.description_classes.simbench_codes import simbench_codes_analysis
+from agent_communication_generation_tool.description_classes.simbench_codes import codes_nan_filtered
 from agent_communication_generation_tool.description_classes.communication_scenario_description import \
     CommunicationScenarioDescription
 from agent_communication_generation_tool.description_classes.agent_communication_pattern import \
     EVManagementSystem, OrganizationalStructure
 from agent_communication_generation_tool.description_classes.communication_graph import StarCommunicationGraph
 from agent_communication_generation_tool.description_classes.communication_network_description import (
-    SimbenchLTENetworkDescription, Simbench5GNetworkDescription)
+    SimbenchLTENetworkDescription)
 
 SIMULATION_DURATION_MS = 30 * 1000  # 30 seconds
 
-num_iterations_till_goal = [1, 5]
+num_iterations_till_goal = [random.randint(1,5)]
 
 for max_number_of_agents_ in num_agents:
     for system_state in system_states:
-        simbench_codes = simbench_codes_analysis
+        simbench_codes = codes_nan_filtered
         for simbench_code in simbench_codes:
             for network_description_class in network_description_classes:
                 if network_description_class == SimbenchLTENetworkDescription:
