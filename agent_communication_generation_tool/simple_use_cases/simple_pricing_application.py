@@ -8,8 +8,7 @@ sys.path.append(Path(__file__).parent.parent.parent.absolute().__str__())
 from network_generation.simbench_network_extractor import SystemState
 from agent_communication_generation_tool.simulation_run_variables import num_agents, system_states, \
     network_description_classes
-from agent_communication_generation_tool.description_classes.simbench_codes import simbench_codes_low_voltage, \
-    simbench_codes_analysis
+from agent_communication_generation_tool.description_classes.simbench_codes import codes_nan_filtered
 from agent_communication_generation_tool.description_classes.communication_scenario_description import \
     CommunicationScenarioDescription
 from agent_communication_generation_tool.description_classes.agent_communication_pattern import PricingApplication
@@ -26,7 +25,7 @@ market_intervals = [5 * 60 * 1000,  # 5 minutes
 for market_interval in market_intervals:
     for max_number_of_agents_ in num_agents:
         for system_state in system_states:
-            simbench_codes = simbench_codes_analysis
+            simbench_codes = codes_nan_filtered
             for simbench_code in simbench_codes:
                 for network_description_class in network_description_classes:
                     if network_description_class == SimbenchLTENetworkDescription:
