@@ -2,7 +2,6 @@
 codes_nan_filtered = [
     "1-MV-urban--1-no_sw",
     "1-LV-semiurb4--1-no_sw",
-    "1-HVMV-mixed-all-2-no_sw",
     "1-MVLV-rural-all-2-no_sw"
 ]
 
