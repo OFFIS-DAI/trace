@@ -117,24 +117,28 @@ class SimbenchLTENetworkDescription(SimbenchNetworkDescription):
         LTE = 0
         LTE450 = 1
 
-    def __init__(self, simbench_code, specification=Specification.LTE, system_state=SystemState.NORMAL):
+    def __init__(self, simbench_code, specification=Specification.LTE, system_state=SystemState.NORMAL,
+                 max_number_of_agents_per_type=None):
         self.system_state = system_state
         self.simbench_code = simbench_code
-        network_extractor = SimbenchLTENetworkExtractor(simbench_code, system_state, specification)
+        network_extractor = SimbenchLTENetworkExtractor(simbench_code, system_state, specification,
+                                                        max_number_of_agents_per_type)
         super().__init__(network_extractor, technology=specification.name, simbench_code=simbench_code)
 
 
 class Simbench5GNetworkDescription(SimbenchNetworkDescription):
-    def __init__(self, simbench_code, specification=None, system_state=SystemState.NORMAL):
+    def __init__(self, simbench_code, specification=None, system_state=SystemState.NORMAL,
+                 max_number_of_agents_per_type=None):
         self.system_state = system_state
         self.simbench_code = simbench_code
-        network_extractor = Simbench5GNetworkExtractor(simbench_code, system_state)
+        network_extractor = Simbench5GNetworkExtractor(simbench_code, system_state, max_number_of_agents_per_type)
         super().__init__(network_extractor, technology='5G', simbench_code=simbench_code)
 
 
 class SimbenchEthernetNetworkDescription(SimbenchNetworkDescription):
-    def __init__(self, simbench_code, specification=None, system_state=SystemState.NORMAL):
-        network_extractor = SimbenchEthernetNetworkExtractor(simbench_code, system_state)
+    def __init__(self, simbench_code, specification=None, system_state=SystemState.NORMAL,
+                 max_number_of_agents_per_type=None):
+        network_extractor = SimbenchEthernetNetworkExtractor(simbench_code, system_state, max_number_of_agents_per_type)
         self.simbench_code = simbench_code
         self.system_state = SystemState.NORMAL
         super().__init__(network_extractor, technology='Ethernet', simbench_code=simbench_code)

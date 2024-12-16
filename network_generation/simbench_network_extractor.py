@@ -81,10 +81,11 @@ def delete_old_config_section():
 
 
 class SimbenchNetworkExtractor(ABC):
-    def __init__(self, simbench_code, system_state=SystemState.NORMAL):
+    def __init__(self, simbench_code, system_state=SystemState.NORMAL, max_number_of_agents_per_type=None):
         self.simbench_code = simbench_code
         self.simbench_network = None
         self.system_state = system_state
+        self.max_number_of_agents_per_type = max_number_of_agents_per_type
 
         self.port = 1000
 
@@ -182,6 +183,7 @@ class SimbenchNetworkExtractor(ABC):
     def rescale_network(self):
         (min_x, min_y), (max_x, max_y) = self.get_network_area()
         self.network_size = (max_x - min_x, max_y - min_y)
+        print('Network size: ', self.network_size)
         for agent in self.agents:
             new_coords = (agent.coordinates[0] - min_x + 10, agent.coordinates[1] - min_y + 10)
             agent.coordinates = new_coords
@@ -190,6 +192,25 @@ class SimbenchNetworkExtractor(ABC):
         port = self.port
         self.port += 1
         return port
+
+    def generate_antenna_positions(self, distance:int) -> list[tuple[int, int]]:
+        """
+        Generates positions of antennas.
+        @param distance: distance between antennas in meters.
+        """
+        width, height = self.network_size
+        positions = []
+
+        # Generate positions along the width and height
+        x = 0
+        while x <= width:
+            y = 0
+            while y <= height:
+                positions.append((x, y))
+                y += distance
+            x += distance
+
+        return positions
 
     def get_agents_from_simbench_network(self):
         # grid infrastructure agents
@@ -204,6 +225,10 @@ class SimbenchNetworkExtractor(ABC):
 
         for index, row in measurements_with_coordinates.iterrows():
             if np.isnan(row['y']) or np.isnan(row['x']):
+                continue
+
+            if (self.max_number_of_agents_per_type
+                    and len(self.grid_infrastructure_agents) >= self.max_number_of_agents_per_type):
                 continue
 
             self.grid_infrastructure_agents.append(
@@ -223,6 +248,9 @@ class SimbenchNetworkExtractor(ABC):
             self.simbench_network.load.join(load_bus_coordinates, on='bus', how='left', rsuffix='_geo'))
         i = 0
         for index, row in loads_with_coordinates.iterrows():
+            if (self.max_number_of_agents_per_type
+                    and len(self.household_agents) >= self.max_number_of_agents_per_type):
+                continue
             self.household_agents.append(
                 LeafAgent(
                     omnet_name=f'household_agent_{i}',
@@ -240,6 +268,9 @@ class SimbenchNetworkExtractor(ABC):
             self.simbench_network.sgen.join(gen_bus_coordinates, on='bus', how='left', rsuffix='_geo'))
         i = 0
         for index, row in gens_with_coordinates.iterrows():
+            if (self.max_number_of_agents_per_type
+                    and len(self.generation_agents) >= self.max_number_of_agents_per_type):
+                continue
             self.generation_agents.append(
                 LeafAgent(
                     omnet_name=f'generation_agent_{i}',
@@ -257,6 +288,9 @@ class SimbenchNetworkExtractor(ABC):
             self.simbench_network.storage.join(storage_bus_coordinates, on='bus', how='left', rsuffix='_geo'))
         i = 0
         for index, row in storages_with_coordinates.iterrows():
+            if (self.max_number_of_agents_per_type
+                    and len(self.storage_agents) >= self.max_number_of_agents_per_type):
+                continue
             self.storage_agents.append(
                 LeafAgent(
                     omnet_name=f'storage_agent_{i}',
@@ -266,6 +300,10 @@ class SimbenchNetworkExtractor(ABC):
                 )
             )
             i += 1
+        print('Household agents: ', len(self.household_agents))
+        print('Generation agents: ', len(self.generation_agents))
+        print('Storage agents: ', len(self.storage_agents))
+        print('Grid infrastructure agents: ', len(self.grid_infrastructure_agents))
         """
         # substation agents
         substation_bus_ids = net.substation['bus']
@@ -363,8 +401,8 @@ class SimbenchNetworkExtractor(ABC):
 
 
 class Simbench5GNetworkExtractor(SimbenchNetworkExtractor):
-    def __init__(self, simbench_code, system_state):
-        super().__init__(simbench_code, system_state)
+    def __init__(self, simbench_code, system_state, max_number_agents_per_type=None):
+        super().__init__(simbench_code, system_state, max_number_agents_per_type)
 
     def place_communication_infrastructure(self):
         # place channel control
@@ -436,12 +474,18 @@ class Simbench5GNetworkExtractor(SimbenchNetworkExtractor):
         )
         self.communication_infrastructure.append(iupf)
         # place gNodeBs
-        gNodeB = CommunicationInfrastructure(
-            class_name='gNodeB',
-            identifier='gNB',
-            position=(int(self.network_size[0]) / 2, int(self.network_size[1]) / 2)
-        )  # TODO: maybe add multiple gNodeBs
-        self.communication_infrastructure.append(gNodeB)
+        positions = self.generate_antenna_positions(distance=1000)
+
+        gNodeBs = []
+
+        for i, position in enumerate(positions):
+            gNodeB = CommunicationInfrastructure(
+                class_name='gNodeB',
+                identifier=f'gNB{i}',
+                position=position
+            )
+            self.communication_infrastructure.append(gNodeB)
+            gNodeBs.append(gNodeB)
 
         # place background cell
         bgc = CommunicationInfrastructure(
@@ -477,14 +521,24 @@ class Simbench5GNetworkExtractor(SimbenchNetworkExtractor):
                 conn_type='Eth10G'
             )
         )
-
-        self.communication_connections.append(
-            CommunicationConnection(
-                connector_1=(iupf, 'pppg++'),
-                connector_2=(gNodeB, 'ppp'),
-                conn_type='Eth10G'
+        for gNodeB in gNodeBs:
+            self.communication_connections.append(
+                CommunicationConnection(
+                    connector_1=(iupf, 'pppg++'),
+                    connector_2=(gNodeB, 'ppp'),
+                    conn_type='Eth10G'
+                )
             )
-        )
+
+        for i in range(len(gNodeBs)):
+            for j in range(i + 1, len(gNodeBs)):  # Avoid duplicate and self-connections
+                self.communication_connections.append(
+                    CommunicationConnection(
+                        connector_1=(gNodeBs[i], 'x2++'),
+                        connector_2=(gNodeBs[j], 'x2++'),
+                        conn_type='Eth10G'
+                    )
+                )
 
         central_agents = [agent for agent in self.agents if isinstance(agent, CentralAgent)]
         for central_agent in central_agents:
@@ -492,7 +546,7 @@ class Simbench5GNetworkExtractor(SimbenchNetworkExtractor):
                 CommunicationConnection(
                     connector_1=(router, 'pppg++'),
                     connector_2=(central_agent, 'pppg++'),
-                    conn_type='Eth10G'  # TODO: maybe change
+                    conn_type='Eth10G'
                 )
             )
 
@@ -557,8 +611,8 @@ class Simbench5GNetworkExtractor(SimbenchNetworkExtractor):
 
 class SimbenchEthernetNetworkExtractor(SimbenchNetworkExtractor):
 
-    def __init__(self, simbench_code, system_state):
-        super().__init__(simbench_code, system_state)
+    def __init__(self, simbench_code, system_state, max_number_of_agents_per_type):
+        super().__init__(simbench_code, system_state, max_number_of_agents_per_type)
 
     def place_communication_infrastructure(self):
         non_central_agents = [agent for agent in self.agents if not isinstance(agent, CentralAgent)]
@@ -692,9 +746,9 @@ class SimbenchEthernetNetworkExtractor(SimbenchNetworkExtractor):
 
 class SimbenchLTENetworkExtractor(SimbenchNetworkExtractor):
 
-    def __init__(self, simbench_code, system_state, specification):
+    def __init__(self, simbench_code, system_state, specification, max_number_of_agents_per_type):
         self.specification = specification
-        super().__init__(simbench_code, system_state)
+        super().__init__(simbench_code, system_state, max_number_of_agents_per_type)
 
     def place_communication_infrastructure(self):
         # place channel control
@@ -758,13 +812,20 @@ class SimbenchLTENetworkExtractor(SimbenchNetworkExtractor):
             position=(100, 100)
         )
         self.communication_infrastructure.append(pgw)
-        # place eNodeBs
-        eNodeB = CommunicationInfrastructure(
-            class_name='eNodeB',
-            identifier='eNB',
-            position=(int(self.network_size[0]) / 2, int(self.network_size[1]) / 2)
-        )  # TODO: maybe add multiple eNodeBs
-        self.communication_infrastructure.append(eNodeB)
+
+        # place gNodeBs
+        positions = self.generate_antenna_positions(distance=3000)
+
+        eNodeBs = []
+
+        for i, position in enumerate(positions):
+            eNodeB = CommunicationInfrastructure(
+                class_name='eNodeB',
+                identifier=f'eNB{i}',
+                position=position
+            )
+            self.communication_infrastructure.append(eNodeB)
+            eNodeBs.append(eNodeB)
 
         """
         Define connections
@@ -784,14 +845,23 @@ class SimbenchLTENetworkExtractor(SimbenchNetworkExtractor):
                 conn_type='Eth10G'
             )
         )
-
-        self.communication_connections.append(
-            CommunicationConnection(
-                connector_1=(pgw, 'pppg++'),
-                connector_2=(eNodeB, 'ppp'),
-                conn_type='Eth10G'
+        for eNodeB in eNodeBs:
+            self.communication_connections.append(
+                CommunicationConnection(
+                    connector_1=(pgw, 'pppg++'),
+                    connector_2=(eNodeB, 'ppp'),
+                    conn_type='Eth10G'
+                )
             )
-        )
+        for i in range(len(eNodeBs)):
+            for j in range(i + 1, len(eNodeBs)):  # Avoid duplicate and self-connections
+                self.communication_connections.append(
+                    CommunicationConnection(
+                        connector_1=(eNodeBs[i], 'x2++'),
+                        connector_2=(eNodeBs[j], 'x2++'),
+                        conn_type='Eth10G'
+                    )
+                )
         central_agents = [agent for agent in self.agents if isinstance(agent, CentralAgent)]
         for central_agent in central_agents:
             self.communication_connections.append(
