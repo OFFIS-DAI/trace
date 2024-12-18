@@ -5,3 +5,4 @@
 /network_generation/agent_configurations/
 /analysis/results/
 /agent_communication_generation_tool/results/ned_files/
+/agent_communication_generation_tool/description_classes/passwords.py
