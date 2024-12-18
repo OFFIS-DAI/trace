@@ -2,6 +2,8 @@ import random
 import sys
 from pathlib import Path
 
+from agent_communication_generation_tool.util import send_mail_notification
+
 # Add the parent directory of "agent_communication_generation_tool" to sys.path
 sys.path.append(Path(__file__).parent.parent.parent.absolute().__str__())
 
@@ -58,4 +60,5 @@ for market_interval in market_intervals:
                                                              agent_communication_pattern=pricing_communication_pattern))
 
                         communication_scenario_description.run_simulation()
+send_mail_notification(scenario_description='simple pricing application')
 

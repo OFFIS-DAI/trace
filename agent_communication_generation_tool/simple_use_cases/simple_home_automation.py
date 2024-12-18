@@ -1,6 +1,8 @@
 import sys
 from pathlib import Path
 
+from agent_communication_generation_tool.util import send_mail_notification
+
 # Add the parent directory of "agent_communication_generation_tool" to sys.path
 sys.path.append(Path(__file__).parent.parent.parent.absolute().__str__())
 
@@ -36,3 +38,4 @@ for han in han_networks:
                                              agent_communication_pattern=customer_automation_comm_pattern))
 
         communication_scenario_description.run_simulation()
+send_mail_notification(scenario_description='simple home automation')

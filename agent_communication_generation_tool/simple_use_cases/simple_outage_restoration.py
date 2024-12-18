@@ -2,6 +2,8 @@ import random
 import sys
 from pathlib import Path
 
+from agent_communication_generation_tool.util import send_mail_notification
+
 # Add the parent directory of "agent_communication_generation_tool" to sys.path
 sys.path.append(Path(__file__).parent.parent.parent.absolute().__str__())
 
@@ -57,4 +59,5 @@ for optimization_complexity, reply_after_times in {'low': (0, 1000), 'medium': (
                                 agent_communication_pattern=demand_response_comm_pattern))
 
                         communication_scenario_description.run_simulation()
+send_mail_notification(scenario_description='simple outage restoration')
 

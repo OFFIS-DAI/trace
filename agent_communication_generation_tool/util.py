@@ -1,13 +1,49 @@
+import smtplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+
 import pandas as pd
 import seaborn as sns
 import networkx as nx
 import matplotlib.pyplot as plt
+
+from agent_communication_generation_tool.description_classes.passwords import MAIL_ADDRESS, PASSWORD
+
 
 def merge_input_and_output_df(input_df, output_df):
     try:
         return pd.merge(input_df, output_df, on='msgId')
     except KeyError as e:
         return input_df
+
+
+def send_mail_notification(scenario_description, recipient_mail="malin.radtke@offis.de"):
+    # Send email notification
+    try:
+        sender_email = MAIL_ADDRESS
+        recipient_email = recipient_mail
+        email_subject = "Simulation Completed"
+        email_body = f"The simulation has completed successfully.\n\n Details: {scenario_description}"
+
+        # Create the email message
+        message = MIMEMultipart()
+        message["From"] = sender_email
+        message["To"] = recipient_email
+        message["Subject"] = email_subject
+
+        # Add the body to the email
+        message.attach(MIMEText(email_body, "plain"))
+
+        # Connect to the SMTP server and send the email
+        with smtplib.SMTP("smtp.gmx.com", 587) as server:
+            server.starttls()
+            server.login(MAIL_ADDRESS, PASSWORD)
+            server.sendmail(sender_email, recipient_email, message.as_string())
+
+        print("Notification email sent successfully.")
+
+    except Exception as e:
+        print(f"Failed to send email notification: {e}")
 
 
 def plot_traffic_pattern(scenario_description,
