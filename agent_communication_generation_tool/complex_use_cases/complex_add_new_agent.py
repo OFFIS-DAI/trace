@@ -8,7 +8,7 @@ from agent_communication_generation_tool.simulation_run_variables import num_age
     network_description_classes
 from agent_communication_generation_tool.simulation_run_variables import data_size_generators, \
     complexities, overlay_types
-from agent_communication_generation_tool.description_classes.simbench_codes import simbench_codes_analysis, codes_nan_filtered
+from agent_communication_generation_tool.description_classes.simbench_codes import codes_nan_filtered
 from agent_communication_generation_tool.description_classes.communication_scenario_description import \
     CommunicationScenarioDescription
 from agent_communication_generation_tool.description_classes.agent_communication_pattern import \
@@ -34,7 +34,8 @@ for system_state in system_states:
                     for specification in specifications:
                         communication_network_description = network_description_class(simbench_code=simbench_code,
                                                                                       system_state=system_state,
-                                                                                      specification=specification)
+                                                                                      specification=specification,
+                                                                                      max_number_of_agents_per_type=num_agents[0])
 
                         for overlay_n, overlay in (
                                 overlay_types(communication_network_description, 1000).items()):

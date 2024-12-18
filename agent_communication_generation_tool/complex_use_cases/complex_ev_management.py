@@ -35,7 +35,8 @@ for max_number_of_agents_ in num_agents:
                 for specification in specifications:
                     communication_network_description = network_description_class(simbench_code=simbench_code,
                                                                                   system_state=system_state,
-                                                                                  specification=specification)
+                                                                                  specification=specification,
+                                                                                  max_number_of_agents_per_type=max_number_of_agents_)
                     for data_size_generator_n, data_size_generator in data_size_generators.items():
                         for optimization_complexity, reply_after_times in complexities.items():
                             """

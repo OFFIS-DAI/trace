@@ -36,7 +36,8 @@ for market_interval in market_intervals:
                     for specification in specifications:
                         communication_network_description = network_description_class(simbench_code=simbench_code,
                                                                                       system_state=system_state,
-                                                                                      specification=specification)
+                                                                                      specification=specification,
+                                                                                      max_number_of_agents_per_type=max_number_of_agents_)
                         communication_graph = (
                             StarCommunicationGraph(agents=communication_network_description.agents,
                                                    central_agent=communication_network_description.get_central_agent(),
