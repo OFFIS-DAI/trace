@@ -193,7 +193,7 @@ class SimbenchNetworkExtractor(ABC):
         self.port += 1
         return port
 
-    def generate_antenna_positions(self, distance:int) -> list[tuple[int, int]]:
+    def generate_antenna_positions(self, distance: int) -> list[tuple[int, int]]:
         """
         Generates positions of antennas.
         @param distance: distance between antennas in meters.
@@ -202,9 +202,9 @@ class SimbenchNetworkExtractor(ABC):
         positions = []
 
         # Generate positions along the width and height
-        x = 0
+        x = 1000 if width > 1000 else int(width / 2)
         while x <= width:
-            y = 0
+            y = 1000 if height > 1000 else int(height / 2)
             while y <= height:
                 positions.append((x, y))
                 y += distance
@@ -403,6 +403,7 @@ class SimbenchNetworkExtractor(ABC):
 class Simbench5GNetworkExtractor(SimbenchNetworkExtractor):
     def __init__(self, simbench_code, system_state, max_number_agents_per_type=None):
         super().__init__(simbench_code, system_state, max_number_agents_per_type)
+        self.gNodeBs = []
 
     def place_communication_infrastructure(self):
         # place channel control
@@ -474,9 +475,7 @@ class Simbench5GNetworkExtractor(SimbenchNetworkExtractor):
         )
         self.communication_infrastructure.append(iupf)
         # place gNodeBs
-        positions = self.generate_antenna_positions(distance=1000)
-
-        gNodeBs = []
+        positions = self.generate_antenna_positions(distance=5000)
 
         for i, position in enumerate(positions):
             gNodeB = CommunicationInfrastructure(
@@ -485,7 +484,7 @@ class Simbench5GNetworkExtractor(SimbenchNetworkExtractor):
                 position=position
             )
             self.communication_infrastructure.append(gNodeB)
-            gNodeBs.append(gNodeB)
+            self.gNodeBs.append(gNodeB)
 
         # place background cell
         bgc = CommunicationInfrastructure(
@@ -521,7 +520,7 @@ class Simbench5GNetworkExtractor(SimbenchNetworkExtractor):
                 conn_type='Eth10G'
             )
         )
-        for gNodeB in gNodeBs:
+        for gNodeB in self.gNodeBs:
             self.communication_connections.append(
                 CommunicationConnection(
                     connector_1=(iupf, 'pppg++'),
@@ -530,12 +529,12 @@ class Simbench5GNetworkExtractor(SimbenchNetworkExtractor):
                 )
             )
 
-        for i in range(len(gNodeBs)):
-            for j in range(i + 1, len(gNodeBs)):  # Avoid duplicate and self-connections
+        for i in range(len(self.gNodeBs)):
+            for j in range(i + 1, len(self.gNodeBs)):  # Avoid duplicate and self-connections
                 self.communication_connections.append(
                     CommunicationConnection(
-                        connector_1=(gNodeBs[i], 'x2++'),
-                        connector_2=(gNodeBs[j], 'x2++'),
+                        connector_1=(self.gNodeBs[i], 'x2++'),
+                        connector_2=(self.gNodeBs[j], 'x2++'),
                         conn_type='Eth10G'
                     )
                 )
@@ -572,7 +571,7 @@ class Simbench5GNetworkExtractor(SimbenchNetworkExtractor):
 
         for module in self.communication_infrastructure:
             submodules += (f'\t{module.identifier}: {module.class_name}' + '{' +
-                           f'@display("p={int(module.position[0])},{int(module.position[1])}");' + '}\n')
+                           f'@display("p={int(module.position[0])},{int(module.position[1])};is=vl");' + '}\n')
 
         for module in self.traffic_devices:
             submodules += (f'\t{module.identifier}: NRUe' + '{' +
@@ -603,6 +602,17 @@ class Simbench5GNetworkExtractor(SimbenchNetworkExtractor):
                 (f'**.{agent.omnet_name}.app[0].trafficConfigPath = '
                  f'"modules/traffic_configurations/traffic_config_{agent.omnet_name}.json"\n')
         config_string += '*.server.numApps=0\n'
+
+        for i in range(len(self.gNodeBs)):
+            iter = 0
+            for j in range(len(self.gNodeBs)):  # Avoid duplicate and self-connections
+                if i == j:
+                    continue
+                config_string += f'*.{self.gNodeBs[i].identifier}.x2App[{iter}].client.connectAddress = "{self.gNodeBs[j].identifier}%x2ppp0"\n'
+                iter += 1
+
+        if len(self.gNodeBs) > 1:
+            config_string += f'*.gNB*.numX2Apps = {len(self.gNodeBs)-1}\n*.gNB*.x2App[*].server.localPort = 5000 + ancestorIndex(1)\n'
 
         for traffic_device in self.traffic_devices:
             config_string += f'*.{traffic_device.identifier}.app[*].destAddress = "{random.choice(self.agents).omnet_name}"\n'
@@ -747,6 +757,7 @@ class SimbenchEthernetNetworkExtractor(SimbenchNetworkExtractor):
 class SimbenchLTENetworkExtractor(SimbenchNetworkExtractor):
 
     def __init__(self, simbench_code, system_state, specification, max_number_of_agents_per_type):
+        self.eNodeBs = []
         self.specification = specification
         super().__init__(simbench_code, system_state, max_number_of_agents_per_type)
 
@@ -813,10 +824,8 @@ class SimbenchLTENetworkExtractor(SimbenchNetworkExtractor):
         )
         self.communication_infrastructure.append(pgw)
 
-        # place gNodeBs
-        positions = self.generate_antenna_positions(distance=3000)
-
-        eNodeBs = []
+        # place eNodeBs
+        positions = self.generate_antenna_positions(distance=1000)
 
         for i, position in enumerate(positions):
             eNodeB = CommunicationInfrastructure(
@@ -825,7 +834,7 @@ class SimbenchLTENetworkExtractor(SimbenchNetworkExtractor):
                 position=position
             )
             self.communication_infrastructure.append(eNodeB)
-            eNodeBs.append(eNodeB)
+            self.eNodeBs.append(eNodeB)
 
         """
         Define connections
@@ -845,7 +854,7 @@ class SimbenchLTENetworkExtractor(SimbenchNetworkExtractor):
                 conn_type='Eth10G'
             )
         )
-        for eNodeB in eNodeBs:
+        for eNodeB in self.eNodeBs:
             self.communication_connections.append(
                 CommunicationConnection(
                     connector_1=(pgw, 'pppg++'),
@@ -853,12 +862,12 @@ class SimbenchLTENetworkExtractor(SimbenchNetworkExtractor):
                     conn_type='Eth10G'
                 )
             )
-        for i in range(len(eNodeBs)):
-            for j in range(i + 1, len(eNodeBs)):  # Avoid duplicate and self-connections
+        for i in range(len(self.eNodeBs)):
+            for j in range(i + 1, len(self.eNodeBs)):  # Avoid duplicate and self-connections
                 self.communication_connections.append(
                     CommunicationConnection(
-                        connector_1=(eNodeBs[i], 'x2++'),
-                        connector_2=(eNodeBs[j], 'x2++'),
+                        connector_1=(self.eNodeBs[i], 'x2++'),
+                        connector_2=(self.eNodeBs[j], 'x2++'),
                         conn_type='Eth10G'
                     )
                 )
@@ -895,7 +904,7 @@ class SimbenchLTENetworkExtractor(SimbenchNetworkExtractor):
 
         for module in self.communication_infrastructure:
             submodules += (f'\t{module.identifier}: {module.class_name}' + '{' +
-                           f'@display("p={int(module.position[0])},{int(module.position[1])}");' + '}\n')
+                           f'@display("p={int(module.position[0])},{int(module.position[1])};is=vl");' + '}\n')
         for agent in self.agents:
             if isinstance(agent, CentralAgent):
                 submodules += (
@@ -925,6 +934,19 @@ class SimbenchLTENetworkExtractor(SimbenchNetworkExtractor):
                 (f'**.{agent.omnet_name}.app[0].trafficConfigPath = '
                  f'"modules/traffic_configurations/traffic_config_{agent.omnet_name}.json"\n')
         config_string += '*.server.numApps=0\n'
+
+
+        for i in range(len(self.eNodeBs)):
+            iter = 0
+            for j in range(len(self.eNodeBs)):  # Avoid duplicate and self-connections
+                if i == j:
+                    continue
+                config_string += f'*.{self.eNodeBs[i].identifier}.x2App[{iter}].client.connectAddress = "{self.eNodeBs[j].identifier}%x2ppp0"\n'
+                iter += 1
+
+        if len(self.eNodeBs) > 1:
+            config_string += f'*.eNB*.numX2Apps = {len(self.eNodeBs)-1}\n*.eNB*.x2App[*].server.localPort = 5000 + ancestorIndex(1)\n'
+
         for traffic_device in self.traffic_devices:
             config_string += (f'*.{traffic_device.identifier}.app[*].destAddress = '
                               f'"{random.choice(self.agents).omnet_name}"\n')
