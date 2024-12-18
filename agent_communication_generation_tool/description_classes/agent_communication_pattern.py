@@ -391,37 +391,39 @@ class AddNewAgent(ComplexAgentCommunicationPattern):
             raise ValueError('More than one control agent.')
         control_center_agent = control_center_agents[0]
 
-        random_leaf_agent = random.choice(leaf_agents)
-
-        # send request from leaf agent to control center agent
-
-        config = {
-            "sender": random_leaf_agent.omnet_name,
-            "messageList": []
-        }
-
-        send_time = random.randint(0, 100)  # in the first 100 ms
-        data_size = self.data_size_generator.get_data_size()
-
-        config = self.add_message_to_config(config, time_send_ms=send_time, receiver=control_center_agent,
-                                            packet_size_bytes=data_size, expect_reply=True,
-                                            reply_after_ms_range=self.reply_after_range)
-
-        write_config_to_file(random_leaf_agent.omnet_name, config)
-        self.traffic_configurations[random_leaf_agent.omnet_name] = config
-
-        # send information from control center agent to all leaf agents
-        asserted_inform_time = send_time + self.reply_after_range[1]
-
         cc_config = {
             "sender": control_center_agent.omnet_name,
             "messageList": []
         }
-        data_size = self.data_size_generator.get_data_size()
-        for leaf_agent in leaf_agents:
-            cc_config = self.add_message_to_config(cc_config, time_send_ms=asserted_inform_time,
-                                                   receiver=leaf_agent,
-                                                   packet_size_bytes=data_size, expect_reply=False)
+
+        # get a subset of agents that are added to the network
+        random_leaf_agents = random.sample(leaf_agents, int(len(leaf_agents)/5))
+
+        # send request from leaf agent to control center agent
+        for random_leaf_agent in random_leaf_agents:
+            config = {
+                "sender": random_leaf_agent.omnet_name,
+                "messageList": []
+            }
+
+            send_time = random.randint(0, 100)  # in the first 100 ms
+            data_size = self.data_size_generator.get_data_size()
+
+            config = self.add_message_to_config(config, time_send_ms=send_time, receiver=control_center_agent,
+                                                packet_size_bytes=data_size, expect_reply=True,
+                                                reply_after_ms_range=self.reply_after_range)
+
+            write_config_to_file(random_leaf_agent.omnet_name, config)
+            self.traffic_configurations[random_leaf_agent.omnet_name] = config
+
+            # send information from control center agent to all leaf agents
+            asserted_inform_time = send_time + self.reply_after_range[1]
+
+            data_size = self.data_size_generator.get_data_size()
+            for leaf_agent in leaf_agents:
+                cc_config = self.add_message_to_config(cc_config, time_send_ms=asserted_inform_time,
+                                                       receiver=leaf_agent,
+                                                       packet_size_bytes=data_size, expect_reply=False)
 
         write_config_to_file(control_center_agent.omnet_name, cc_config)
         self.traffic_configurations[control_center_agent.omnet_name] = cc_config
@@ -432,47 +434,47 @@ class AddNewAgent(ComplexAgentCommunicationPattern):
         leaf_agents = self.communication_graph.get_agents_by_class(LeafAgent)
         control_center_agent = self.get_control_center_agent()
         aggregator_agent = self.get_aggregator_agent()
-        random_leaf_agent = random.choice(leaf_agents)
-
-        # send request from leaf agent to aggregator agent
-
-        config = {
-            "sender": random_leaf_agent.omnet_name,
-            "messageList": []
-        }
-
-        send_time = random.randint(0, 100)  # in the first 100 ms
-        data_size = self.data_size_generator.get_data_size()
-
-        config = self.add_message_to_config(config, time_send_ms=send_time, receiver=aggregator_agent,
-                                            packet_size_bytes=data_size)
-
-        write_config_to_file(random_leaf_agent.omnet_name, config)
-        self.traffic_configurations[random_leaf_agent.omnet_name] = config
-
-        # send request from aggregator agent to control agent
+        random_leaf_agents = random.sample(leaf_agents, int(len(leaf_agents)/5))
 
         a_config = {
             "sender": aggregator_agent.omnet_name,
             "messageList": []
         }
 
-        send_time += 10
-        data_size = self.data_size_generator.get_data_size()
+        # send request from leaf agent to aggregator agent
+        for random_leaf_agent in random_leaf_agents:
+            config = {
+                "sender": random_leaf_agent.omnet_name,
+                "messageList": []
+            }
 
-        a_config = self.add_message_to_config(a_config, time_send_ms=send_time, receiver=control_center_agent,
-                                              packet_size_bytes=data_size, expect_reply=True,
-                                              reply_after_ms_range=self.reply_after_range)
+            send_time = random.randint(0, 100)  # in the first 100 ms
+            data_size = self.data_size_generator.get_data_size()
 
-        # send information from control center agent to all leaf agents
-        asserted_inform_time = send_time + self.reply_after_range[1]
+            config = self.add_message_to_config(config, time_send_ms=send_time, receiver=aggregator_agent,
+                                                packet_size_bytes=data_size)
 
-        data_size = self.data_size_generator.get_data_size()
+            write_config_to_file(random_leaf_agent.omnet_name, config)
+            self.traffic_configurations[random_leaf_agent.omnet_name] = config
 
-        for leaf_agent in leaf_agents:
-            a_config = self.add_message_to_config(a_config, time_send_ms=asserted_inform_time,
-                                                  receiver=leaf_agent,
-                                                  packet_size_bytes=data_size, expect_reply=False)
+            # send request from aggregator agent to control agent
+
+            send_time += 10
+            data_size = self.data_size_generator.get_data_size()
+
+            a_config = self.add_message_to_config(a_config, time_send_ms=send_time, receiver=control_center_agent,
+                                                  packet_size_bytes=data_size, expect_reply=True,
+                                                  reply_after_ms_range=self.reply_after_range)
+
+            # send information from control center agent to all leaf agents
+            asserted_inform_time = send_time + self.reply_after_range[1]
+
+            data_size = self.data_size_generator.get_data_size()
+
+            for leaf_agent in leaf_agents:
+                a_config = self.add_message_to_config(a_config, time_send_ms=asserted_inform_time,
+                                                      receiver=leaf_agent,
+                                                      packet_size_bytes=data_size, expect_reply=False)
 
         write_config_to_file(aggregator_agent.omnet_name, a_config)
         self.traffic_configurations[aggregator_agent.omnet_name] = a_config
@@ -489,30 +491,31 @@ class AddNewAgent(ComplexAgentCommunicationPattern):
             raise ValueError('More than one control agent.')
         control_center_agent = control_center_agents[0]
 
-        random_leaf_agent = random.choice(leaf_agents)
+        random_leaf_agents = random.sample(leaf_agents, int(len(leaf_agents)/5))
 
-        # send request from leaf agent to control center agent
-        config = get_initial_config(random_leaf_agent)
+        for random_leaf_agent in random_leaf_agents:
+            # send request from leaf agent to control center agent
+            config = get_initial_config(random_leaf_agent)
 
-        send_time = random.randint(0, 100)  # in the first 100 ms
-        data_size = self.data_size_generator.get_data_size()
+            send_time = random.randint(0, 100)  # in the first 100 ms
+            data_size = self.data_size_generator.get_data_size()
 
-        config = self.add_message_to_config(config, time_send_ms=send_time, receiver=control_center_agent,
-                                            packet_size_bytes=data_size, expect_reply=True,
-                                            reply_after_ms_range=self.reply_after_range)
+            config = self.add_message_to_config(config, time_send_ms=send_time, receiver=control_center_agent,
+                                                packet_size_bytes=data_size, expect_reply=True,
+                                                reply_after_ms_range=self.reply_after_range)
 
-        # send information from control center agent to all leaf agents
-        asserted_inform_time = send_time + self.reply_after_range[1]
+            # send information from control center agent to all leaf agents
+            asserted_inform_time = send_time + self.reply_after_range[1]
 
-        data_size = self.data_size_generator.get_data_size()
+            data_size = self.data_size_generator.get_data_size()
 
-        for neighbor in self.communication_graph.get_neighbors(random_leaf_agent):
-            config = self.add_message_to_config(config, time_send_ms=asserted_inform_time,
-                                                receiver=neighbor,
-                                                packet_size_bytes=data_size, expect_reply=False)
+            for neighbor in self.communication_graph.get_neighbors(random_leaf_agent):
+                config = self.add_message_to_config(config, time_send_ms=asserted_inform_time,
+                                                    receiver=neighbor,
+                                                    packet_size_bytes=data_size, expect_reply=False)
 
-        write_config_to_file(random_leaf_agent.omnet_name, config)
-        self.traffic_configurations[random_leaf_agent.omnet_name] = config
+            write_config_to_file(random_leaf_agent.omnet_name, config)
+            self.traffic_configurations[random_leaf_agent.omnet_name] = config
 
         self.fill_config_for_non_sending_agents()
 
