@@ -1173,7 +1173,7 @@ class OnDemandAutomatedMeterReading(SimpleAgentCommunicationPattern):
         control_center_agent = self.get_control_center_agent()
         meter_agents = self.communication_graph.get_agents_by_type(LeafAgent.LeafAgentType.HOUSEHOLD_AGENT)
         # only some meters send data
-        meter_agents = random.sample(meter_agents, int(len(meter_agents) / 2))
+        meter_agents = random.sample(meter_agents, int(len(meter_agents) / 3))
         self.generate_many_to_one_communication(one=control_center_agent,
                                                 many=meter_agents,
                                                 send_only_once=False)
