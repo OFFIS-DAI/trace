@@ -1,0 +1,14 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-12-18 15:49:00.468208,,,,,,,,,
+1,Simulation configuration ID,7be97585-ed46-49aa-b38b-72161ab3b8f6,,,,,,,,,
+2,Network,SimbenchNetwork_LTE450_1-MV-urban--1-no_sw,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 324 agents,,,,,,,,,
+4,Agent communication pattern,DemandResponse,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,Fixed data size generator with data size = 100 B,,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,300000,,,,,,,,,
+9,Communication mode,UNICAST,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+0,,,0.0,98.0,household_agent_63,100.0,control_center_agent,0.0,25.0,100.0,123.0
+1,,,108100.0,141.0,control_center_agent,100.0,household_agent_63,123.0,34.0,100.0,175.0

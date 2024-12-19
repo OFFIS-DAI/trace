@@ -1,0 +1,14 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-12-18 17:14:50.922103,,,,,,,,,
+1,Simulation configuration ID,2e8b399d-00fe-4ac7-a371-b0ccac57c6f2,,,,,,,,,
+2,Network,SimbenchNetwork_Ethernet_1-MVLV-rural-all-2-no_sw,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 332 agents,,,,,,,,,
+4,Agent communication pattern,DemandResponse,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,Fixed data size generator with data size = 100 B,,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,300000,,,,,,,,,
+9,Communication mode,UNICAST,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+0,,,0.0,32.0,household_agent_95,100.0,control_center_agent,0.0,0.0,100.0,32.0
+1,,,111900.0,564.0,control_center_agent,100.0,household_agent_95,32.0,0.0,100.0,564.0
