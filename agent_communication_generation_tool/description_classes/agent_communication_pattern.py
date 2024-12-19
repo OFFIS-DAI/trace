@@ -1264,7 +1264,8 @@ class FaultLocationIsolation(SimpleAgentCommunicationPattern):
 
     def generate_traffic_configuration_files(self):
         control_center_agent = self.get_control_center_agent()
-        leaf_agents = self.communication_graph.get_agents_by_class(LeafAgent)
+        leaf_agents = random.sample(self.communication_graph.get_agents_by_class(LeafAgent),
+                                    int(len(self.communication_graph.get_agents_by_class(LeafAgent))/4))
 
         send_time = random.randint(0, 100)  # in the first 100 ms
 
@@ -1327,6 +1328,7 @@ class CustomerInformation(SimpleAgentCommunicationPattern):
     def generate_traffic_configuration_files(self):
         control_center_agent = self.get_control_center_agent()
         meter_agents = self.communication_graph.get_agents_by_type(LeafAgent.LeafAgentType.HOUSEHOLD_AGENT)
+        meter_agents = random.sample(meter_agents, int(len(meter_agents)/3)) # only use 1/3 of meter agents
 
         self.generate_broadcast_time_triggered_communication(one=control_center_agent,
                                                              many=meter_agents)
