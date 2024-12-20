@@ -1189,9 +1189,11 @@ class PricingApplication(SimpleAgentCommunicationPattern):
 
     def generate_traffic_configuration_files(self):
         market_agent = self.get_market_agent()
-        meter_agents = self.communication_graph.get_agents_by_type(LeafAgent.LeafAgentType.HOUSEHOLD_AGENT)
+        meter_agents = (self.communication_graph.get_agents_by_type(LeafAgent.LeafAgentType.HOUSEHOLD_AGENT) +
+                        self.communication_graph.get_agents_by_type(LeafAgent.LeafAgentType.STORAGE_AGENT))
+        meter_agents_sample = len(meter_agents) if len(meter_agents) < 50 else 50
         self.generate_broadcast_time_triggered_communication(one=market_agent,
-                                                             many=meter_agents)
+                                                             many=random.sample(meter_agents, meter_agents_sample))
 
 
 class DemandResponse(SimpleAgentCommunicationPattern):
@@ -1314,7 +1316,9 @@ class OutageRestorationManagement(SimpleAgentCommunicationPattern):
         self.generate_event_triggered_communication(one=control_center_agent,
                                                     many=meter_agents,
                                                     send_time=send_time,
+                                                    multiple_events=True,
                                                     expect_reply=True,
+                                                    event_frequency_range=(0, 60000), # Assume outage every minute
                                                     reply_after_range=self.reply_after_range)
 
 
