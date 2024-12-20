@@ -1247,6 +1247,7 @@ class VoltageReduction(SimpleAgentCommunicationPattern):
     def generate_traffic_configuration_files(self):
         control_center_agent = self.get_control_center_agent()
         leaf_agents = self.communication_graph.get_agents_by_class(LeafAgent)
+        leaf_agents = random.sample(leaf_agents, 50) if len(leaf_agents) > 50 else leaf_agents
 
         send_time = random.randint(0, 100)  # in the first 100 ms
 
