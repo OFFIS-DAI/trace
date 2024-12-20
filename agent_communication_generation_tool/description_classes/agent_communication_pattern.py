@@ -1289,11 +1289,11 @@ class StorageApplication(SimpleAgentCommunicationPattern):
 
     def generate_traffic_configuration_files(self):
         control_center_agent = self.get_control_center_agent()
-        meter_agents = self.communication_graph.get_agents_by_type(LeafAgent.LeafAgentType.HOUSEHOLD_AGENT)
+
         storage_agents = self.communication_graph.get_agents_by_type(LeafAgent.LeafAgentType.STORAGE_AGENT)
 
         self.generate_broadcast_time_triggered_communication(one=control_center_agent,
-                                                             many=meter_agents + storage_agents,
+                                                             many=storage_agents,
                                                              expect_reply=True,
                                                              reply_after_range=self.reply_after_range)
 
