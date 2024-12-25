@@ -397,7 +397,7 @@ class AddNewAgent(ComplexAgentCommunicationPattern):
         }
 
         # get a subset of agents that are added to the network
-        random_leaf_agents = random.sample(leaf_agents, int(len(leaf_agents)/5))
+        random_leaf_agents = leaf_agents if len(leaf_agents) < 10 else random.sample(leaf_agents, 10)
 
         # send request from leaf agent to control center agent
         for random_leaf_agent in random_leaf_agents:
@@ -434,7 +434,7 @@ class AddNewAgent(ComplexAgentCommunicationPattern):
         leaf_agents = self.communication_graph.get_agents_by_class(LeafAgent)
         control_center_agent = self.get_control_center_agent()
         aggregator_agent = self.get_aggregator_agent()
-        random_leaf_agents = random.sample(leaf_agents, int(len(leaf_agents)/5))
+        random_leaf_agents = leaf_agents if len(leaf_agents) < 10 else random.sample(leaf_agents, 10)
 
         a_config = {
             "sender": aggregator_agent.omnet_name,
@@ -491,7 +491,7 @@ class AddNewAgent(ComplexAgentCommunicationPattern):
             raise ValueError('More than one control agent.')
         control_center_agent = control_center_agents[0]
 
-        random_leaf_agents = random.sample(leaf_agents, int(len(leaf_agents)/5))
+        random_leaf_agents = leaf_agents if len(leaf_agents) < 10 else random.sample(leaf_agents, 10)
 
         for random_leaf_agent in random_leaf_agents:
             # send request from leaf agent to control center agent
@@ -1190,7 +1190,8 @@ class PricingApplication(SimpleAgentCommunicationPattern):
     def generate_traffic_configuration_files(self):
         market_agent = self.get_market_agent()
         meter_agents = (self.communication_graph.get_agents_by_type(LeafAgent.LeafAgentType.HOUSEHOLD_AGENT) +
-                        self.communication_graph.get_agents_by_type(LeafAgent.LeafAgentType.STORAGE_AGENT))
+                        self.communication_graph.get_agents_by_type(LeafAgent.LeafAgentType.STORAGE_AGENT) +
+                        self.communication_graph.get_agents_by_type(LeafAgent.LeafAgentType.GENERATION_AGENT))
         meter_agents_sample = len(meter_agents) if len(meter_agents) < 50 else 50
         self.generate_broadcast_time_triggered_communication(one=market_agent,
                                                              many=random.sample(meter_agents, meter_agents_sample))
