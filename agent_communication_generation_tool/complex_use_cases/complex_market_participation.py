@@ -2,11 +2,10 @@ import random
 import sys
 from pathlib import Path
 
-from agent_communication_generation_tool.util import send_mail_notification
-
 # Add the parent directory of "agent_communication_generation_tool" to sys.path
 sys.path.append(Path(__file__).parent.parent.parent.absolute().__str__())
 
+from agent_communication_generation_tool.util import send_mail_notification
 from agent_communication_generation_tool.simulation_run_variables import num_agents, system_states, \
     network_description_classes
 from agent_communication_generation_tool.simulation_run_variables import \
