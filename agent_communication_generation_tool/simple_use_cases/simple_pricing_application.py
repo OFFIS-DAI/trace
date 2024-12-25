@@ -18,7 +18,7 @@ from agent_communication_generation_tool.description_classes.communication_graph
 from agent_communication_generation_tool.description_classes.communication_network_description import \
     SimbenchLTENetworkDescription
 
-SIMULATION_DURATION_MS = 60 * 60 * 1000  # one hour
+SIMULATION_DURATION_MS = 45 * 60 * 1000  # 45 minutes
 
 market_intervals = [5 * 60 * 1000,  # 5 minutes
                     15 * 60 * 1000,  # 15 minuted
