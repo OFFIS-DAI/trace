@@ -1,0 +1,27 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-12-20 01:59:46.626240,,,,,,,,,
+1,Simulation configuration ID,622ec031-defa-4c58-a3ff-b5beb0a13ce1,,,,,,,,,
+2,Network,SimbenchNetwork_Ethernet_1-MV-urban--1-no_sw,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 326 agents,,,,,,,,,
+4,Agent communication pattern,OutageRestorationManagement,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,Fixed data size generator with data size = 25 B,,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,300000,,,,,,,,,
+9,Communication mode,UNICAST,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+0,,,0.0,29499.0,household_agent_7,25.0,control_center_agent,0.0,0.0,25.0,29499.0
+1,,,1.0,32901.0,household_agent_40,25.0,control_center_agent,0.0,0.0,25.0,32901.0
+2,,,2.0,87772.0,household_agent_90,25.0,control_center_agent,0.0,0.0,25.0,87772.0
+3,,,3.0,138403.0,household_agent_61,25.0,control_center_agent,0.0,0.0,25.0,138403.0
+4,,,4.0,153405.0,household_agent_40,25.0,control_center_agent,0.0,0.0,25.0,153405.0
+5,,,5.0,153921.0,household_agent_79,25.0,control_center_agent,0.0,0.0,25.0,153921.0
+6,,,6.0,200804.0,household_agent_35,25.0,control_center_agent,0.0,0.0,25.0,200804.0
+7,,,7.0,236713.0,household_agent_94,25.0,control_center_agent,0.0,0.0,25.0,236713.0
+8,,,8.0,272803.0,household_agent_64,25.0,control_center_agent,0.0,0.0,25.0,272803.0
+9,,,9.0,289829.0,household_agent_22,25.0,control_center_agent,0.0,0.0,25.0,289829.0
+10,,,102500.0,294088.0,control_center_agent,25.0,household_agent_7,29499.0,0.0,25.0,294088.0
+11,,,105800.0,83772.0,control_center_agent,25.0,household_agent_40,32901.0,0.0,25.0,83772.0
+12,,,105801.0,295743.0,control_center_agent,25.0,household_agent_40,153405.0,0.0,25.0,295743.0
+13,,,109700.0,228945.0,control_center_agent,25.0,household_agent_79,153921.0,0.0,25.0,228945.0
+14,,,110800.0,154121.0,control_center_agent,25.0,household_agent_90,87772.0,0.0,25.0,154121.0

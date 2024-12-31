@@ -1,0 +1,28 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-12-30 01:50:00.383838,,,,,,,,,
+1,Simulation configuration ID,0cd1d2cc-3643-4a33-ac7a-d5c97b9d3a50,,,,,,,,,
+2,Network,SimbenchNetwork_LTE_1-MVLV-rural-all-2-no_sw,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 330 agents,,,,,,,,,
+4,Agent communication pattern,DemandSupplyBalancing,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"Increasing data size generator with lower bound = 8 B,upper bound = 50 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,CENTRALIZED,,,,,,,,,
+0,,,0.0,33.0,control_center_agent,41.0,generation_agent_77,0.0,40.0,41.0,73.0
+1,,,1.0,33.0,control_center_agent,41.0,generation_agent_26,0.0,34.0,41.0,67.0
+2,,,2.0,33.0,control_center_agent,41.0,generation_agent_35,0.0,28.0,41.0,61.0
+3,,,3.0,33.0,control_center_agent,41.0,generation_agent_82,0.0,33.0,41.0,66.0
+4,,,4.0,33.0,control_center_agent,41.0,generation_agent_23,0.0,37.0,41.0,70.0
+5,,,328.0,33.0,control_center_agent,41.0,generation_agent_87,0.0,28.0,41.0,61.0
+6,,,329.0,33.0,control_center_agent,41.0,generation_agent_3,0.0,28.0,41.0,61.0
+7,,,330.0,33.0,control_center_agent,41.0,generation_agent_55,0.0,28.0,41.0,61.0
+8,,,654.0,33.0,control_center_agent,41.0,generation_agent_0,0.0,34.0,41.0,67.0
+9,,,978.0,33.0,control_center_agent,41.0,generation_agent_89,0.0,28.0,41.0,61.0
+10,,,979.0,33.0,control_center_agent,41.0,generation_agent_10,0.0,35.0,41.0,68.0
+11,,,980.0,33.0,control_center_agent,41.0,generation_agent_73,0.0,28.0,41.0,61.0
+12,,,1304.0,33.0,control_center_agent,41.0,generation_agent_41,0.0,35.0,41.0,68.0
+13,,,1305.0,33.0,control_center_agent,41.0,generation_agent_91,0.0,28.0,41.0,61.0
+14,,,1629.0,33.0,control_center_agent,41.0,generation_agent_67,0.0,28.0,41.0,61.0

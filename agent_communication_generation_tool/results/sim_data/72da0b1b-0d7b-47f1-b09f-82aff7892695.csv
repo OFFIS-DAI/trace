@@ -1,0 +1,55 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,receiverPort,packetSize_B_x,sender,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-12-19 18:33:56.511253,,,,,,,,,
+1,Simulation configuration ID,72da0b1b-0d7b-47f1-b09f-82aff7892695,,,,,,,,,
+2,Network,Wifi_802_11,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 11 agents,,,,,,,,,
+4,Agent communication pattern,CustomerAutomation,,,,,,,,,
+5,Trigger Type,TIME_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 10 B,upper bound = 100 B",,,,,,,,,
+7,Frequency,60000,,,,,,,,,
+8,Simulation duration,300000,,,,,,,,,
+9,Communication mode,BROADCAST,,,,,,,,,
+0,,,0.0,60000.0,device_agent_0,1001.0,55.0,household_agent,59.0,55.0,60059.0
+1,,,1.0,60000.0,device_agent_1,1002.0,55.0,household_agent,48.0,55.0,60048.0
+2,,,2.0,60000.0,device_agent_2,1003.0,55.0,household_agent,67.0,55.0,60067.0
+3,,,3.0,60000.0,device_agent_3,1004.0,55.0,household_agent,72.0,55.0,60072.0
+4,,,4.0,60000.0,device_agent_4,1005.0,55.0,household_agent,74.0,55.0,60074.0
+5,,,5.0,60000.0,device_agent_5,1006.0,55.0,household_agent,83.0,55.0,60083.0
+6,,,6.0,60000.0,device_agent_6,1007.0,55.0,household_agent,92.0,55.0,60092.0
+7,,,7.0,60000.0,device_agent_7,1008.0,55.0,household_agent,99.0,55.0,60099.0
+8,,,8.0,60000.0,device_agent_8,1009.0,55.0,household_agent,103.0,55.0,60103.0
+9,,,9.0,60000.0,device_agent_9,1010.0,55.0,household_agent,108.0,55.0,60108.0
+10,,,10.0,120000.0,device_agent_0,1001.0,55.0,household_agent,53.0,55.0,120053.0
+11,,,11.0,120000.0,device_agent_1,1002.0,55.0,household_agent,58.0,55.0,120058.0
+12,,,12.0,120000.0,device_agent_2,1003.0,55.0,household_agent,69.0,55.0,120069.0
+13,,,13.0,120000.0,device_agent_3,1004.0,55.0,household_agent,87.0,55.0,120087.0
+14,,,14.0,120000.0,device_agent_4,1005.0,55.0,household_agent,84.0,55.0,120084.0
+15,,,15.0,120000.0,device_agent_5,1006.0,55.0,household_agent,79.0,55.0,120079.0
+16,,,16.0,120000.0,device_agent_6,1007.0,55.0,household_agent,91.0,55.0,120091.0
+17,,,17.0,120000.0,device_agent_7,1008.0,55.0,household_agent,95.0,55.0,120095.0
+18,,,18.0,120000.0,device_agent_8,1009.0,55.0,household_agent,98.0,55.0,120098.0
+19,,,19.0,120000.0,device_agent_9,1010.0,55.0,household_agent,101.0,55.0,120101.0
+20,,,20.0,180000.0,device_agent_0,1001.0,55.0,household_agent,61.0,55.0,180061.0
+21,,,21.0,180000.0,device_agent_1,1002.0,55.0,household_agent,53.0,55.0,180053.0
+22,,,22.0,180000.0,device_agent_2,1003.0,55.0,household_agent,65.0,55.0,180065.0
+23,,,23.0,180000.0,device_agent_3,1004.0,55.0,household_agent,100.0,55.0,180100.0
+24,,,24.0,180000.0,device_agent_4,1005.0,55.0,household_agent,83.0,55.0,180083.0
+25,,,25.0,180000.0,device_agent_5,1006.0,55.0,household_agent,71.0,55.0,180071.0
+26,,,26.0,180000.0,device_agent_6,1007.0,55.0,household_agent,75.0,55.0,180075.0
+27,,,27.0,180000.0,device_agent_7,1008.0,55.0,household_agent,93.0,55.0,180093.0
+28,,,28.0,180000.0,device_agent_8,1009.0,55.0,household_agent,97.0,55.0,180097.0
+29,,,29.0,180000.0,device_agent_9,1010.0,55.0,household_agent,105.0,55.0,180105.0
+30,,,30.0,240000.0,device_agent_0,1001.0,55.0,household_agent,54.0,55.0,240054.0
+31,,,31.0,240000.0,device_agent_1,1002.0,55.0,household_agent,61.0,55.0,240061.0
+32,,,32.0,240000.0,device_agent_2,1003.0,55.0,household_agent,66.0,55.0,240066.0
+33,,,33.0,240000.0,device_agent_3,1004.0,55.0,household_agent,72.0,55.0,240072.0
+34,,,34.0,240000.0,device_agent_4,1005.0,55.0,household_agent,104.0,55.0,240104.0
+35,,,35.0,240000.0,device_agent_5,1006.0,55.0,household_agent,78.0,55.0,240078.0
+36,,,36.0,240000.0,device_agent_6,1007.0,55.0,household_agent,93.0,55.0,240093.0
+37,,,37.0,240000.0,device_agent_7,1008.0,55.0,household_agent,88.0,55.0,240088.0
+38,,,38.0,240000.0,device_agent_8,1009.0,55.0,household_agent,101.0,55.0,240101.0
+39,,,39.0,240000.0,device_agent_9,1010.0,55.0,household_agent,97.0,55.0,240097.0
+40,,,40.0,60000.0,household_agent,1000.0,54.0,device_agent_0,65.0,54.0,60065.0
+41,,,41.0,120000.0,household_agent,1000.0,54.0,device_agent_0,65.0,54.0,120065.0
+42,,,42.0,180000.0,household_agent,1000.0,54.0,device_agent_0,50.0,54.0,180050.0
+43,,,43.0,240000.0,household_agent,1000.0,54.0,device_agent_0,82.0,54.0,240082.0

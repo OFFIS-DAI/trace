@@ -1,0 +1,17 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,receiverPort,packetSize_B_x,sender,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-12-29 22:52:28.950476,,,,,,,,,
+1,Simulation configuration ID,50005ed3-0a52-4d73-b1d2-2db433b13099,,,,,,,,,
+2,Network,SimbenchNetwork_LTE_1-MV-urban--1-no_sw,,,,,,,,,
+3,Communication graph,Small World Overlay Topology with 324 agents and p = 0.5,,,,,,,,,
+4,Agent communication pattern,DemandSupplyBalancing,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"Increasing data size generator with lower bound = 8 B,upper bound = 50 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,DECENTRALIZED,,,,,,,,,
+0,,,0.0,45.0,storage_agent_98,1316.0,41.0,control_center_agent,25.0,41.0,70.0
+1,,,1.0,17136.0,storage_agent_65,1283.0,41.0,storage_agent_98,54.0,41.0,17190.0
+2,,,2.0,17136.0,storage_agent_97,1315.0,41.0,storage_agent_98,65.0,41.0,17201.0
+3,,,3.0,17136.0,storage_agent_99,1317.0,41.0,storage_agent_98,76.0,41.0,17212.0

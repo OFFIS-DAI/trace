@@ -1,0 +1,19 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,receiverPort,packetSize_B_x,sender,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-12-30 03:15:41.961404,,,,,,,,,
+1,Simulation configuration ID,b25132f3-dd32-4381-bae5-4aaace6dca9c,,,,,,,,,
+2,Network,SimbenchNetwork_Ethernet_1-MV-urban--1-no_sw,,,,,,,,,
+3,Communication graph,Small World Overlay Topology with 326 agents and p = 0.5,,,,,,,,,
+4,Agent communication pattern,DemandSupplyBalancing,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"Increasing data size generator with lower bound = 50 B,upper bound = 200 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,DECENTRALIZED,,,,,,,,,
+0,,,0.0,36.0,storage_agent_68,1286.0,191.0,control_center_agent,0.0,191.0,36.0
+1,,,1.0,127.0,household_agent_20,1038.0,191.0,storage_agent_68,0.0,191.0,127.0
+2,,,2.0,127.0,storage_agent_67,1285.0,191.0,storage_agent_68,1.0,191.0,128.0
+3,,,3.0,127.0,storage_agent_69,1287.0,191.0,storage_agent_68,0.0,191.0,127.0
+4,,,4.0,127.0,storage_agent_55,1273.0,191.0,storage_agent_68,1.0,191.0,128.0
+5,,,5.0,461.0,control_center_agent,1319.0,191.0,storage_agent_68,0.0,191.0,461.0

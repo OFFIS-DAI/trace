@@ -1,0 +1,27 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-12-20 00:29:12.919729,,,,,,,,,
+1,Simulation configuration ID,bf4c67a4-82a8-4cf5-b2e3-44507b3f7838,,,,,,,,,
+2,Network,SimbenchNetwork_LTE_1-MVLV-rural-all-2-no_sw,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 330 agents,,,,,,,,,
+4,Agent communication pattern,OutageRestorationManagement,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,Fixed data size generator with data size = 25 B,,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,300000,,,,,,,,,
+9,Communication mode,UNICAST,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+0,,,0.0,50965.0,household_agent_44,25.0,control_center_agent,0.0,25.0,25.0,50990.0
+1,,,1.0,59019.0,household_agent_34,25.0,control_center_agent,0.0,25.0,25.0,59044.0
+2,,,2.0,111924.0,household_agent_85,25.0,control_center_agent,0.0,25.0,25.0,111949.0
+3,,,3.0,159004.0,household_agent_0,25.0,control_center_agent,0.0,26.0,25.0,159030.0
+4,,,4.0,192124.0,household_agent_89,25.0,control_center_agent,0.0,25.0,25.0,192149.0
+5,,,5.0,248281.0,household_agent_21,25.0,control_center_agent,0.0,25.0,25.0,248306.0
+6,,,6.0,266854.0,household_agent_49,25.0,control_center_agent,0.0,25.0,25.0,266879.0
+7,,,7.0,296963.0,household_agent_22,25.0,control_center_agent,0.0,25.0,25.0,296988.0
+8,,,102400.0,173243.0,control_center_agent,25.0,household_agent_0,159030.0,38.0,25.0,173281.0
+9,,,104500.0,276102.0,control_center_agent,25.0,household_agent_21,248306.0,34.0,25.0,276136.0
+10,,,105800.0,60390.0,control_center_agent,25.0,household_agent_34,59044.0,34.0,25.0,60424.0
+11,,,106800.0,77179.0,control_center_agent,25.0,household_agent_44,50990.0,36.0,25.0,77215.0
+12,,,107300.0,274376.0,control_center_agent,25.0,household_agent_49,266879.0,34.0,25.0,274410.0
+13,,,110900.0,139493.0,control_center_agent,25.0,household_agent_85,111949.0,34.0,25.0,139527.0
+14,,,111300.0,218200.0,control_center_agent,25.0,household_agent_89,192149.0,34.0,25.0,218234.0

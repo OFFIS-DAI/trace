@@ -1,0 +1,16 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,receiverPort,packetSize_B_x,sender,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-12-29 20:40:44.063612,,,,,,,,,
+1,Simulation configuration ID,f1ef0580-68b2-41cb-a020-be000d3a20b4,,,,,,,,,
+2,Network,SimbenchNetwork_LTE450_1-MV-urban--1-no_sw,,,,,,,,,
+3,Communication graph,Ring Overlay Topology with 324 agents,,,,,,,,,
+4,Agent communication pattern,DemandSupplyBalancing,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"Increasing data size generator with lower bound = 8 B,upper bound = 50 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,DECENTRALIZED,,,,,,,,,
+0,,,0.0,72.0,household_agent_89,1107.0,41.0,control_center_agent,25.0,41.0,97.0
+1,,,2.0,536.0,household_agent_90,1108.0,41.0,household_agent_89,66.0,41.0,602.0
+2,,,3.0,1958.0,control_center_agent,1319.0,41.0,household_agent_89,36.0,41.0,1994.0

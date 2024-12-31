@@ -1,0 +1,28 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-12-30 10:44:17.616677,,,,,,,,,
+1,Simulation configuration ID,1b016a46-051c-437e-acba-983400889559,,,,,,,,,
+2,Network,SimbenchNetwork_LTE450_1-MVLV-rural-all-2-no_sw,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 330 agents,,,,,,,,,
+4,Agent communication pattern,DemandSupplyBalancing,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"Increasing data size generator with lower bound = 50 B,upper bound = 200 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,CENTRALIZED,,,,,,,,,
+0,,,0.0,97.0,control_center_agent,191.0,generation_agent_77,0.0,45.0,191.0,142.0
+1,,,1.0,97.0,control_center_agent,191.0,generation_agent_81,0.0,41.0,191.0,138.0
+2,,,2.0,97.0,control_center_agent,191.0,generation_agent_58,0.0,29.0,191.0,126.0
+3,,,3.0,97.0,control_center_agent,191.0,generation_agent_33,0.0,36.0,191.0,133.0
+4,,,4.0,97.0,control_center_agent,191.0,generation_agent_49,0.0,28.0,191.0,125.0
+5,,,5.0,97.0,control_center_agent,191.0,generation_agent_59,0.0,29.0,191.0,126.0
+6,,,6.0,97.0,control_center_agent,191.0,generation_agent_84,0.0,36.0,191.0,133.0
+7,,,7.0,97.0,control_center_agent,191.0,generation_agent_28,0.0,28.0,191.0,125.0
+8,,,8.0,97.0,control_center_agent,191.0,generation_agent_41,0.0,28.0,191.0,125.0
+9,,,332.0,97.0,control_center_agent,191.0,generation_agent_9,0.0,36.0,191.0,133.0
+10,,,656.0,97.0,control_center_agent,191.0,generation_agent_65,0.0,28.0,191.0,125.0
+11,,,980.0,97.0,control_center_agent,191.0,generation_agent_51,0.0,30.0,191.0,127.0
+12,,,1304.0,97.0,control_center_agent,191.0,generation_agent_3,0.0,35.0,191.0,132.0
+13,,,1305.0,97.0,control_center_agent,191.0,generation_agent_29,0.0,50.0,191.0,147.0
+14,,,1306.0,97.0,control_center_agent,191.0,generation_agent_73,0.0,28.0,191.0,125.0

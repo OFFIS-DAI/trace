@@ -1,0 +1,23 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,receiverPort,packetSize_B_x,sender,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-12-30 13:43:57.765289,,,,,,,,,
+1,Simulation configuration ID,3df5d7a5-6202-4d17-8efe-22847a547561,,,,,,,,,
+2,Network,SimbenchNetwork_5G_1-MV-urban--1-no_sw,,,,,,,,,
+3,Communication graph,Small World Overlay Topology with 324 agents and p = 0.5,,,,,,,,,
+4,Agent communication pattern,DemandSupplyBalancing,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"Increasing data size generator with lower bound = 200 B,upper bound = 1000 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,DECENTRALIZED,,,,,,,,,
+0,,,0.0,24.0,household_agent_79,1097.0,991.0,control_center_agent,19.0,536.0,43.0
+1,,,0.0,24.0,household_agent_79,1097.0,991.0,control_center_agent,33.0,455.0,57.0
+2,,,1.0,280.0,household_agent_78,1096.0,991.0,household_agent_79,47.0,536.0,327.0
+3,,,1.0,280.0,household_agent_78,1096.0,991.0,household_agent_79,81.0,455.0,361.0
+4,,,2.0,280.0,household_agent_80,1098.0,991.0,household_agent_79,58.0,536.0,338.0
+5,,,2.0,280.0,household_agent_80,1098.0,991.0,household_agent_79,92.0,455.0,372.0
+6,,,3.0,280.0,generation_agent_3,1121.0,991.0,household_agent_79,69.0,536.0,349.0
+7,,,3.0,280.0,generation_agent_3,1121.0,991.0,household_agent_79,103.0,455.0,383.0
+8,,,4.0,1407.0,control_center_agent,1319.0,991.0,household_agent_79,28.0,536.0,1435.0
+9,,,4.0,1407.0,control_center_agent,1319.0,991.0,household_agent_79,48.0,455.0,1455.0

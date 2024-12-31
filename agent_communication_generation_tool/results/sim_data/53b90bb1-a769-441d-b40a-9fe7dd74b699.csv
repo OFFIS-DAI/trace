@@ -1,0 +1,21 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,receiverPort,packetSize_B_x,sender,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-12-30 16:32:40.316604,,,,,,,,,
+1,Simulation configuration ID,53b90bb1-a769-441d-b40a-9fe7dd74b699,,,,,,,,,
+2,Network,SimbenchNetwork_Ethernet_1-MV-urban--1-no_sw,,,,,,,,,
+3,Communication graph,Ring Overlay Topology with 326 agents,,,,,,,,,
+4,Agent communication pattern,DemandSupplyBalancing,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"Increasing data size generator with lower bound = 200 B,upper bound = 1000 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,DECENTRALIZED,,,,,,,,,
+0,,,0.0,40.0,storage_agent_92,1310.0,991.0,control_center_agent,1.0,536.0,41.0
+1,,,0.0,40.0,storage_agent_92,1310.0,991.0,control_center_agent,2.0,455.0,42.0
+2,,,1.0,27462.0,storage_agent_91,1309.0,991.0,storage_agent_92,1.0,536.0,27463.0
+3,,,1.0,27462.0,storage_agent_91,1309.0,991.0,storage_agent_92,2.0,455.0,27464.0
+4,,,2.0,27462.0,storage_agent_93,1311.0,991.0,storage_agent_92,1.0,536.0,27463.0
+5,,,2.0,27462.0,storage_agent_93,1311.0,991.0,storage_agent_92,2.0,455.0,27464.0
+6,,,3.0,9864.0,control_center_agent,1319.0,991.0,storage_agent_92,1.0,536.0,9865.0
+7,,,3.0,9864.0,control_center_agent,1319.0,991.0,storage_agent_92,2.0,455.0,9866.0

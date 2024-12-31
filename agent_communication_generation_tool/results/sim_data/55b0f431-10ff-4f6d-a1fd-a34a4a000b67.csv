@@ -1,0 +1,25 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,receiverPort,packetSize_B_x,sender,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-12-30 15:14:39.729352,,,,,,,,,
+1,Simulation configuration ID,55b0f431-10ff-4f6d-a1fd-a34a4a000b67,,,,,,,,,
+2,Network,SimbenchNetwork_LTE_1-MVLV-rural-all-2-no_sw,,,,,,,,,
+3,Communication graph,Ring Overlay Topology with 330 agents,,,,,,,,,
+4,Agent communication pattern,DemandSupplyBalancing,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"Increasing data size generator with lower bound = 200 B,upper bound = 1000 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,HIERARCHICAL,,,,,,,,,
+0,,,0.0,82.0,aggregator_agent,1324.0,991.0,control_center_agent,45.0,536.0,127.0
+1,,,0.0,82.0,aggregator_agent,1324.0,991.0,control_center_agent,80.0,455.0,162.0
+2,,,1.0,145.0,storage_agent_68,1292.0,991.0,aggregator_agent,75.0,536.0,220.0
+3,,,1.0,145.0,storage_agent_68,1292.0,991.0,aggregator_agent,128.0,455.0,273.0
+4,,,5.0,1847.0,control_center_agent,1325.0,991.0,aggregator_agent,49.0,536.0,1896.0
+5,,,5.0,1847.0,control_center_agent,1325.0,991.0,aggregator_agent,81.0,455.0,1928.0
+6,,,2.0,453.0,storage_agent_67,1291.0,991.0,storage_agent_68,64.0,536.0,517.0
+7,,,2.0,453.0,storage_agent_67,1291.0,991.0,storage_agent_68,102.0,455.0,555.0
+8,,,3.0,453.0,storage_agent_69,1293.0,991.0,storage_agent_68,79.0,536.0,532.0
+9,,,3.0,453.0,storage_agent_69,1293.0,991.0,storage_agent_68,122.0,455.0,575.0
+10,,,4.0,1356.0,aggregator_agent,1324.0,991.0,storage_agent_68,82.0,536.0,1438.0
+11,,,4.0,1356.0,aggregator_agent,1324.0,991.0,storage_agent_68,140.0,455.0,1496.0

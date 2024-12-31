@@ -1,0 +1,27 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-12-20 02:08:57.035834,,,,,,,,,
+1,Simulation configuration ID,24595441-7078-40aa-8393-ecbfa161e740,,,,,,,,,
+2,Network,SimbenchNetwork_5G_1-MVLV-rural-all-2-no_sw,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 330 agents,,,,,,,,,
+4,Agent communication pattern,OutageRestorationManagement,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,Fixed data size generator with data size = 25 B,,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,300000,,,,,,,,,
+9,Communication mode,UNICAST,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+0,,,0.0,46295.0,household_agent_44,25.0,control_center_agent,0.0,25.0,25.0,46320.0
+1,,,1.0,74357.0,household_agent_55,25.0,control_center_agent,0.0,25.0,25.0,74382.0
+2,,,2.0,123317.0,household_agent_82,25.0,control_center_agent,0.0,25.0,25.0,123342.0
+3,,,3.0,125903.0,household_agent_11,25.0,control_center_agent,0.0,25.0,25.0,125928.0
+4,,,4.0,141864.0,household_agent_61,25.0,control_center_agent,0.0,25.0,25.0,141889.0
+5,,,5.0,159945.0,household_agent_69,25.0,control_center_agent,0.0,37.0,25.0,159982.0
+6,,,7.0,233415.0,household_agent_2,25.0,control_center_agent,0.0,25.0,25.0,233440.0
+7,,,8.0,240664.0,household_agent_31,25.0,control_center_agent,0.0,25.0,25.0,240689.0
+8,,,9.0,261466.0,household_agent_95,25.0,control_center_agent,0.0,31.0,25.0,261497.0
+9,,,10.0,274785.0,household_agent_79,25.0,control_center_agent,0.0,31.0,25.0,274816.0
+10,,,11.0,289139.0,household_agent_87,25.0,control_center_agent,0.0,25.0,25.0,289164.0
+11,,,106800.0,162950.0,control_center_agent,25.0,household_agent_44,46320.0,34.0,25.0,162984.0
+12,,,107900.0,243992.0,control_center_agent,25.0,household_agent_55,74382.0,34.0,25.0,244026.0
+13,,,108500.0,201484.0,control_center_agent,25.0,household_agent_61,141889.0,34.0,25.0,201518.0
+14,,,110600.0,262324.0,control_center_agent,25.0,household_agent_82,123342.0,34.0,25.0,262358.0

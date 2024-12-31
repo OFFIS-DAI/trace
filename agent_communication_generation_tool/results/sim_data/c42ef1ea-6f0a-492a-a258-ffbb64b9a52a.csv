@@ -1,0 +1,33 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,receiverPort,packetSize_B_x,sender,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-12-30 14:30:04.131466,,,,,,,,,
+1,Simulation configuration ID,c42ef1ea-6f0a-492a-a258-ffbb64b9a52a,,,,,,,,,
+2,Network,SimbenchNetwork_LTE450_1-LV-semiurb4--1-no_sw,,,,,,,,,
+3,Communication graph,Ring Overlay Topology with 65 agents,,,,,,,,,
+4,Agent communication pattern,DemandSupplyBalancing,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"Increasing data size generator with lower bound = 200 B,upper bound = 1000 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,HIERARCHICAL,,,,,,,,,
+0,,,0.0,73.0,aggregator_agent,1059.0,991.0,control_center_agent,26.0,536.0,99.0
+1,,,0.0,73.0,aggregator_agent,1059.0,991.0,control_center_agent,40.0,455.0,113.0
+2,,,1.0,245.0,household_agent_3,1006.0,991.0,aggregator_agent,63.0,536.0,308.0
+3,,,1.0,245.0,household_agent_3,1006.0,991.0,aggregator_agent,99.0,455.0,344.0
+4,,,9.0,2472.0,control_center_agent,1060.0,991.0,aggregator_agent,37.0,536.0,2509.0
+5,,,9.0,2472.0,control_center_agent,1060.0,991.0,aggregator_agent,59.0,455.0,2531.0
+6,,,5.0,990.0,household_agent_3,1006.0,991.0,household_agent_2,55.0,536.0,1045.0
+7,,,5.0,990.0,household_agent_3,1006.0,991.0,household_agent_2,89.0,455.0,1079.0
+8,,,7.0,1615.0,household_agent_3,1006.0,991.0,household_agent_2,55.0,536.0,1670.0
+9,,,7.0,1615.0,household_agent_3,1006.0,991.0,household_agent_2,89.0,455.0,1704.0
+10,,,2.0,646.0,household_agent_2,1005.0,991.0,household_agent_3,57.0,536.0,703.0
+11,,,2.0,646.0,household_agent_2,1005.0,991.0,household_agent_3,93.0,455.0,739.0
+12,,,3.0,646.0,household_agent_4,1007.0,991.0,household_agent_3,71.0,536.0,717.0
+13,,,3.0,646.0,household_agent_4,1007.0,991.0,household_agent_3,108.0,455.0,754.0
+14,,,4.0,990.0,household_agent_2,1005.0,991.0,household_agent_3,58.0,536.0,1048.0
+15,,,4.0,990.0,household_agent_2,1005.0,991.0,household_agent_3,94.0,455.0,1084.0
+16,,,6.0,1615.0,household_agent_2,1005.0,991.0,household_agent_3,58.0,536.0,1673.0
+17,,,6.0,1615.0,household_agent_2,1005.0,991.0,household_agent_3,105.0,455.0,1720.0
+18,,,8.0,1688.0,aggregator_agent,1059.0,991.0,household_agent_3,63.0,536.0,1751.0
+19,,,8.0,1688.0,aggregator_agent,1059.0,991.0,household_agent_3,99.0,455.0,1787.0

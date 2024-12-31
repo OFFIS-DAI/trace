@@ -1,0 +1,28 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-12-19 21:22:04.699440,,,,,,,,,
+1,Simulation configuration ID,b872e615-d7d2-4cd2-b190-42f61b73c8ea,,,,,,,,,
+2,Network,SimbenchNetwork_LTE_1-LV-semiurb4--1-no_sw,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 65 agents,,,,,,,,,
+4,Agent communication pattern,OutageRestorationManagement,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,Fixed data size generator with data size = 25 B,,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,300000,,,,,,,,,
+9,Communication mode,UNICAST,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+0,,,0.0,37845.0,household_agent_38,25.0,control_center_agent,0.0,19.0,25.0,37864.0
+1,,,1.0,82135.0,household_agent_21,25.0,control_center_agent,0.0,19.0,25.0,82154.0
+2,,,2.0,109179.0,household_agent_50,25.0,control_center_agent,0.0,19.0,25.0,109198.0
+3,,,3.0,123155.0,household_agent_20,25.0,control_center_agent,0.0,25.0,25.0,123180.0
+4,,,4.0,168253.0,household_agent_18,25.0,control_center_agent,0.0,19.0,25.0,168272.0
+5,,,5.0,190437.0,household_agent_9,25.0,control_center_agent,0.0,19.0,25.0,190456.0
+6,,,6.0,243997.0,household_agent_35,25.0,control_center_agent,0.0,19.0,25.0,244016.0
+7,,,7.0,284844.0,household_agent_17,25.0,control_center_agent,0.0,19.0,25.0,284863.0
+8,,,101200.0,191222.0,control_center_agent,25.0,household_agent_9,190456.0,28.0,25.0,191250.0
+9,,,102000.0,285553.0,control_center_agent,25.0,household_agent_17,284863.0,28.0,25.0,285581.0
+10,,,102100.0,169047.0,control_center_agent,25.0,household_agent_18,168272.0,28.0,25.0,169075.0
+11,,,102300.0,123660.0,control_center_agent,25.0,household_agent_20,123180.0,35.0,25.0,123695.0
+12,,,102400.0,82486.0,control_center_agent,25.0,household_agent_21,82154.0,28.0,25.0,82514.0
+13,,,103800.0,244768.0,control_center_agent,25.0,household_agent_35,244016.0,28.0,25.0,244796.0
+14,,,104100.0,38519.0,control_center_agent,25.0,household_agent_38,37864.0,28.0,25.0,38547.0
+15,,,105300.0,109972.0,control_center_agent,25.0,household_agent_50,109198.0,28.0,25.0,110000.0

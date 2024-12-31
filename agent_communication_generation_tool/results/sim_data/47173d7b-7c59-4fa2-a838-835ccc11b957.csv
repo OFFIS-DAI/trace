@@ -1,0 +1,23 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,receiverPort,packetSize_B_x,sender,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-12-30 17:43:17.903404,,,,,,,,,
+1,Simulation configuration ID,47173d7b-7c59-4fa2-a838-835ccc11b957,,,,,,,,,
+2,Network,SimbenchNetwork_Ethernet_1-MVLV-rural-all-2-no_sw,,,,,,,,,
+3,Communication graph,Ring Overlay Topology with 332 agents,,,,,,,,,
+4,Agent communication pattern,DemandSupplyBalancing,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"Increasing data size generator with lower bound = 200 B,upper bound = 1000 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,HIERARCHICAL,,,,,,,,,
+0,,,0.0,45.0,aggregator_agent,1324.0,991.0,control_center_agent,1.0,536.0,46.0
+1,,,0.0,45.0,aggregator_agent,1324.0,991.0,control_center_agent,2.0,455.0,47.0
+2,,,1.0,164.0,generation_agent_14,1138.0,991.0,aggregator_agent,2.0,536.0,166.0
+3,,,1.0,164.0,generation_agent_14,1138.0,991.0,aggregator_agent,3.0,455.0,167.0
+4,,,2.0,4920.0,generation_agent_13,1137.0,991.0,generation_agent_14,1.0,536.0,4921.0
+5,,,2.0,4920.0,generation_agent_13,1137.0,991.0,generation_agent_14,2.0,455.0,4922.0
+6,,,3.0,4920.0,generation_agent_15,1139.0,991.0,generation_agent_14,1.0,536.0,4921.0
+7,,,3.0,4920.0,generation_agent_15,1139.0,991.0,generation_agent_14,2.0,455.0,4922.0
+8,,,4.0,25926.0,aggregator_agent,1324.0,991.0,generation_agent_14,2.0,536.0,25928.0
+9,,,4.0,25926.0,aggregator_agent,1324.0,991.0,generation_agent_14,3.0,455.0,25929.0

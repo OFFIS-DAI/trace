@@ -1,0 +1,41 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-12-29 22:45:21.260435,,,,,,,,,
+1,Simulation configuration ID,238644d9-eadc-43af-bd26-f2c76a7ad957,,,,,,,,,
+2,Network,SimbenchNetwork_LTE_1-MV-urban--1-no_sw,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 324 agents,,,,,,,,,
+4,Agent communication pattern,DemandSupplyBalancing,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"Increasing data size generator with lower bound = 8 B,upper bound = 50 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,CENTRALIZED,,,,,,,,,
+0,,,0.0,63.0,control_center_agent,41.0,generation_agent_41,0.0,39.0,41.0,102.0
+1,,,318.0,63.0,control_center_agent,41.0,generation_agent_24,0.0,28.0,41.0,91.0
+2,,,636.0,63.0,control_center_agent,41.0,generation_agent_1,0.0,28.0,41.0,91.0
+3,,,954.0,63.0,control_center_agent,41.0,generation_agent_10,0.0,35.0,41.0,98.0
+4,,,955.0,63.0,control_center_agent,41.0,generation_agent_63,0.0,51.0,41.0,114.0
+5,,,1273.0,63.0,control_center_agent,41.0,generation_agent_18,0.0,28.0,41.0,91.0
+6,,,1275.0,63.0,control_center_agent,41.0,generation_agent_37,0.0,28.0,41.0,91.0
+7,,,1593.0,63.0,control_center_agent,41.0,generation_agent_68,0.0,28.0,41.0,91.0
+8,,,1911.0,63.0,control_center_agent,41.0,generation_agent_98,0.0,33.0,41.0,96.0
+9,,,2229.0,63.0,control_center_agent,41.0,generation_agent_32,0.0,33.0,41.0,96.0
+10,,,2230.0,63.0,control_center_agent,41.0,generation_agent_77,0.0,28.0,41.0,91.0
+11,,,2231.0,63.0,control_center_agent,41.0,generation_agent_28,0.0,34.0,41.0,97.0
+12,,,2232.0,63.0,control_center_agent,41.0,generation_agent_19,0.0,35.0,41.0,98.0
+13,,,2233.0,63.0,control_center_agent,41.0,generation_agent_33,0.0,33.0,41.0,96.0
+14,,,131900.0,1873.0,generation_agent_77,41.0,control_center_agent,91.0,19.0,41.0,1892.0
+15,,,131901.0,17637.0,generation_agent_1,41.0,control_center_agent,91.0,19.0,41.0,17656.0
+16,,,131902.0,2945.0,generation_agent_18,41.0,control_center_agent,91.0,19.0,41.0,2964.0
+17,,,131903.0,16575.0,generation_agent_37,41.0,control_center_agent,91.0,19.0,41.0,16594.0
+18,,,131904.0,14313.0,generation_agent_24,41.0,control_center_agent,91.0,19.0,41.0,14332.0
+19,,,131905.0,10500.0,generation_agent_68,41.0,control_center_agent,91.0,19.0,41.0,10519.0
+20,,,131906.0,10422.0,generation_agent_98,41.0,control_center_agent,96.0,19.0,41.0,10441.0
+21,,,131907.0,1382.0,generation_agent_32,41.0,control_center_agent,96.0,19.0,41.0,1401.0
+22,,,131908.0,4267.0,generation_agent_33,41.0,control_center_agent,96.0,19.0,41.0,4286.0
+23,,,131909.0,24323.0,generation_agent_28,41.0,control_center_agent,97.0,25.0,41.0,24348.0
+24,,,131910.0,24376.0,generation_agent_10,41.0,control_center_agent,98.0,25.0,41.0,24401.0
+25,,,131911.0,22155.0,generation_agent_19,41.0,control_center_agent,98.0,25.0,41.0,22180.0
+26,,,131912.0,6415.0,generation_agent_41,41.0,control_center_agent,102.0,25.0,41.0,6440.0
+27,,,131913.0,14619.0,generation_agent_63,41.0,control_center_agent,114.0,30.0,41.0,14649.0

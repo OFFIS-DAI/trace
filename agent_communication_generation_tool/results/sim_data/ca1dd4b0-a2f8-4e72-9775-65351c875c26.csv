@@ -1,0 +1,27 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-12-19 23:47:37.368922,,,,,,,,,
+1,Simulation configuration ID,ca1dd4b0-a2f8-4e72-9775-65351c875c26,,,,,,,,,
+2,Network,SimbenchNetwork_Ethernet_1-LV-semiurb4--1-no_sw,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 67 agents,,,,,,,,,
+4,Agent communication pattern,OutageRestorationManagement,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,Fixed data size generator with data size = 25 B,,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,300000,,,,,,,,,
+9,Communication mode,UNICAST,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+0,,,0.0,39272.0,household_agent_17,25.0,control_center_agent,0.0,0.0,25.0,39272.0
+1,,,1.0,62074.0,household_agent_1,25.0,control_center_agent,0.0,0.0,25.0,62074.0
+2,,,2.0,88224.0,household_agent_5,25.0,control_center_agent,0.0,0.0,25.0,88224.0
+3,,,3.0,135977.0,household_agent_30,25.0,control_center_agent,0.0,0.0,25.0,135977.0
+4,,,4.0,184513.0,household_agent_35,25.0,control_center_agent,0.0,0.0,25.0,184513.0
+5,,,5.0,231952.0,household_agent_43,25.0,control_center_agent,0.0,0.0,25.0,231952.0
+6,,,6.0,277521.0,household_agent_48,25.0,control_center_agent,0.0,0.0,25.0,277521.0
+7,,,7.0,297851.0,household_agent_3,25.0,control_center_agent,0.0,0.0,25.0,297851.0
+8,,,100400.0,90141.0,control_center_agent,25.0,household_agent_1,62074.0,0.0,25.0,90141.0
+9,,,100800.0,105587.0,control_center_agent,25.0,household_agent_5,88224.0,0.0,25.0,105587.0
+10,,,102000.0,62709.0,control_center_agent,25.0,household_agent_17,39272.0,0.0,25.0,62709.0
+11,,,103300.0,159885.0,control_center_agent,25.0,household_agent_30,135977.0,0.0,25.0,159885.0
+12,,,103800.0,199343.0,control_center_agent,25.0,household_agent_35,184513.0,0.0,25.0,199343.0
+13,,,104600.0,259625.0,control_center_agent,25.0,household_agent_43,231952.0,0.0,25.0,259625.0
+14,,,105100.0,285816.0,control_center_agent,25.0,household_agent_48,277521.0,0.0,25.0,285816.0

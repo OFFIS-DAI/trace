@@ -1,0 +1,48 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-12-26 14:29:34.689651,,,,,,,,,
+1,Simulation configuration ID,28e7ec7e-e7ec-4d53-85f8-d3b68e2c9126,,,,,,,,,
+2,Network,SimbenchNetwork_LTE450_1-MVLV-rural-all-2-no_sw,,,,,,,,,
+3,Communication graph,Ring Overlay Topology with 330 agents,,,,,,,,,
+4,Agent communication pattern,AddNewAgent,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 8 B,upper bound = 50 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,DECENTRALIZED,,,,,,,,,
+0,,,0.0,84.0,control_center_agent,29.0,household_agent_79,0.0,34.0,29.0,118.0
+1,,,1.0,184.0,household_agent_78,9.0,household_agent_79,0.0,59.0,9.0,243.0
+2,,,2.0,184.0,household_agent_80,9.0,household_agent_79,0.0,70.0,9.0,254.0
+3,,,3.0,75.0,control_center_agent,47.0,generation_agent_43,0.0,28.0,47.0,103.0
+4,,,4.0,175.0,generation_agent_42,15.0,generation_agent_43,0.0,53.0,15.0,228.0
+5,,,5.0,175.0,generation_agent_44,15.0,generation_agent_43,0.0,64.0,15.0,239.0
+6,,,6.0,71.0,control_center_agent,46.0,storage_agent_32,0.0,28.0,46.0,99.0
+7,,,7.0,171.0,storage_agent_31,50.0,storage_agent_32,0.0,47.0,50.0,218.0
+8,,,8.0,171.0,storage_agent_33,50.0,storage_agent_32,0.0,58.0,50.0,229.0
+9,,,9.0,31.0,control_center_agent,16.0,household_agent_31,0.0,3476.0,16.0,3507.0
+10,,,10.0,131.0,household_agent_30,28.0,household_agent_31,0.0,3722.0,28.0,3853.0
+11,,,11.0,131.0,household_agent_32,28.0,household_agent_31,0.0,3539.0,28.0,3670.0
+12,,,12.0,5.0,control_center_agent,35.0,storage_agent_54,0.0,35.0,35.0,40.0
+13,,,14.0,105.0,storage_agent_55,26.0,storage_agent_54,0.0,76.0,26.0,181.0
+14,,,15.0,98.0,control_center_agent,8.0,household_agent_82,0.0,28.0,8.0,126.0
+15,,,16.0,198.0,household_agent_81,43.0,household_agent_82,0.0,60.0,43.0,258.0
+16,,,17.0,198.0,household_agent_83,43.0,household_agent_82,0.0,71.0,43.0,269.0
+17,,,18.0,70.0,control_center_agent,28.0,generation_agent_0,0.0,28.0,28.0,98.0
+18,,,19.0,170.0,household_agent_99,37.0,generation_agent_0,0.0,52.0,37.0,222.0
+19,,,20.0,170.0,generation_agent_1,37.0,generation_agent_0,0.0,63.0,37.0,233.0
+20,,,21.0,23.0,control_center_agent,26.0,generation_agent_68,0.0,28.0,26.0,51.0
+21,,,22.0,123.0,generation_agent_67,15.0,generation_agent_68,0.0,47.0,15.0,170.0
+22,,,23.0,123.0,generation_agent_69,15.0,generation_agent_68,0.0,52.0,15.0,175.0
+23,,,24.0,73.0,control_center_agent,31.0,storage_agent_3,0.0,28.0,31.0,101.0
+24,,,25.0,173.0,storage_agent_2,10.0,storage_agent_3,0.0,54.0,10.0,227.0
+25,,,26.0,173.0,storage_agent_4,10.0,storage_agent_3,0.0,59.0,10.0,232.0
+26,,,132500.0,73.0,storage_agent_54,35.0,control_center_agent,40.0,25.0,35.0,98.0
+27,,,132501.0,96.0,generation_agent_68,26.0,control_center_agent,51.0,19.0,26.0,115.0
+28,,,132502.0,183.0,generation_agent_0,28.0,control_center_agent,98.0,19.0,28.0,202.0
+29,,,132503.0,171.0,storage_agent_32,46.0,control_center_agent,99.0,19.0,46.0,190.0
+30,,,132504.0,179.0,storage_agent_3,31.0,control_center_agent,101.0,20.0,31.0,199.0
+31,,,132505.0,146.0,generation_agent_43,47.0,control_center_agent,103.0,19.0,47.0,165.0
+32,,,132506.0,139.0,household_agent_79,29.0,control_center_agent,118.0,25.0,29.0,164.0
+33,,,132507.0,193.0,household_agent_82,8.0,control_center_agent,126.0,18.0,8.0,211.0
+34,,,132508.0,3607.0,household_agent_31,16.0,control_center_agent,3507.0,233.0,16.0,3840.0

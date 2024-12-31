@@ -1,0 +1,26 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-12-19 22:32:17.802568,,,,,,,,,
+1,Simulation configuration ID,82526ae4-64f3-4966-a530-6ee5acb97508,,,,,,,,,
+2,Network,SimbenchNetwork_Ethernet_1-MVLV-rural-all-2-no_sw,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 332 agents,,,,,,,,,
+4,Agent communication pattern,OutageRestorationManagement,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,Fixed data size generator with data size = 25 B,,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,300000,,,,,,,,,
+9,Communication mode,UNICAST,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+0,,,0.0,54893.0,household_agent_33,25.0,control_center_agent,0.0,0.0,25.0,54893.0
+1,,,1.0,80290.0,household_agent_24,25.0,control_center_agent,0.0,0.0,25.0,80290.0
+2,,,2.0,126303.0,household_agent_16,25.0,control_center_agent,0.0,0.0,25.0,126303.0
+3,,,3.0,158891.0,household_agent_88,25.0,control_center_agent,0.0,0.0,25.0,158891.0
+4,,,4.0,203585.0,household_agent_77,25.0,control_center_agent,0.0,0.0,25.0,203585.0
+5,,,5.0,221447.0,household_agent_94,25.0,control_center_agent,0.0,0.0,25.0,221447.0
+6,,,6.0,278892.0,household_agent_31,25.0,control_center_agent,0.0,0.0,25.0,278892.0
+7,,,104000.0,126950.0,control_center_agent,25.0,household_agent_16,126303.0,0.0,25.0,126950.0
+8,,,104800.0,80727.0,control_center_agent,25.0,household_agent_24,80290.0,0.0,25.0,80727.0
+9,,,105500.0,279623.0,control_center_agent,25.0,household_agent_31,278892.0,0.0,25.0,279623.0
+10,,,105700.0,55558.0,control_center_agent,25.0,household_agent_33,54893.0,0.0,25.0,55558.0
+11,,,110100.0,204546.0,control_center_agent,25.0,household_agent_77,203585.0,0.0,25.0,204546.0
+12,,,111200.0,159053.0,control_center_agent,25.0,household_agent_88,158891.0,0.0,25.0,159053.0
+13,,,111800.0,221451.0,control_center_agent,25.0,household_agent_94,221447.0,0.0,25.0,221451.0
