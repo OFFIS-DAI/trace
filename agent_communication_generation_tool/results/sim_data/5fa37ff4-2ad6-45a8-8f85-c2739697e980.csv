@@ -1,0 +1,30 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-12-31 16:01:52.843624,,,,,,,,,
+1,Simulation configuration ID,5fa37ff4-2ad6-45a8-8f85-c2739697e980,,,,,,,,,
+2,Network,SimbenchNetwork_Ethernet_1-MV-urban--1-no_sw,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 326 agents,,,,,,,,,
+4,Agent communication pattern,EVManagementSystem,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 50 B,upper bound = 200 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,HIERARCHICAL,,,,,,,,,
+0,,,0.0,78.0,aggregator_agent,164.0,market_agent,0.0,0.0,164.0,78.0
+1,,,1.0,33.0,aggregator_agent,59.0,grid_operator_agent,0.0,0.0,59.0,33.0
+2,,,2.0,178.0,aggregator_agent,60.0,household_agent_14,0.0,0.0,60.0,178.0
+3,,,3.0,161.0,aggregator_agent,140.0,household_agent_80,0.0,0.0,140.0,161.0
+4,,,4.0,103.0,aggregator_agent,184.0,household_agent_85,0.0,0.0,184.0,103.0
+5,,,5.0,87.0,aggregator_agent,84.0,household_agent_32,0.0,0.0,84.0,87.0
+6,,,6.0,122.0,aggregator_agent,59.0,household_agent_0,0.0,0.0,59.0,122.0
+7,,,7.0,110.0,aggregator_agent,139.0,household_agent_64,0.0,0.0,139.0,110.0
+8,,,8.0,138.0,aggregator_agent,145.0,household_agent_66,0.0,0.0,145.0,138.0
+9,,,9.0,173.0,aggregator_agent,94.0,household_agent_8,0.0,0.0,94.0,173.0
+10,,,10.0,174.0,aggregator_agent,156.0,household_agent_33,0.0,1.0,156.0,175.0
+11,,,11.0,100.0,aggregator_agent,77.0,household_agent_35,0.0,0.0,77.0,100.0
+12,,,12.0,101.0,aggregator_agent,99.0,household_agent_27,0.0,0.0,99.0,101.0
+13,,,13.0,119.0,aggregator_agent,195.0,household_agent_6,0.0,1.0,195.0,120.0
+14,,,14.0,94.0,aggregator_agent,61.0,household_agent_11,0.0,0.0,61.0,94.0
+15,,,15.0,137.0,aggregator_agent,87.0,household_agent_86,0.0,0.0,87.0,137.0
+16,,,16.0,124.0,aggregator_agent,84.0,household_agent_38,0.0,0.0,84.0,124.0

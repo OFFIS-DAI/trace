@@ -1,0 +1,28 @@
+,Parameter,Value,sender,msgId,timeSend_ms,receiver,packetSize_B_x,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-12-31 14:02:58.058876,,,,,,,,,
+1,Simulation configuration ID,e4f98452-9f22-4687-857f-1131a8679227,,,,,,,,,
+2,Network,SimbenchNetwork_LTE_1-MV-urban--1-no_sw,,,,,,,,,
+3,Communication graph,Ring Overlay Topology with 324 agents,,,,,,,,,
+4,Agent communication pattern,EVManagementSystem,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 200 B,upper bound = 1000 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,DECENTRALIZED,,,,,,,,,
+0,,,household_agent_37,0.0,75.0,household_agent_36,476.0,0.0,53.0,476.0,128.0
+1,,,household_agent_37,2.0,325.0,household_agent_36,331.0,0.0,96.0,536.0,421.0
+2,,,household_agent_36,1.0,66.0,household_agent_37,932.0,0.0,57.0,536.0,123.0
+3,,,household_agent_36,1.0,66.0,household_agent_37,932.0,0.0,96.0,396.0,162.0
+4,,,household_agent_36,3.0,264.0,household_agent_37,696.0,0.0,57.0,536.0,321.0
+5,,,household_agent_36,3.0,264.0,household_agent_37,696.0,0.0,92.0,160.0,356.0
+6,,,household_agent_36,105400.0,200.0,household_agent_37,476.0,128.0,66.0,476.0,266.0
+7,,,household_agent_36,105401.0,427.0,household_agent_37,331.0,421.0,58.0,331.0,485.0
+8,,,household_agent_37,105500.0,218.0,household_agent_36,932.0,123.0,55.0,536.0,273.0
+9,,,household_agent_37,105500.0,218.0,household_agent_36,932.0,123.0,96.0,396.0,314.0
+10,,,household_agent_37,105501.0,257.0,household_agent_36,932.0,162.0,59.0,536.0,316.0
+11,,,household_agent_37,105501.0,257.0,household_agent_36,932.0,162.0,97.0,396.0,354.0
+12,,,household_agent_37,105502.0,332.0,household_agent_36,696.0,321.0,130.0,536.0,462.0
+13,,,household_agent_37,105503.0,367.0,household_agent_36,696.0,356.0,97.0,536.0,464.0
+14,,,household_agent_37,105503.0,367.0,household_agent_36,696.0,356.0,135.0,115.0,502.0

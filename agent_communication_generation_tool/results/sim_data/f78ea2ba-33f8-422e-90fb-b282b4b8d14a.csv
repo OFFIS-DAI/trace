@@ -1,0 +1,13 @@
+,Parameter,Value,sender
+0,Start simulation,2024-12-31 22:23:09.480206,
+1,Simulation configuration ID,f78ea2ba-33f8-422e-90fb-b282b4b8d14a,
+2,Network,SimbenchNetwork_5G_1-MVLV-rural-all-2-no_sw,
+3,Communication graph,Ring Overlay Topology with 330 agents,
+4,Agent communication pattern,EVManagementSystem,
+5,Trigger Type,EVENT_TRIGGERED,
+6,Data size generator,"In interval data size generator with lower bound = 200 B,upper bound = 1000 B",
+7,Frequency,0,
+8,Simulation duration,30000,
+9,Communication mode,COMPLEX,
+10,System State,SystemState.NORMAL,
+11,Organizational structure,DECENTRALIZED,

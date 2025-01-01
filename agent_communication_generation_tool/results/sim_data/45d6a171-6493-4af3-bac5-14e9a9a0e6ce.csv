@@ -1,0 +1,28 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-12-31 19:17:31.245329,,,,,,,,,
+1,Simulation configuration ID,45d6a171-6493-4af3-bac5-14e9a9a0e6ce,,,,,,,,,
+2,Network,SimbenchNetwork_5G_1-MVLV-rural-all-2-no_sw,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 330 agents,,,,,,,,,
+4,Agent communication pattern,EVManagementSystem,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 8 B,upper bound = 50 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,HIERARCHICAL,,,,,,,,,
+0,,,0.0,54.0,aggregator_agent,19.0,market_agent,0.0,26.0,19.0,80.0
+1,,,1.0,17.0,aggregator_agent,37.0,grid_operator_agent,0.0,25.0,37.0,42.0
+2,,,2.0,137.0,aggregator_agent,15.0,household_agent_80,0.0,105.0,15.0,242.0
+3,,,3.0,132.0,aggregator_agent,26.0,household_agent_34,0.0,93.0,26.0,225.0
+4,,,4.0,154.0,aggregator_agent,11.0,household_agent_16,0.0,93.0,11.0,247.0
+5,,,5.0,79.0,aggregator_agent,16.0,household_agent_62,0.0,80.0,16.0,159.0
+6,,,6.0,57.0,aggregator_agent,32.0,household_agent_29,0.0,64.0,32.0,121.0
+7,,,7.0,97.0,aggregator_agent,26.0,household_agent_22,0.0,101.0,26.0,198.0
+8,,,8.0,65.0,aggregator_agent,19.0,household_agent_33,0.0,73.0,19.0,138.0
+9,,,9.0,54.0,aggregator_agent,43.0,household_agent_42,0.0,85.0,43.0,139.0
+10,,,11.0,66.0,aggregator_agent,36.0,household_agent_75,0.0,77.0,36.0,143.0
+11,,,12.0,80.0,aggregator_agent,16.0,household_agent_18,0.0,91.0,16.0,171.0
+12,,,13.0,121.0,aggregator_agent,27.0,household_agent_90,0.0,88.0,27.0,209.0
+13,,,14.0,55.0,aggregator_agent,10.0,household_agent_69,0.0,4058.0,10.0,4113.0
+14,,,15.0,114.0,aggregator_agent,40.0,household_agent_57,0.0,4063.0,40.0,4177.0

@@ -1,0 +1,53 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-12-31 17:56:36.893690,,,,,,,,,
+1,Simulation configuration ID,95dd9231-1d02-4180-9519-8451649d3cc4,,,,,,,,,
+2,Network,SimbenchNetwork_Ethernet_1-LV-semiurb4--1-no_sw,,,,,,,,,
+3,Communication graph,Ring Overlay Topology with 67 agents,,,,,,,,,
+4,Agent communication pattern,EVManagementSystem,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 50 B,upper bound = 200 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,DECENTRALIZED,,,,,,,,,
+0,,,0.0,139.0,household_agent_22,76.0,household_agent_23,0.0,0.0,76.0,139.0
+1,,,1.0,137.0,household_agent_24,69.0,household_agent_23,0.0,0.0,69.0,137.0
+2,,,10.0,314.0,household_agent_22,65.0,household_agent_23,0.0,0.0,65.0,314.0
+3,,,11.0,342.0,household_agent_24,59.0,household_agent_23,0.0,0.0,59.0,342.0
+4,,,2.0,182.0,household_agent_23,74.0,household_agent_24,0.0,0.0,74.0,182.0
+5,,,3.0,150.0,household_agent_25,175.0,household_agent_24,0.0,0.0,175.0,150.0
+6,,,12.0,385.0,household_agent_23,101.0,household_agent_24,0.0,0.0,101.0,385.0
+7,,,13.0,356.0,household_agent_25,173.0,household_agent_24,0.0,0.0,173.0,356.0
+8,,,4.0,189.0,household_agent_24,83.0,household_agent_25,0.0,0.0,83.0,189.0
+9,,,14.0,315.0,household_agent_24,188.0,household_agent_25,0.0,0.0,188.0,315.0
+10,,,5.0,166.0,household_agent_23,72.0,household_agent_22,0.0,0.0,72.0,166.0
+11,,,15.0,294.0,household_agent_23,51.0,household_agent_22,0.0,0.0,51.0,294.0
+12,,,6.0,151.0,household_agent_31,59.0,household_agent_32,0.0,0.0,59.0,151.0
+13,,,16.0,368.0,household_agent_31,162.0,household_agent_32,0.0,0.0,162.0,368.0
+14,,,7.0,144.0,household_agent_12,125.0,household_agent_11,0.0,0.0,125.0,144.0
+15,,,17.0,300.0,household_agent_12,60.0,household_agent_11,0.0,0.0,60.0,300.0
+16,,,8.0,125.0,household_agent_11,138.0,household_agent_12,0.0,0.0,138.0,125.0
+17,,,18.0,379.0,household_agent_11,190.0,household_agent_12,0.0,0.0,190.0,379.0
+18,,,9.0,183.0,household_agent_32,162.0,household_agent_31,0.0,0.0,162.0,183.0
+19,,,19.0,335.0,household_agent_32,110.0,household_agent_31,0.0,0.0,110.0,335.0
+20,,,101400.0,198.0,household_agent_12,138.0,household_agent_11,125.0,0.0,138.0,198.0
+21,,,101401.0,406.0,household_agent_12,190.0,household_agent_11,379.0,0.0,190.0,406.0
+22,,,101500.0,241.0,household_agent_11,125.0,household_agent_12,144.0,0.0,125.0,241.0
+23,,,101501.0,353.0,household_agent_11,60.0,household_agent_12,300.0,0.0,60.0,353.0
+24,,,102500.0,177.0,household_agent_23,76.0,household_agent_22,139.0,0.0,76.0,177.0
+25,,,102501.0,385.0,household_agent_23,65.0,household_agent_22,314.0,0.0,65.0,385.0
+26,,,102600.0,223.0,household_agent_22,72.0,household_agent_23,166.0,0.0,72.0,223.0
+27,,,102601.0,208.0,household_agent_24,74.0,household_agent_23,182.0,0.0,74.0,208.0
+28,,,102602.0,334.0,household_agent_22,51.0,household_agent_23,294.0,0.0,51.0,334.0
+29,,,102603.0,478.0,household_agent_24,101.0,household_agent_23,385.0,0.0,101.0,478.0
+30,,,102700.0,200.0,household_agent_23,69.0,household_agent_24,137.0,0.0,69.0,200.0
+31,,,102701.0,198.0,household_agent_25,83.0,household_agent_24,189.0,0.0,83.0,198.0
+32,,,102702.0,406.0,household_agent_25,188.0,household_agent_24,315.0,0.0,188.0,406.0
+33,,,102703.0,382.0,household_agent_23,59.0,household_agent_24,342.0,0.0,59.0,382.0
+34,,,102800.0,191.0,household_agent_24,175.0,household_agent_25,150.0,0.0,175.0,191.0
+35,,,102801.0,455.0,household_agent_24,173.0,household_agent_25,356.0,0.0,173.0,455.0
+36,,,103400.0,223.0,household_agent_32,59.0,household_agent_31,151.0,0.0,59.0,223.0
+37,,,103401.0,464.0,household_agent_32,162.0,household_agent_31,368.0,0.0,162.0,464.0
+38,,,103500.0,225.0,household_agent_31,162.0,household_agent_32,183.0,0.0,162.0,225.0
+39,,,103501.0,369.0,household_agent_31,110.0,household_agent_32,335.0,0.0,110.0,369.0

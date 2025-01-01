@@ -1,0 +1,39 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2024-12-31 13:03:57.467815,,,,,,,,,
+1,Simulation configuration ID,79e67596-2c27-42f8-95aa-f881fbf944d5,,,,,,,,,
+2,Network,SimbenchNetwork_LTE_1-MV-urban--1-no_sw,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 324 agents,,,,,,,,,
+4,Agent communication pattern,EVManagementSystem,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 8 B,upper bound = 50 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,CENTRALIZED,,,,,,,,,
+0,,,0.0,29.0,grid_operator_agent,40.0,household_agent_74,0.0,28.0,40.0,57.0
+1,,,1.0,29.0,grid_operator_agent,20.0,household_agent_25,0.0,34.0,20.0,63.0
+2,,,2.0,29.0,grid_operator_agent,42.0,household_agent_79,0.0,28.0,42.0,57.0
+3,,,3.0,29.0,grid_operator_agent,24.0,household_agent_21,0.0,61.0,24.0,90.0
+4,,,4.0,29.0,grid_operator_agent,19.0,household_agent_3,0.0,28.0,19.0,57.0
+5,,,6.0,29.0,grid_operator_agent,35.0,household_agent_99,0.0,43.0,35.0,72.0
+6,,,8.0,29.0,grid_operator_agent,15.0,household_agent_30,0.0,28.0,15.0,57.0
+7,,,9.0,29.0,grid_operator_agent,12.0,household_agent_59,0.0,28.0,12.0,57.0
+8,,,10.0,29.0,grid_operator_agent,12.0,household_agent_93,0.0,39.0,12.0,68.0
+9,,,11.0,29.0,grid_operator_agent,10.0,household_agent_22,0.0,35.0,10.0,64.0
+10,,,12.0,29.0,grid_operator_agent,32.0,household_agent_82,0.0,28.0,32.0,57.0
+11,,,13.0,29.0,grid_operator_agent,26.0,household_agent_47,0.0,28.0,26.0,57.0
+12,,,14.0,29.0,grid_operator_agent,12.0,household_agent_72,0.0,28.0,12.0,57.0
+13,,,132100.0,133.0,household_agent_30,15.0,grid_operator_agent,57.0,19.0,15.0,152.0
+14,,,132101.0,92.0,household_agent_3,19.0,grid_operator_agent,57.0,19.0,19.0,111.0
+15,,,132102.0,144.0,household_agent_79,42.0,grid_operator_agent,57.0,19.0,42.0,163.0
+16,,,132103.0,156.0,household_agent_72,12.0,grid_operator_agent,57.0,19.0,12.0,175.0
+17,,,132104.0,136.0,household_agent_47,26.0,grid_operator_agent,57.0,19.0,26.0,155.0
+18,,,132105.0,104.0,household_agent_82,32.0,grid_operator_agent,57.0,19.0,32.0,123.0
+19,,,132106.0,109.0,household_agent_59,12.0,grid_operator_agent,57.0,19.0,12.0,128.0
+20,,,132107.0,138.0,household_agent_74,40.0,grid_operator_agent,57.0,19.0,40.0,157.0
+21,,,132108.0,160.0,household_agent_25,20.0,grid_operator_agent,63.0,25.0,20.0,185.0
+22,,,132109.0,107.0,household_agent_22,10.0,grid_operator_agent,64.0,25.0,10.0,132.0
+23,,,132110.0,117.0,household_agent_93,12.0,grid_operator_agent,68.0,25.0,12.0,142.0
+24,,,132111.0,75.0,household_agent_99,35.0,grid_operator_agent,72.0,26.0,35.0,101.0
+25,,,132112.0,116.0,household_agent_21,24.0,grid_operator_agent,90.0,25.0,24.0,141.0
