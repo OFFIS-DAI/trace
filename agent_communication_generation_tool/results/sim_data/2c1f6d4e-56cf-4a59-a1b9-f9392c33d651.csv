@@ -1,0 +1,28 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2025-01-01 15:27:38.085993,,,,,,,,,
+1,Simulation configuration ID,2c1f6d4e-56cf-4a59-a1b9-f9392c33d651,,,,,,,,,
+2,Network,SimbenchNetwork_LTE450_1-MVLV-rural-all-2-no_sw,,,,,,,,,
+3,Communication graph,Small World Overlay Topology with 330 agents and p = 0.5,,,,,,,,,
+4,Agent communication pattern,FaultDetectionAndLocation,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 8 B,upper bound = 50 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,DECENTRALIZED,,,,,,,,,
+0,,,0.0,74.0,household_agent_54,16.0,generation_agent_97,0.0,63.0,16.0,137.0
+1,,,0.0,74.0,household_agent_54,16.0,generation_agent_97,0.0,59.0,17.0,91.0
+2,,,0.0,74.0,household_agent_54,16.0,generation_agent_97,0.0,95.0,32.0,176.0
+3,,,1.0,74.0,generation_agent_75,32.0,generation_agent_97,0.0,75.0,32.0,149.0
+4,,,1.0,74.0,generation_agent_75,32.0,generation_agent_97,0.0,70.0,9.0,102.0
+5,,,1.0,74.0,generation_agent_75,32.0,generation_agent_97,0.0,81.0,29.0,138.0
+6,,,2.0,74.0,generation_agent_96,30.0,generation_agent_97,0.0,71.0,8.0,116.0
+7,,,3.0,74.0,generation_agent_98,44.0,generation_agent_97,0.0,56.0,18.0,72.0
+8,,,4.0,74.0,storage_agent_76,36.0,generation_agent_97,0.0,132.0,36.0,206.0
+9,,,4.0,74.0,storage_agent_76,36.0,generation_agent_97,0.0,93.0,20.0,163.0
+10,,,107800.0,283.0,generation_agent_97,16.0,household_agent_54,137.0,61.0,16.0,344.0
+11,,,119900.0,1100.0,generation_agent_97,32.0,generation_agent_75,149.0,59.0,32.0,1159.0
+12,,,130000.0,768.0,generation_agent_97,36.0,storage_agent_76,206.0,53.0,36.0,821.0
+13,,,131200.0,782.0,storage_agent_89,17.0,storage_agent_88,91.0,59.0,17.0,841.0
+14,,,131400.0,982.0,storage_agent_89,9.0,storage_agent_90,102.0,59.0,9.0,1041.0

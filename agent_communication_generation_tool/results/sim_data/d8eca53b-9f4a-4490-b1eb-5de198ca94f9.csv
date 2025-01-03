@@ -1,0 +1,16 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,receiverPort,packetSize_B_x,sender,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2025-01-01 19:27:07.076112,,,,,,,,,
+1,Simulation configuration ID,d8eca53b-9f4a-4490-b1eb-5de198ca94f9,,,,,,,,,
+2,Network,SimbenchNetwork_LTE450_1-LV-semiurb4--1-no_sw,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 65 agents,,,,,,,,,
+4,Agent communication pattern,FaultDetectionAndLocation,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 50 B,upper bound = 200 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,CENTRALIZED,,,,,,,,,
+0,,,0.0,12.0,control_center_agent,1060.0,81.0,grid_infrastructure_agent_0,28.0,81.0,40.0
+1,,,1.0,47.0,control_center_agent,1060.0,104.0,grid_infrastructure_agent_1,28.0,104.0,75.0
+2,,,2.0,97.0,control_center_agent,1060.0,52.0,grid_infrastructure_agent_2,34.0,52.0,131.0

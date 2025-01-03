@@ -1,0 +1,28 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,receiverPort,packetSize_B_x,sender,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2025-01-01 20:47:16.998965,,,,,,,,,
+1,Simulation configuration ID,1f5acb12-d55c-4c1b-9ea7-ff0f272ea2a8,,,,,,,,,
+2,Network,SimbenchNetwork_LTE450_1-MV-urban--1-no_sw,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 324 agents,,,,,,,,,
+4,Agent communication pattern,FaultDetectionAndLocation,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 50 B,upper bound = 200 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,HIERARCHICAL,,,,,,,,,
+0,,,0.0,86.0,pdc_agent_0,1322.0,148.0,grid_infrastructure_agent_0,69.0,148.0,155.0
+1,,,1.0,42.0,pdc_agent_0,1322.0,195.0,grid_infrastructure_agent_1,67.0,195.0,109.0
+2,,,2.0,5.0,pdc_agent_0,1322.0,98.0,grid_infrastructure_agent_2,55.0,98.0,60.0
+3,,,4.0,22.0,pdc_agent_0,1322.0,76.0,grid_infrastructure_agent_4,59.0,76.0,81.0
+4,,,5.0,64.0,pdc_agent_0,1322.0,96.0,grid_infrastructure_agent_5,71.0,96.0,135.0
+5,,,6.0,68.0,pdc_agent_0,1322.0,74.0,grid_infrastructure_agent_6,65.0,74.0,133.0
+6,,,7.0,13.0,pdc_agent_0,1322.0,160.0,grid_infrastructure_agent_7,55.0,160.0,68.0
+7,,,8.0,61.0,pdc_agent_0,1322.0,92.0,grid_infrastructure_agent_8,78.0,92.0,139.0
+8,,,9.0,91.0,pdc_agent_0,1322.0,81.0,grid_infrastructure_agent_9,60.0,81.0,151.0
+9,,,10.0,60.0,pdc_agent_0,1322.0,180.0,grid_infrastructure_agent_10,64.0,180.0,124.0
+10,,,11.0,21.0,pdc_agent_0,1322.0,160.0,grid_infrastructure_agent_11,65.0,160.0,86.0
+11,,,13.0,90.0,pdc_agent_0,1322.0,93.0,grid_infrastructure_agent_13,59.0,93.0,149.0
+12,,,15.0,21.0,pdc_agent_0,1322.0,129.0,grid_infrastructure_agent_15,57.0,129.0,78.0
+13,,,16.0,62.0,pdc_agent_0,1322.0,112.0,grid_infrastructure_agent_16,69.0,112.0,131.0
+14,,,17.0,32.0,pdc_agent_0,1322.0,96.0,grid_infrastructure_agent_17,55.0,96.0,87.0

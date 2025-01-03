@@ -1,0 +1,28 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,receiverPort,packetSize_B_x,sender,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2025-01-01 12:58:20.578648,,,,,,,,,
+1,Simulation configuration ID,8c4a38ec-1511-4c4f-8ed7-71a99f0b1cde,,,,,,,,,
+2,Network,SimbenchNetwork_LTE450_1-MV-urban--1-no_sw,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 324 agents,,,,,,,,,
+4,Agent communication pattern,FaultDetectionAndLocation,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 8 B,upper bound = 50 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,HIERARCHICAL,,,,,,,,,
+0,,,0.0,31.0,pdc_agent_0,1322.0,8.0,grid_infrastructure_agent_0,60.0,8.0,91.0
+1,,,1.0,30.0,pdc_agent_0,1322.0,18.0,grid_infrastructure_agent_1,58.0,18.0,88.0
+2,,,2.0,87.0,pdc_agent_0,1322.0,31.0,grid_infrastructure_agent_2,63.0,31.0,150.0
+3,,,4.0,15.0,pdc_agent_0,1322.0,32.0,grid_infrastructure_agent_4,55.0,32.0,70.0
+4,,,5.0,11.0,pdc_agent_0,1322.0,19.0,grid_infrastructure_agent_5,54.0,19.0,65.0
+5,,,6.0,60.0,pdc_agent_0,1322.0,28.0,grid_infrastructure_agent_6,50.0,28.0,110.0
+6,,,7.0,67.0,pdc_agent_0,1322.0,19.0,grid_infrastructure_agent_7,67.0,19.0,134.0
+7,,,8.0,40.0,pdc_agent_0,1322.0,12.0,grid_infrastructure_agent_8,63.0,12.0,103.0
+8,,,9.0,39.0,pdc_agent_0,1322.0,27.0,grid_infrastructure_agent_9,54.0,27.0,93.0
+9,,,10.0,29.0,pdc_agent_0,1322.0,50.0,grid_infrastructure_agent_10,54.0,50.0,83.0
+10,,,11.0,84.0,pdc_agent_0,1322.0,29.0,grid_infrastructure_agent_11,67.0,29.0,151.0
+11,,,13.0,35.0,pdc_agent_0,1322.0,12.0,grid_infrastructure_agent_13,60.0,12.0,95.0
+12,,,15.0,71.0,pdc_agent_0,1322.0,24.0,grid_infrastructure_agent_15,70.0,24.0,141.0
+13,,,16.0,60.0,pdc_agent_0,1322.0,40.0,grid_infrastructure_agent_16,52.0,40.0,112.0
+14,,,17.0,76.0,pdc_agent_0,1322.0,41.0,grid_infrastructure_agent_17,64.0,41.0,140.0

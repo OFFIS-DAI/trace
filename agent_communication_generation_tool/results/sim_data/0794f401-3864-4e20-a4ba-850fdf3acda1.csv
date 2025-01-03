@@ -1,0 +1,20 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2025-01-02 06:12:55.384762,,,,,,,,,
+1,Simulation configuration ID,0794f401-3864-4e20-a4ba-850fdf3acda1,,,,,,,,,
+2,Network,SimbenchNetwork_LTE450_1-MV-urban--1-no_sw,,,,,,,,,
+3,Communication graph,Ring Overlay Topology with 324 agents,,,,,,,,,
+4,Agent communication pattern,FaultDetectionAndLocation,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 200 B,upper bound = 1000 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,DECENTRALIZED,,,,,,,,,
+0,,,0.0,23.0,storage_agent_67,594.0,storage_agent_68,0.0,60.0,536.0,83.0
+1,,,0.0,23.0,storage_agent_67,594.0,storage_agent_68,0.0,100.0,58.0,123.0
+2,,,0.0,23.0,storage_agent_67,594.0,storage_agent_68,0.0,86.0,536.0,143.0
+3,,,0.0,23.0,storage_agent_67,594.0,storage_agent_68,0.0,128.0,431.0,185.0
+4,,,1.0,23.0,storage_agent_69,979.0,storage_agent_68,0.0,68.0,536.0,91.0
+5,,,1.0,23.0,storage_agent_69,979.0,storage_agent_68,0.0,113.0,443.0,136.0
+6,,,1.0,23.0,storage_agent_69,979.0,storage_agent_68,0.0,63.0,527.0,99.0

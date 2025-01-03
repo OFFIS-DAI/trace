@@ -1,0 +1,104 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2025-01-02 05:25:52.627337,,,,,,,,,
+1,Simulation configuration ID,3861b37d-d49c-4f4e-a46a-338d37c9ae99,,,,,,,,,
+2,Network,SimbenchNetwork_LTE_1-MVLV-rural-all-2-no_sw,,,,,,,,,
+3,Communication graph,Complete Overlay Topology with 330 agents,,,,,,,,,
+4,Agent communication pattern,FaultDetectionAndLocation,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 200 B,upper bound = 1000 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,DECENTRALIZED,,,,,,,,,
+0,,,0.0,38.0,household_agent_0,875.0,grid_infrastructure_agent_3,0.0,92.0,536.0,130.0
+1,,,0.0,38.0,household_agent_0,875.0,grid_infrastructure_agent_3,0.0,189.0,339.0,227.0
+2,,,0.0,38.0,household_agent_0,875.0,grid_infrastructure_agent_3,0.0,63.0,226.0,157.0
+3,,,0.0,38.0,household_agent_0,875.0,grid_infrastructure_agent_3,0.0,49.0,536.0,61.0
+4,,,0.0,38.0,household_agent_0,875.0,grid_infrastructure_agent_3,0.0,83.0,60.0,95.0
+5,,,1.0,38.0,household_agent_1,962.0,grid_infrastructure_agent_3,0.0,203.0,536.0,241.0
+6,,,1.0,38.0,household_agent_1,962.0,grid_infrastructure_agent_3,0.0,259.0,426.0,297.0
+7,,,1.0,38.0,household_agent_1,962.0,grid_infrastructure_agent_3,0.0,83.0,462.0,177.0
+8,,,1.0,38.0,household_agent_1,962.0,grid_infrastructure_agent_3,0.0,59.0,312.0,71.0
+9,,,1.0,38.0,household_agent_1,962.0,grid_infrastructure_agent_3,0.0,83.0,536.0,109.0
+10,,,1.0,38.0,household_agent_1,962.0,grid_infrastructure_agent_3,0.0,120.0,197.0,146.0
+11,,,2.0,38.0,household_agent_2,946.0,grid_infrastructure_agent_3,0.0,273.0,536.0,311.0
+12,,,2.0,38.0,household_agent_2,946.0,grid_infrastructure_agent_3,0.0,331.0,410.0,369.0
+13,,,2.0,38.0,household_agent_2,946.0,grid_infrastructure_agent_3,0.0,71.0,536.0,83.0
+14,,,2.0,38.0,household_agent_2,946.0,grid_infrastructure_agent_3,0.0,105.0,321.0,117.0
+15,,,2.0,38.0,household_agent_2,946.0,grid_infrastructure_agent_3,0.0,124.0,536.0,207.0
+16,,,2.0,38.0,household_agent_2,946.0,grid_infrastructure_agent_3,0.0,165.0,245.0,248.0
+17,,,3.0,38.0,household_agent_3,505.0,grid_infrastructure_agent_3,0.0,361.0,505.0,399.0
+18,,,4.0,38.0,household_agent_4,262.0,grid_infrastructure_agent_3,0.0,382.0,262.0,420.0
+19,,,4.0,38.0,household_agent_4,262.0,grid_infrastructure_agent_3,0.0,143.0,273.0,219.0
+20,,,5.0,38.0,household_agent_5,901.0,grid_infrastructure_agent_3,0.0,459.0,536.0,497.0
+21,,,5.0,38.0,household_agent_5,901.0,grid_infrastructure_agent_3,0.0,513.0,365.0,551.0
+22,,,5.0,38.0,household_agent_5,901.0,grid_infrastructure_agent_3,0.0,68.0,536.0,78.0
+23,,,5.0,38.0,household_agent_5,901.0,grid_infrastructure_agent_3,0.0,105.0,349.0,115.0
+24,,,6.0,38.0,household_agent_6,904.0,grid_infrastructure_agent_3,0.0,524.0,536.0,562.0
+25,,,6.0,38.0,household_agent_6,904.0,grid_infrastructure_agent_3,0.0,573.0,368.0,611.0
+26,,,6.0,38.0,household_agent_6,904.0,grid_infrastructure_agent_3,0.0,47.0,219.0,50.0
+27,,,7.0,38.0,household_agent_7,430.0,grid_infrastructure_agent_3,0.0,586.0,430.0,624.0
+28,,,7.0,38.0,household_agent_7,430.0,grid_infrastructure_agent_3,0.0,126.0,383.0,225.0
+29,,,8.0,38.0,household_agent_8,995.0,grid_infrastructure_agent_3,0.0,663.0,536.0,701.0
+30,,,8.0,38.0,household_agent_8,995.0,grid_infrastructure_agent_3,0.0,720.0,459.0,758.0
+31,,,8.0,38.0,household_agent_8,995.0,grid_infrastructure_agent_3,0.0,49.0,536.0,57.0
+32,,,8.0,38.0,household_agent_8,995.0,grid_infrastructure_agent_3,0.0,85.0,373.0,93.0
+33,,,9.0,38.0,household_agent_9,736.0,grid_infrastructure_agent_3,0.0,732.0,536.0,770.0
+34,,,9.0,38.0,household_agent_9,736.0,grid_infrastructure_agent_3,0.0,780.0,200.0,818.0
+35,,,10.0,38.0,household_agent_10,581.0,grid_infrastructure_agent_3,0.0,786.0,536.0,824.0
+36,,,10.0,38.0,household_agent_10,581.0,grid_infrastructure_agent_3,0.0,828.0,45.0,866.0
+37,,,10.0,38.0,household_agent_10,581.0,grid_infrastructure_agent_3,0.0,83.0,536.0,106.0
+38,,,10.0,38.0,household_agent_10,581.0,grid_infrastructure_agent_3,0.0,119.0,274.0,142.0
+39,,,11.0,38.0,household_agent_11,617.0,grid_infrastructure_agent_3,0.0,854.0,536.0,892.0
+40,,,11.0,38.0,household_agent_11,617.0,grid_infrastructure_agent_3,0.0,898.0,81.0,936.0
+41,,,11.0,38.0,household_agent_11,617.0,grid_infrastructure_agent_3,0.0,85.0,536.0,91.0
+42,,,11.0,38.0,household_agent_11,617.0,grid_infrastructure_agent_3,0.0,132.0,362.0,138.0
+43,,,12.0,38.0,household_agent_12,642.0,grid_infrastructure_agent_3,0.0,914.0,536.0,952.0
+44,,,12.0,38.0,household_agent_12,642.0,grid_infrastructure_agent_3,0.0,960.0,106.0,998.0
+45,,,12.0,38.0,household_agent_12,642.0,grid_infrastructure_agent_3,0.0,119.0,536.0,193.0
+46,,,12.0,38.0,household_agent_12,642.0,grid_infrastructure_agent_3,0.0,161.0,130.0,235.0
+47,,,13.0,38.0,household_agent_13,500.0,grid_infrastructure_agent_3,0.0,990.0,500.0,1028.0
+48,,,13.0,38.0,household_agent_13,500.0,grid_infrastructure_agent_3,0.0,61.0,216.0,100.0
+49,,,14.0,38.0,household_agent_14,493.0,grid_infrastructure_agent_3,0.0,1019.0,493.0,1057.0
+50,,,14.0,38.0,household_agent_14,493.0,grid_infrastructure_agent_3,0.0,82.0,536.0,84.0
+51,,,14.0,38.0,household_agent_14,493.0,grid_infrastructure_agent_3,0.0,117.0,17.0,119.0
+52,,,15.0,38.0,household_agent_15,982.0,grid_infrastructure_agent_3,0.0,1089.0,536.0,1127.0
+53,,,15.0,38.0,household_agent_15,982.0,grid_infrastructure_agent_3,0.0,1141.0,446.0,1179.0
+54,,,15.0,38.0,household_agent_15,982.0,grid_infrastructure_agent_3,0.0,90.0,513.0,159.0
+55,,,16.0,38.0,household_agent_16,470.0,grid_infrastructure_agent_3,0.0,1155.0,470.0,1193.0
+56,,,16.0,38.0,household_agent_16,470.0,grid_infrastructure_agent_3,0.0,65.0,536.0,81.0
+57,,,16.0,38.0,household_agent_16,470.0,grid_infrastructure_agent_3,0.0,105.0,449.0,121.0
+58,,,17.0,38.0,household_agent_17,747.0,grid_infrastructure_agent_3,0.0,1186.0,536.0,1224.0
+59,,,17.0,38.0,household_agent_17,747.0,grid_infrastructure_agent_3,0.0,1227.0,211.0,1265.0
+60,,,17.0,38.0,household_agent_17,747.0,grid_infrastructure_agent_3,0.0,130.0,536.0,218.0
+61,,,17.0,38.0,household_agent_17,747.0,grid_infrastructure_agent_3,0.0,176.0,5.0,264.0
+62,,,18.0,38.0,household_agent_18,687.0,grid_infrastructure_agent_3,0.0,1259.0,536.0,1297.0
+63,,,18.0,38.0,household_agent_18,687.0,grid_infrastructure_agent_3,0.0,1305.0,151.0,1343.0
+64,,,18.0,38.0,household_agent_18,687.0,grid_infrastructure_agent_3,0.0,131.0,536.0,222.0
+65,,,18.0,38.0,household_agent_18,687.0,grid_infrastructure_agent_3,0.0,172.0,257.0,263.0
+66,,,19.0,38.0,household_agent_19,681.0,grid_infrastructure_agent_3,0.0,1311.0,536.0,1349.0
+67,,,19.0,38.0,household_agent_19,681.0,grid_infrastructure_agent_3,0.0,1361.0,145.0,1399.0
+68,,,19.0,38.0,household_agent_19,681.0,grid_infrastructure_agent_3,0.0,60.0,407.0,70.0
+69,,,20.0,38.0,household_agent_20,259.0,grid_infrastructure_agent_3,0.0,1382.0,259.0,1420.0
+70,,,20.0,38.0,household_agent_20,259.0,grid_infrastructure_agent_3,0.0,124.0,469.0,209.0
+71,,,21.0,38.0,household_agent_21,558.0,grid_infrastructure_agent_3,0.0,1414.0,536.0,1452.0
+72,,,21.0,38.0,household_agent_21,558.0,grid_infrastructure_agent_3,0.0,1450.0,22.0,1488.0
+73,,,21.0,38.0,household_agent_21,558.0,grid_infrastructure_agent_3,0.0,63.0,536.0,86.0
+74,,,21.0,38.0,household_agent_21,558.0,grid_infrastructure_agent_3,0.0,106.0,246.0,129.0
+75,,,22.0,38.0,household_agent_22,956.0,grid_infrastructure_agent_3,0.0,169.0,512.0,244.0
+76,,,23.0,38.0,household_agent_23,822.0,grid_infrastructure_agent_3,0.0,1494.0,536.0,1532.0
+77,,,23.0,38.0,household_agent_23,822.0,grid_infrastructure_agent_3,0.0,102.0,536.0,180.0
+78,,,23.0,38.0,household_agent_23,822.0,grid_infrastructure_agent_3,0.0,135.0,343.0,213.0
+79,,,24.0,38.0,household_agent_24,402.0,grid_infrastructure_agent_3,0.0,1525.0,402.0,1563.0
+80,,,113700.0,22656.0,generation_agent_14,226.0,generation_agent_13,157.0,63.0,226.0,22719.0
+81,,,113900.0,9418.0,generation_agent_14,462.0,generation_agent_15,177.0,67.0,462.0,9485.0
+82,,,124200.0,26091.0,storage_agent_31,857.0,storage_agent_18,83.0,50.0,536.0,26141.0
+83,,,124200.0,26091.0,storage_agent_31,857.0,storage_agent_18,83.0,85.0,321.0,26176.0
+84,,,124201.0,26125.0,storage_agent_31,857.0,storage_agent_18,117.0,64.0,536.0,26189.0
+85,,,124201.0,26125.0,storage_agent_31,857.0,storage_agent_18,117.0,99.0,321.0,26224.0
+86,,,125400.0,20604.0,storage_agent_31,596.0,storage_agent_30,61.0,50.0,536.0,20654.0
+87,,,125400.0,20604.0,storage_agent_31,596.0,storage_agent_30,61.0,84.0,60.0,20688.0
+88,,,125401.0,20638.0,storage_agent_31,596.0,storage_agent_30,95.0,63.0,536.0,20701.0
+89,,,125401.0,20638.0,storage_agent_31,596.0,storage_agent_30,95.0,97.0,60.0,20735.0
+90,,,125600.0,13582.0,storage_agent_31,312.0,storage_agent_32,71.0,47.0,312.0,13629.0

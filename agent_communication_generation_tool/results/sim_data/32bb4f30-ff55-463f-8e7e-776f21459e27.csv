@@ -1,0 +1,22 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2025-01-02 01:40:52.099022,,,,,,,,,
+1,Simulation configuration ID,32bb4f30-ff55-463f-8e7e-776f21459e27,,,,,,,,,
+2,Network,SimbenchNetwork_Ethernet_1-MV-urban--1-no_sw,,,,,,,,,
+3,Communication graph,Ring Overlay Topology with 326 agents,,,,,,,,,
+4,Agent communication pattern,FaultDetectionAndLocation,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 200 B,upper bound = 1000 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,DECENTRALIZED,,,,,,,,,
+0,,,0.0,64.0,generation_agent_98,702.0,generation_agent_99,0.0,1.0,536.0,65.0
+1,,,0.0,64.0,generation_agent_98,702.0,generation_agent_99,0.0,1.0,166.0,65.0
+2,,,0.0,64.0,generation_agent_98,702.0,generation_agent_99,0.0,2.0,536.0,40.0
+3,,,0.0,64.0,generation_agent_98,702.0,generation_agent_99,0.0,3.0,284.0,41.0
+4,,,1.0,64.0,grid_infrastructure_agent_0,290.0,generation_agent_99,0.0,1.0,290.0,65.0
+5,,,1.0,64.0,grid_infrastructure_agent_0,290.0,generation_agent_99,0.0,1.0,339.0,93.0
+6,,,121601.0,140.0,generation_agent_99,702.0,generation_agent_98,65.0,1.0,536.0,141.0
+7,,,121601.0,140.0,generation_agent_99,702.0,generation_agent_98,65.0,1.0,166.0,141.0
+8,,,100000.0,79.0,generation_agent_99,290.0,grid_infrastructure_agent_0,65.0,1.0,290.0,80.0

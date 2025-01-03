@@ -1,0 +1,29 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,receiverPort,packetSize_B_x,sender,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2025-01-01 21:08:27.198253,,,,,,,,,
+1,Simulation configuration ID,462fc22f-a51d-4116-9b12-e8ae4121f06f,,,,,,,,,
+2,Network,SimbenchNetwork_5G_1-MVLV-rural-all-2-no_sw,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 330 agents,,,,,,,,,
+4,Agent communication pattern,FaultDetectionAndLocation,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 50 B,upper bound = 200 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,HIERARCHICAL,,,,,,,,,
+0,,,0.0,22.0,pdc_agent_0,1328.0,179.0,grid_infrastructure_agent_0,65.0,179.0,87.0
+1,,,1.0,70.0,pdc_agent_0,1328.0,76.0,grid_infrastructure_agent_1,197.0,76.0,267.0
+2,,,2.0,69.0,pdc_agent_0,1328.0,128.0,grid_infrastructure_agent_2,324.0,128.0,393.0
+3,,,3.0,71.0,pdc_agent_0,1328.0,199.0,grid_infrastructure_agent_3,245.0,199.0,316.0
+4,,,4.0,93.0,pdc_agent_0,1328.0,77.0,grid_infrastructure_agent_4,305.0,77.0,398.0
+5,,,6.0,23.0,pdc_agent_0,1328.0,85.0,grid_infrastructure_agent_6,53.0,85.0,76.0
+6,,,7.0,26.0,pdc_agent_0,1328.0,98.0,grid_infrastructure_agent_7,121.0,98.0,147.0
+7,,,8.0,35.0,pdc_agent_0,1328.0,135.0,grid_infrastructure_agent_8,123.0,135.0,158.0
+8,,,12.0,99.0,pdc_agent_0,1328.0,62.0,grid_infrastructure_agent_12,316.0,62.0,415.0
+9,,,13.0,61.0,pdc_agent_0,1328.0,86.0,grid_infrastructure_agent_13,179.0,86.0,240.0
+10,,,15.0,26.0,pdc_agent_0,1328.0,105.0,grid_infrastructure_agent_15,110.0,105.0,136.0
+11,,,16.0,71.0,pdc_agent_0,1328.0,88.0,grid_infrastructure_agent_16,267.0,88.0,338.0
+12,,,18.0,71.0,pdc_agent_0,1328.0,132.0,grid_infrastructure_agent_18,218.0,132.0,289.0
+13,,,19.0,29.0,pdc_agent_0,1328.0,77.0,grid_infrastructure_agent_19,4069.0,77.0,4098.0
+14,,,22.0,47.0,pdc_agent_0,1328.0,148.0,grid_infrastructure_agent_22,171.0,148.0,218.0
+15,,,23.0,10.0,pdc_agent_0,1328.0,131.0,grid_infrastructure_agent_23,53.0,131.0,63.0

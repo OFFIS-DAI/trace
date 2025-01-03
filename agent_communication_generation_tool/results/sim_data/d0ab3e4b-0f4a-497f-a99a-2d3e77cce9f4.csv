@@ -1,0 +1,29 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2025-01-01 20:32:18.089734,,,,,,,,,
+1,Simulation configuration ID,d0ab3e4b-0f4a-497f-a99a-2d3e77cce9f4,,,,,,,,,
+2,Network,SimbenchNetwork_5G_1-MV-urban--1-no_sw,,,,,,,,,
+3,Communication graph,Complete Overlay Topology with 324 agents,,,,,,,,,
+4,Agent communication pattern,FaultDetectionAndLocation,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 50 B,upper bound = 200 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,DECENTRALIZED,,,,,,,,,
+0,,,0.0,85.0,household_agent_0,76.0,storage_agent_86,0.0,14055.0,182.0,14117.0
+1,,,0.0,85.0,household_agent_0,76.0,storage_agent_86,0.0,65.0,104.0,128.0
+2,,,0.0,85.0,household_agent_0,76.0,storage_agent_86,0.0,148.0,50.0,200.0
+3,,,1.0,85.0,household_agent_1,81.0,storage_agent_86,0.0,993.0,190.0,1056.0
+4,,,1.0,85.0,household_agent_1,81.0,storage_agent_86,0.0,197.0,69.0,282.0
+5,,,3.0,85.0,household_agent_3,107.0,storage_agent_86,0.0,96.0,81.0,140.0
+6,,,4.0,85.0,household_agent_4,129.0,storage_agent_86,0.0,66.0,167.0,74.0
+7,,,5.0,85.0,household_agent_5,153.0,storage_agent_86,0.0,71.0,155.0,85.0
+8,,,8.0,85.0,household_agent_8,130.0,storage_agent_86,0.0,161.0,60.0,238.0
+9,,,9.0,85.0,household_agent_9,122.0,storage_agent_86,0.0,156.0,143.0,222.0
+10,,,10.0,85.0,household_agent_10,111.0,storage_agent_86,0.0,4051.0,91.0,4096.0
+11,,,12.0,85.0,household_agent_12,155.0,storage_agent_86,0.0,109.0,62.0,156.0
+12,,,13.0,85.0,household_agent_13,174.0,storage_agent_86,0.0,59.0,57.0,63.0
+13,,,16.0,85.0,household_agent_16,126.0,storage_agent_86,0.0,139.0,138.0,211.0
+14,,,17.0,85.0,household_agent_17,100.0,storage_agent_86,0.0,115.0,84.0,129.0
+15,,,116800.0,1023.0,generation_agent_51,104.0,generation_agent_50,128.0,70.0,104.0,1093.0

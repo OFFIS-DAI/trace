@@ -1,0 +1,27 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2025-01-02 03:59:05.144122,,,,,,,,,
+1,Simulation configuration ID,a91aebcb-20c1-4bb5-9645-ca81444abdb8,,,,,,,,,
+2,Network,SimbenchNetwork_LTE450_1-MVLV-rural-all-2-no_sw,,,,,,,,,
+3,Communication graph,Ring Overlay Topology with 330 agents,,,,,,,,,
+4,Agent communication pattern,FaultDetectionAndLocation,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 200 B,upper bound = 1000 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,DECENTRALIZED,,,,,,,,,
+0,,,0.0,91.0,storage_agent_72,725.0,storage_agent_73,0.0,61.0,536.0,152.0
+1,,,0.0,91.0,storage_agent_72,725.0,storage_agent_73,0.0,98.0,189.0,189.0
+2,,,0.0,91.0,storage_agent_72,725.0,storage_agent_73,0.0,107.0,536.0,134.0
+3,,,0.0,91.0,storage_agent_72,725.0,storage_agent_73,0.0,155.0,438.0,182.0
+4,,,1.0,91.0,storage_agent_74,662.0,storage_agent_73,0.0,79.0,536.0,170.0
+5,,,1.0,91.0,storage_agent_74,662.0,storage_agent_73,0.0,121.0,126.0,212.0
+6,,,1.0,91.0,storage_agent_74,662.0,storage_agent_73,0.0,73.0,297.0,122.0
+7,,,129600.0,1069.0,storage_agent_73,725.0,storage_agent_72,152.0,92.0,536.0,1161.0
+8,,,129600.0,1069.0,storage_agent_73,725.0,storage_agent_72,152.0,134.0,536.0,1203.0
+9,,,129601.0,1106.0,storage_agent_73,725.0,storage_agent_72,189.0,138.0,378.0,1244.0
+10,,,129800.0,852.0,storage_agent_73,662.0,storage_agent_74,170.0,65.0,536.0,917.0
+11,,,129800.0,852.0,storage_agent_73,662.0,storage_agent_74,170.0,106.0,126.0,958.0
+12,,,129801.0,894.0,storage_agent_73,662.0,storage_agent_74,212.0,71.0,536.0,965.0
+13,,,129801.0,894.0,storage_agent_73,662.0,storage_agent_74,212.0,110.0,126.0,1004.0

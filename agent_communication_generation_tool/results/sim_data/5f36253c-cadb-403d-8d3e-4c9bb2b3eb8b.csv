@@ -1,0 +1,34 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2025-01-02 01:29:40.650700,,,,,,,,,
+1,Simulation configuration ID,5f36253c-cadb-403d-8d3e-4c9bb2b3eb8b,,,,,,,,,
+2,Network,SimbenchNetwork_LTE_1-MV-urban--1-no_sw,,,,,,,,,
+3,Communication graph,Small World Overlay Topology with 324 agents and p = 0.5,,,,,,,,,
+4,Agent communication pattern,FaultDetectionAndLocation,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 200 B,upper bound = 1000 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,DECENTRALIZED,,,,,,,,,
+0,,,0.0,72.0,household_agent_58,442.0,storage_agent_0,0.0,63.0,442.0,135.0
+1,,,0.0,72.0,household_agent_58,442.0,storage_agent_0,0.0,55.0,335.0,121.0
+2,,,1.0,72.0,grid_infrastructure_agent_17,857.0,storage_agent_0,0.0,78.0,536.0,150.0
+3,,,1.0,72.0,grid_infrastructure_agent_17,857.0,storage_agent_0,0.0,116.0,321.0,188.0
+4,,,2.0,72.0,storage_agent_1,640.0,storage_agent_0,0.0,93.0,536.0,165.0
+5,,,2.0,72.0,storage_agent_1,640.0,storage_agent_0,0.0,127.0,104.0,199.0
+6,,,3.0,72.0,storage_agent_26,625.0,storage_agent_0,0.0,161.0,536.0,233.0
+7,,,3.0,72.0,storage_agent_26,625.0,storage_agent_0,0.0,195.0,89.0,267.0
+8,,,3.0,72.0,storage_agent_26,625.0,storage_agent_0,0.0,70.0,510.0,72.0
+9,,,107600.0,136.0,storage_agent_0,442.0,household_agent_58,135.0,63.0,442.0,199.0
+10,,,121600.0,153.0,generation_agent_99,335.0,generation_agent_98,121.0,54.0,335.0,207.0
+11,,,101700.0,189.0,storage_agent_0,857.0,grid_infrastructure_agent_17,150.0,71.0,536.0,260.0
+12,,,101700.0,189.0,storage_agent_0,857.0,grid_infrastructure_agent_17,150.0,119.0,321.0,308.0
+13,,,101701.0,227.0,storage_agent_0,857.0,grid_infrastructure_agent_17,188.0,96.0,536.0,323.0
+14,,,101701.0,227.0,storage_agent_0,857.0,grid_infrastructure_agent_17,188.0,144.0,321.0,371.0
+15,,,121900.0,251.0,storage_agent_0,640.0,storage_agent_1,165.0,102.0,536.0,353.0
+16,,,121900.0,251.0,storage_agent_0,640.0,storage_agent_1,165.0,146.0,536.0,397.0
+17,,,121901.0,285.0,storage_agent_0,640.0,storage_agent_1,199.0,153.0,208.0,438.0
+18,,,124400.0,308.0,storage_agent_0,625.0,storage_agent_26,233.0,93.0,536.0,401.0
+19,,,124400.0,308.0,storage_agent_0,625.0,storage_agent_26,233.0,137.0,536.0,445.0
+20,,,124401.0,342.0,storage_agent_0,625.0,storage_agent_26,267.0,141.0,178.0,483.0

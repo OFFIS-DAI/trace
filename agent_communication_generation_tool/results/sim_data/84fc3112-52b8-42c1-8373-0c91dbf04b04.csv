@@ -1,0 +1,17 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2025-01-02 00:57:25.753994,,,,,,,,,
+1,Simulation configuration ID,84fc3112-52b8-42c1-8373-0c91dbf04b04,,,,,,,,,
+2,Network,SimbenchNetwork_Ethernet_1-MVLV-rural-all-2-no_sw,,,,,,,,,
+3,Communication graph,Ring Overlay Topology with 332 agents,,,,,,,,,
+4,Agent communication pattern,FaultDetectionAndLocation,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 50 B,upper bound = 200 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,DECENTRALIZED,,,,,,,,,
+0,,,0.0,73.0,household_agent_55,110.0,household_agent_56,0.0,0.0,110.0,73.0
+1,,,0.0,73.0,household_agent_55,110.0,household_agent_56,0.0,0.0,100.0,6.0
+2,,,1.0,73.0,household_agent_57,109.0,household_agent_56,0.0,0.0,109.0,73.0
+3,,,1.0,73.0,household_agent_57,109.0,household_agent_56,0.0,1.0,163.0,66.0

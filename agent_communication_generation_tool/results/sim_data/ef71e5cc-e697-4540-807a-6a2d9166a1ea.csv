@@ -1,0 +1,18 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,receiverPort,packetSize_B_x,sender,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2025-01-02 04:54:15.418880,,,,,,,,,
+1,Simulation configuration ID,ef71e5cc-e697-4540-807a-6a2d9166a1ea,,,,,,,,,
+2,Network,SimbenchNetwork_Ethernet_1-LV-semiurb4--1-no_sw,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 67 agents,,,,,,,,,
+4,Agent communication pattern,FaultDetectionAndLocation,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 200 B,upper bound = 1000 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,HIERARCHICAL,,,,,,,,,
+0,,,0.0,73.0,pdc_agent_0,1063.0,545.0,grid_infrastructure_agent_0,1.0,536.0,74.0
+1,,,0.0,73.0,pdc_agent_0,1063.0,545.0,grid_infrastructure_agent_0,1.0,9.0,74.0
+2,,,1.0,100.0,pdc_agent_0,1063.0,490.0,grid_infrastructure_agent_1,1.0,490.0,101.0
+3,,,2.0,71.0,pdc_agent_0,1063.0,598.0,grid_infrastructure_agent_2,1.0,536.0,72.0
+4,,,2.0,71.0,pdc_agent_0,1063.0,598.0,grid_infrastructure_agent_2,1.0,62.0,72.0

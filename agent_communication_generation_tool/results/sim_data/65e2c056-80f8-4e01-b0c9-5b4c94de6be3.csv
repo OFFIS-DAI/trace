@@ -1,0 +1,28 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,receiverPort,packetSize_B_x,sender,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2025-01-01 19:12:11.845372,,,,,,,,,
+1,Simulation configuration ID,65e2c056-80f8-4e01-b0c9-5b4c94de6be3,,,,,,,,,
+2,Network,SimbenchNetwork_LTE450_1-MV-urban--1-no_sw,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 324 agents,,,,,,,,,
+4,Agent communication pattern,FaultDetectionAndLocation,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 50 B,upper bound = 200 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,CENTRALIZED,,,,,,,,,
+0,,,0.0,92.0,control_center_agent,1319.0,115.0,grid_infrastructure_agent_0,38.0,115.0,130.0
+1,,,1.0,60.0,control_center_agent,1319.0,61.0,grid_infrastructure_agent_1,34.0,61.0,94.0
+2,,,2.0,79.0,control_center_agent,1319.0,129.0,grid_infrastructure_agent_2,36.0,129.0,115.0
+3,,,4.0,1.0,control_center_agent,1319.0,200.0,grid_infrastructure_agent_4,36.0,200.0,37.0
+4,,,5.0,3.0,control_center_agent,1319.0,74.0,grid_infrastructure_agent_5,36.0,74.0,39.0
+5,,,6.0,89.0,control_center_agent,1319.0,163.0,grid_infrastructure_agent_6,28.0,163.0,117.0
+6,,,7.0,34.0,control_center_agent,1319.0,89.0,grid_infrastructure_agent_7,35.0,89.0,69.0
+7,,,8.0,22.0,control_center_agent,1319.0,197.0,grid_infrastructure_agent_8,46.0,197.0,68.0
+8,,,9.0,40.0,control_center_agent,1319.0,126.0,grid_infrastructure_agent_9,35.0,126.0,75.0
+9,,,10.0,70.0,control_center_agent,1319.0,77.0,grid_infrastructure_agent_10,35.0,77.0,105.0
+10,,,11.0,30.0,control_center_agent,1319.0,134.0,grid_infrastructure_agent_11,41.0,134.0,71.0
+11,,,13.0,38.0,control_center_agent,1319.0,186.0,grid_infrastructure_agent_13,41.0,186.0,79.0
+12,,,15.0,47.0,control_center_agent,1319.0,177.0,grid_infrastructure_agent_15,39.0,177.0,86.0
+13,,,16.0,77.0,control_center_agent,1319.0,147.0,grid_infrastructure_agent_16,37.0,147.0,114.0
+14,,,17.0,99.0,control_center_agent,1319.0,61.0,grid_infrastructure_agent_17,35.0,61.0,134.0

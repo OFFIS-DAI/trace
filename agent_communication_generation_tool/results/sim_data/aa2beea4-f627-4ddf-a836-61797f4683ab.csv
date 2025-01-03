@@ -1,0 +1,17 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2025-01-01 15:40:51.263492,,,,,,,,,
+1,Simulation configuration ID,aa2beea4-f627-4ddf-a836-61797f4683ab,,,,,,,,,
+2,Network,SimbenchNetwork_5G_1-MV-urban--1-no_sw,,,,,,,,,
+3,Communication graph,Ring Overlay Topology with 324 agents,,,,,,,,,
+4,Agent communication pattern,FaultDetectionAndLocation,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 8 B,upper bound = 50 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,DECENTRALIZED,,,,,,,,,
+0,,,0.0,39.0,grid_infrastructure_agent_7,12.0,grid_infrastructure_agent_8,0.0,101.0,20.0,133.0
+1,,,1.0,39.0,grid_infrastructure_agent_9,29.0,grid_infrastructure_agent_8,0.0,64.0,29.0,103.0
+2,,,1.0,39.0,grid_infrastructure_agent_9,29.0,grid_infrastructure_agent_8,0.0,84.0,26.0,149.0
+3,,,100900.0,8450.0,grid_infrastructure_agent_8,29.0,grid_infrastructure_agent_9,103.0,53.0,29.0,8503.0

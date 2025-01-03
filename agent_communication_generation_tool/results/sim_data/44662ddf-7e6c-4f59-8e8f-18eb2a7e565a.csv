@@ -1,0 +1,32 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2025-01-01 20:13:41.317793,,,,,,,,,
+1,Simulation configuration ID,44662ddf-7e6c-4f59-8e8f-18eb2a7e565a,,,,,,,,,
+2,Network,SimbenchNetwork_Ethernet_1-MVLV-rural-all-2-no_sw,,,,,,,,,
+3,Communication graph,Small World Overlay Topology with 332 agents and p = 0.5,,,,,,,,,
+4,Agent communication pattern,FaultDetectionAndLocation,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 50 B,upper bound = 200 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,DECENTRALIZED,,,,,,,,,
+0,,,0.0,27.0,household_agent_81,159.0,generation_agent_95,0.0,1.0,159.0,28.0
+1,,,0.0,27.0,household_agent_81,159.0,generation_agent_95,0.0,0.0,100.0,95.0
+2,,,0.0,27.0,household_agent_81,159.0,generation_agent_95,0.0,0.0,130.0,44.0
+3,,,1.0,27.0,generation_agent_94,127.0,generation_agent_95,0.0,1.0,182.0,96.0
+4,,,1.0,27.0,generation_agent_94,127.0,generation_agent_95,0.0,0.0,127.0,27.0
+5,,,1.0,27.0,generation_agent_94,127.0,generation_agent_95,0.0,0.0,78.0,81.0
+6,,,2.0,27.0,generation_agent_96,65.0,generation_agent_95,0.0,0.0,65.0,27.0
+7,,,2.0,27.0,generation_agent_96,65.0,generation_agent_95,0.0,0.0,106.0,58.0
+8,,,3.0,27.0,grid_infrastructure_agent_5,92.0,generation_agent_95,0.0,1.0,92.0,28.0
+9,,,3.0,27.0,grid_infrastructure_agent_5,92.0,generation_agent_95,0.0,0.0,130.0,13.0
+10,,,4.0,27.0,storage_agent_96,182.0,generation_agent_95,0.0,1.0,182.0,28.0
+11,,,4.0,27.0,storage_agent_96,182.0,generation_agent_95,0.0,0.0,110.0,11.0
+12,,,110500.0,36.0,generation_agent_95,159.0,household_agent_81,28.0,1.0,159.0,37.0
+13,,,113400.0,192.0,generation_agent_11,100.0,generation_agent_10,95.0,0.0,100.0,192.0
+14,,,113600.0,141.0,generation_agent_11,182.0,generation_agent_12,96.0,1.0,182.0,142.0
+15,,,121800.0,94.0,generation_agent_95,127.0,generation_agent_94,27.0,0.0,127.0,94.0
+16,,,122000.0,97.0,generation_agent_95,65.0,generation_agent_96,27.0,0.0,65.0,97.0
+17,,,100500.0,34.0,generation_agent_95,92.0,grid_infrastructure_agent_5,28.0,0.0,92.0,34.0
+18,,,132000.0,88.0,generation_agent_95,182.0,storage_agent_96,28.0,1.0,182.0,89.0
