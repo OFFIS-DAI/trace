@@ -1,0 +1,60 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2025-01-08 12:29:04.398542,,,,,,,,,
+1,Simulation configuration ID,62ec84bb-31ea-4774-a939-922b86393c2f,,,,,,,,,
+2,Network,SimbenchNetwork_LTE450_1-LV-semiurb4--1-no_sw,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 65 agents,,,,,,,,,
+4,Agent communication pattern,StorageApplication,,,,,,,,,
+5,Trigger Type,TIME_TRIGGERED,,,,,,,,,
+6,Data size generator,Fixed data size generator with data size = 50 B,,,,,,,,,
+7,Frequency,12000,,,,,,,,,
+8,Simulation duration,300000,,,,,,,,,
+9,Communication mode,BROADCAST,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+0,,,0.0,12000.0,storage_agent_0,50.0,control_center_agent,0.0,19.0,50.0,12019.0
+1,,,1.0,24000.0,storage_agent_0,50.0,control_center_agent,0.0,19.0,50.0,24019.0
+2,,,2.0,36000.0,storage_agent_0,50.0,control_center_agent,0.0,19.0,50.0,36019.0
+3,,,3.0,48000.0,storage_agent_0,50.0,control_center_agent,0.0,19.0,50.0,48019.0
+4,,,4.0,60000.0,storage_agent_0,50.0,control_center_agent,0.0,19.0,50.0,60019.0
+5,,,5.0,72000.0,storage_agent_0,50.0,control_center_agent,0.0,19.0,50.0,72019.0
+6,,,6.0,84000.0,storage_agent_0,50.0,control_center_agent,0.0,19.0,50.0,84019.0
+7,,,7.0,96000.0,storage_agent_0,50.0,control_center_agent,0.0,19.0,50.0,96019.0
+8,,,8.0,108000.0,storage_agent_0,50.0,control_center_agent,0.0,19.0,50.0,108019.0
+9,,,9.0,120000.0,storage_agent_0,50.0,control_center_agent,0.0,19.0,50.0,120019.0
+10,,,10.0,132000.0,storage_agent_0,50.0,control_center_agent,0.0,19.0,50.0,132019.0
+11,,,11.0,144000.0,storage_agent_0,50.0,control_center_agent,0.0,19.0,50.0,144019.0
+12,,,12.0,156000.0,storage_agent_0,50.0,control_center_agent,0.0,19.0,50.0,156019.0
+13,,,13.0,168000.0,storage_agent_0,50.0,control_center_agent,0.0,19.0,50.0,168019.0
+14,,,14.0,180000.0,storage_agent_0,50.0,control_center_agent,0.0,19.0,50.0,180019.0
+15,,,15.0,192000.0,storage_agent_0,50.0,control_center_agent,0.0,19.0,50.0,192019.0
+16,,,16.0,204000.0,storage_agent_0,50.0,control_center_agent,0.0,19.0,50.0,204019.0
+17,,,17.0,216000.0,storage_agent_0,50.0,control_center_agent,0.0,19.0,50.0,216019.0
+18,,,18.0,228000.0,storage_agent_0,50.0,control_center_agent,0.0,19.0,50.0,228019.0
+19,,,19.0,240000.0,storage_agent_0,50.0,control_center_agent,0.0,19.0,50.0,240019.0
+20,,,20.0,252000.0,storage_agent_0,50.0,control_center_agent,0.0,19.0,50.0,252019.0
+21,,,21.0,264000.0,storage_agent_0,50.0,control_center_agent,0.0,19.0,50.0,264019.0
+22,,,22.0,276000.0,storage_agent_0,50.0,control_center_agent,0.0,19.0,50.0,276019.0
+23,,,23.0,288000.0,storage_agent_0,50.0,control_center_agent,0.0,19.0,50.0,288019.0
+24,,,105800.0,12921.0,control_center_agent,50.0,storage_agent_0,12019.0,28.0,50.0,12949.0
+25,,,105801.0,24415.0,control_center_agent,50.0,storage_agent_0,24019.0,28.0,50.0,24443.0
+26,,,105802.0,36514.0,control_center_agent,50.0,storage_agent_0,36019.0,28.0,50.0,36542.0
+27,,,105803.0,48620.0,control_center_agent,50.0,storage_agent_0,48019.0,28.0,50.0,48648.0
+28,,,105804.0,60886.0,control_center_agent,50.0,storage_agent_0,60019.0,28.0,50.0,60914.0
+29,,,105805.0,72211.0,control_center_agent,50.0,storage_agent_0,72019.0,28.0,50.0,72239.0
+30,,,105806.0,84137.0,control_center_agent,50.0,storage_agent_0,84019.0,28.0,50.0,84165.0
+31,,,105807.0,96411.0,control_center_agent,50.0,storage_agent_0,96019.0,28.0,50.0,96439.0
+32,,,105808.0,108458.0,control_center_agent,50.0,storage_agent_0,108019.0,28.0,50.0,108486.0
+33,,,105809.0,120848.0,control_center_agent,50.0,storage_agent_0,120019.0,28.0,50.0,120876.0
+34,,,105810.0,132624.0,control_center_agent,50.0,storage_agent_0,132019.0,28.0,50.0,132652.0
+35,,,105811.0,144429.0,control_center_agent,50.0,storage_agent_0,144019.0,28.0,50.0,144457.0
+36,,,105812.0,156894.0,control_center_agent,50.0,storage_agent_0,156019.0,28.0,50.0,156922.0
+37,,,105813.0,168273.0,control_center_agent,50.0,storage_agent_0,168019.0,28.0,50.0,168301.0
+38,,,105814.0,180771.0,control_center_agent,50.0,storage_agent_0,180019.0,28.0,50.0,180799.0
+39,,,105815.0,192989.0,control_center_agent,50.0,storage_agent_0,192019.0,28.0,50.0,193017.0
+40,,,105816.0,204484.0,control_center_agent,50.0,storage_agent_0,204019.0,28.0,50.0,204512.0
+41,,,105817.0,216312.0,control_center_agent,50.0,storage_agent_0,216019.0,28.0,50.0,216340.0
+42,,,105818.0,228892.0,control_center_agent,50.0,storage_agent_0,228019.0,28.0,50.0,228920.0
+43,,,105819.0,240446.0,control_center_agent,50.0,storage_agent_0,240019.0,28.0,50.0,240474.0
+44,,,105820.0,252138.0,control_center_agent,50.0,storage_agent_0,252019.0,28.0,50.0,252166.0
+45,,,105821.0,264326.0,control_center_agent,50.0,storage_agent_0,264019.0,28.0,50.0,264354.0
+46,,,105822.0,276125.0,control_center_agent,50.0,storage_agent_0,276019.0,28.0,50.0,276153.0
+47,,,105823.0,288109.0,control_center_agent,50.0,storage_agent_0,288019.0,28.0,50.0,288137.0
