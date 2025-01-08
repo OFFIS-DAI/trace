@@ -39,7 +39,7 @@ for system_state in system_states:
                                                                                       max_number_of_agents_per_type=num_agents[0])
 
                         for overlay_n, overlay in (
-                                overlay_types(communication_network_description, 1000).items()):
+                                overlay_types(communication_network_description, num_agents[0]).items()):
                             communication_pattern = AddNewAgent(simulation_duration_ms=SIMULATION_DURATION_MS,
                                                                 communication_graph=overlay,
                                                                 reply_after_range=reply_after_times,

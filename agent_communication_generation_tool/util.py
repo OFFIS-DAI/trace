@@ -17,13 +17,14 @@ def merge_input_and_output_df(input_df, output_df):
         return input_df
 
 
-def send_mail_notification(scenario_description, recipient_mail="malin.radtke@offis.de"):
+def send_mail_notification(scenario_description, recipient_mail="malin.radtke@offis.de", failed=False):
     # Send email notification
     try:
         sender_email = MAIL_ADDRESS
         recipient_email = recipient_mail
-        email_subject = "Simulation Completed"
-        email_body = f"The simulation has completed successfully.\n\n Details: {scenario_description}"
+        email_subject = "Simulation Completed" if not failed else "Simulation Failed "
+        email_body = f"The simulation has completed successfully.\n\n Details: {scenario_description}" if not failed \
+            else f"The simulation has failed. \n\nDetails: {scenario_description}"
 
         # Create the email message
         message = MIMEMultipart()

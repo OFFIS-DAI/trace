@@ -378,6 +378,7 @@ class AddNewAgent(ComplexAgentCommunicationPattern):
                  data_size_generator: DataSizeGenerator,
                  organizational_structure: OrganizationalStructure, reply_after_range: tuple[int, int]):
         self.reply_after_range = reply_after_range
+        self.num_new_agents = 10
         super().__init__(simulation_duration_ms, communication_graph, TriggerType.EVENT_TRIGGERED, data_size_generator,
                          organizational_structure)
 
@@ -397,7 +398,8 @@ class AddNewAgent(ComplexAgentCommunicationPattern):
         }
 
         # get a subset of agents that are added to the network
-        random_leaf_agents = leaf_agents if len(leaf_agents) < 10 else random.sample(leaf_agents, 10)
+        random_leaf_agents = leaf_agents if len(leaf_agents) < self.num_new_agents \
+            else random.sample(leaf_agents, self.num_new_agents)
 
         # send request from leaf agent to control center agent
         for random_leaf_agent in random_leaf_agents:
@@ -434,7 +436,8 @@ class AddNewAgent(ComplexAgentCommunicationPattern):
         leaf_agents = self.communication_graph.get_agents_by_class(LeafAgent)
         control_center_agent = self.get_control_center_agent()
         aggregator_agent = self.get_aggregator_agent()
-        random_leaf_agents = leaf_agents if len(leaf_agents) < 10 else random.sample(leaf_agents, 10)
+        random_leaf_agents = leaf_agents if len(leaf_agents) < self.num_new_agents \
+            else random.sample(leaf_agents, self.num_new_agents)
 
         a_config = {
             "sender": aggregator_agent.omnet_name,
@@ -491,7 +494,8 @@ class AddNewAgent(ComplexAgentCommunicationPattern):
             raise ValueError('More than one control agent.')
         control_center_agent = control_center_agents[0]
 
-        random_leaf_agents = leaf_agents if len(leaf_agents) < 10 else random.sample(leaf_agents, 10)
+        random_leaf_agents = leaf_agents if len(leaf_agents) < self.num_new_agents \
+            else random.sample(leaf_agents, self.num_new_agents)
 
         for random_leaf_agent in random_leaf_agents:
             # send request from leaf agent to control center agent
@@ -536,42 +540,43 @@ class DemandSupplyBalancing(ComplexAgentCommunicationPattern):
         generator_agents = self.communication_graph.get_agents_by_type(LeafAgent.LeafAgentType.GENERATION_AGENT)
         if len(generator_agents) == 0:
             raise ValueError('No generator agents implemented.')
-        random_generator_agent = random.choice(generator_agents)
+        random_generator_agents = random.sample(generator_agents, 15) if len(generator_agents) > 15 \
+            else generator_agents
         control_center_agent = self.get_control_center_agent()
 
         time_send = random.randint(0, 100)
 
-        # send request from generator agent to control center agent
-        # control center agent responds with agree or decline
-        gen_config = self.add_message_to_config(
-            config=get_initial_config(random_generator_agent),
-            time_send_ms=time_send,
-            receiver=control_center_agent,
-            packet_size_bytes=self.data_size_generator.get_data_size(),
-            expect_reply=True,
-            reply_after_ms_range=self.t_central_optimization_range
-        )
-        write_config_to_file(random_generator_agent.omnet_name, gen_config)
-        self.traffic_configurations[random_generator_agent.omnet_name] = gen_config
-
         cc_config = get_initial_config(control_center_agent)
 
-        # if control center agent responds with agree: inform other leaf agents, generator agent sends confirm
-        if random.random() < self.p_agree_to_power_supply:
-            # control center agent agrees to power supply
-            for leaf_agent in self.communication_graph.get_agents_by_class(LeafAgent):
-                if leaf_agent == random_generator_agent:
-                    continue
-                cc_config = self.add_message_to_config(
-                    config=cc_config,
-                    time_send_ms=time_send + self.t_central_optimization_range[1],
-                    receiver=leaf_agent,
-                    packet_size_bytes=self.data_size_generator.get_data_size(),
-                    expect_reply=False,
-                    reply_after_ms_range=(0, 100)
-                )
-            write_config_to_file(control_center_agent.omnet_name, cc_config)
-            self.traffic_configurations[control_center_agent.omnet_name] = cc_config
+        for random_generator_agent in random_generator_agents:
+            # send request from generator agent to control center agent
+            # control center agent responds with agree or decline
+            gen_config = self.add_message_to_config(
+                config=get_initial_config(random_generator_agent),
+                time_send_ms=time_send,
+                receiver=control_center_agent,
+                packet_size_bytes=self.data_size_generator.get_data_size(),
+                expect_reply=True,
+                reply_after_ms_range=self.t_central_optimization_range
+            )
+            write_config_to_file(random_generator_agent.omnet_name, gen_config)
+            self.traffic_configurations[random_generator_agent.omnet_name] = gen_config
+            # if control center agent responds with agree: inform other leaf agents, generator agent sends confirm
+            if random.random() < self.p_agree_to_power_supply:
+                # control center agent agrees to power supply
+                for leaf_agent in self.communication_graph.get_agents_by_class(LeafAgent):
+                    if leaf_agent == random_generator_agent:
+                        continue
+                    cc_config = self.add_message_to_config(
+                        config=cc_config,
+                        time_send_ms=time_send + self.t_central_optimization_range[1],
+                        receiver=leaf_agent,
+                        packet_size_bytes=self.data_size_generator.get_data_size(),
+                        expect_reply=False,
+                        reply_after_ms_range=(0, 100)
+                    )
+        write_config_to_file(control_center_agent.omnet_name, cc_config)
+        self.traffic_configurations[control_center_agent.omnet_name] = cc_config
 
         self.fill_config_for_non_sending_agents()
 
@@ -581,6 +586,7 @@ class DemandSupplyBalancing(ComplexAgentCommunicationPattern):
         demand_supply_agents = (self.communication_graph.get_agents_by_type(LeafAgent.LeafAgentType.HOUSEHOLD_AGENT) +
                                 self.communication_graph.get_agents_by_type(LeafAgent.LeafAgentType.GENERATION_AGENT) +
                                 self.communication_graph.get_agents_by_type(LeafAgent.LeafAgentType.STORAGE_AGENT))
+        demand_supply_agents = random.sample(demand_supply_agents, 15) if len(demand_supply_agents) > 15 else demand_supply_agents
         initial_neg_agent = random.choice(demand_supply_agents)
 
         time_send = random.randint(0, 100)
@@ -680,6 +686,8 @@ class DemandSupplyBalancing(ComplexAgentCommunicationPattern):
         demand_supply_agents = (self.communication_graph.get_agents_by_type(LeafAgent.LeafAgentType.HOUSEHOLD_AGENT) +
                                 self.communication_graph.get_agents_by_type(LeafAgent.LeafAgentType.GENERATION_AGENT) +
                                 self.communication_graph.get_agents_by_type(LeafAgent.LeafAgentType.STORAGE_AGENT))
+        demand_supply_agents = random.sample(demand_supply_agents, 15) if len(demand_supply_agents) > 15 \
+            else demand_supply_agents
         initial_neg_agent = random.choice(demand_supply_agents)
 
         time_send = random.randint(0, 100)
@@ -757,6 +765,7 @@ class MarketParticipation(ComplexAgentCommunicationPattern):
         self.market_interval_ms = market_interval_ms
         self.t_local_optimization = t_local_optimization
         self.num_iterations_till_goal = num_iterations_till_goal
+        self.num_participant_agents = 15
         super().__init__(simulation_duration_ms, communication_graph, TriggerType.TIME_TRIGGERED, data_size_generator,
                          organizational_structure)
 
@@ -765,6 +774,9 @@ class MarketParticipation(ComplexAgentCommunicationPattern):
         participant_agents = (self.communication_graph.get_agents_by_type(LeafAgent.LeafAgentType.HOUSEHOLD_AGENT) +
                               self.communication_graph.get_agents_by_type(LeafAgent.LeafAgentType.GENERATION_AGENT) +
                               self.communication_graph.get_agents_by_type(LeafAgent.LeafAgentType.STORAGE_AGENT))
+
+        participant_agents = random.sample(participant_agents, self.num_participant_agents) \
+            if len(participant_agents) > self.num_participant_agents else participant_agents
 
         # in interval:
         time_send = random.randint(0, 100)
@@ -792,6 +804,9 @@ class MarketParticipation(ComplexAgentCommunicationPattern):
         participant_agents = (self.communication_graph.get_agents_by_type(LeafAgent.LeafAgentType.HOUSEHOLD_AGENT) +
                               self.communication_graph.get_agents_by_type(LeafAgent.LeafAgentType.GENERATION_AGENT) +
                               self.communication_graph.get_agents_by_type(LeafAgent.LeafAgentType.STORAGE_AGENT))
+
+        participant_agents = random.sample(participant_agents, self.num_participant_agents) \
+            if len(participant_agents) > self.num_participant_agents else participant_agents
 
         # in interval:
         time_send = random.randint(0, 100)
@@ -848,6 +863,9 @@ class MarketParticipation(ComplexAgentCommunicationPattern):
         participant_agents = (self.communication_graph.get_agents_by_type(LeafAgent.LeafAgentType.HOUSEHOLD_AGENT) +
                               self.communication_graph.get_agents_by_type(LeafAgent.LeafAgentType.GENERATION_AGENT) +
                               self.communication_graph.get_agents_by_type(LeafAgent.LeafAgentType.STORAGE_AGENT))
+
+        participant_agents = random.sample(participant_agents, self.num_participant_agents) \
+            if len(participant_agents) > self.num_participant_agents else participant_agents
 
         random_initiator = random.choice(participant_agents)
         initiator_config = get_initial_config(random_initiator)
@@ -970,6 +988,7 @@ class EVManagementSystem(ComplexAgentCommunicationPattern):
 
     def generate_traffic_configuration_files_centralized(self):
         ev_agents = self.communication_graph.get_agents_by_type(LeafAgent.LeafAgentType.HOUSEHOLD_AGENT)
+        ev_agents = random.sample(ev_agents, 15) if len(ev_agents) > 15 else ev_agents
         dso_agent = self.get_grid_operator_agent()
 
         # ev agents send charge requirement to dso agent, dso agent replies
@@ -994,6 +1013,7 @@ class EVManagementSystem(ComplexAgentCommunicationPattern):
         aggregator_agent = self.get_aggregator_agent()
         grid_operator_agent = self.get_grid_operator_agent()
         ev_agents = self.communication_graph.get_agents_by_type(LeafAgent.LeafAgentType.HOUSEHOLD_AGENT)
+        ev_agents = random.sample(ev_agents, 15) if len(ev_agents) > 15 else ev_agents
 
         agent_to_configs = {}
 
@@ -1038,6 +1058,7 @@ class EVManagementSystem(ComplexAgentCommunicationPattern):
         # send schedule from ev agent to neighbors and expect reply
 
         ev_agents = self.communication_graph.get_agents_by_type(LeafAgent.LeafAgentType.HOUSEHOLD_AGENT)
+        ev_agents = random.sample(ev_agents, 15) if len(ev_agents) > 15 else ev_agents
 
         time_send_min = random.randint(0, 100)
         agent_configs = {agent: get_initial_config(agent) for agent in ev_agents}
