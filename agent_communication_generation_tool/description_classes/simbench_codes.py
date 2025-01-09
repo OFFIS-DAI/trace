@@ -46,8 +46,7 @@ codes_nan = [
 ]
 
 codes_wan_filtered = [
-"1-HV-urban--1-no_sw",
-"1-HVMV-mixed-all-2-no_sw",
+    "1-MV-urban--1-no_sw", "1-MV-rural--0-no_sw"
 ]
 
 codes_wan = [
