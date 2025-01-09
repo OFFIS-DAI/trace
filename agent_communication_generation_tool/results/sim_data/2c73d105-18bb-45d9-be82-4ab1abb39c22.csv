@@ -1,0 +1,52 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,receiverPort,packetSize_B_x,sender,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2025-01-09 13:54:18.847693,,,,,,,,,
+1,Simulation configuration ID,2c73d105-18bb-45d9-be82-4ab1abb39c22,,,,,,,,,
+2,Network,SimbenchNetwork_Ethernet_1-MVLV-rural-all-2-no_sw,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 332 agents,,,,,,,,,
+4,Agent communication pattern,VoltageReduction,,,,,,,,,
+5,Trigger Type,EVENT_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 50 B,upper bound = 1000 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,BROADCAST,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+0,,,0.0,96.0,household_agent_7,1031.0,659.0,control_center_agent,2.0,536.0,98.0
+1,,,0.0,96.0,household_agent_7,1031.0,659.0,control_center_agent,11.0,123.0,107.0
+2,,,1.0,96.0,household_agent_12,1036.0,659.0,control_center_agent,2.0,536.0,98.0
+3,,,1.0,96.0,household_agent_12,1036.0,659.0,control_center_agent,11.0,123.0,107.0
+4,,,2.0,96.0,household_agent_15,1039.0,659.0,control_center_agent,3.0,536.0,99.0
+5,,,2.0,96.0,household_agent_15,1039.0,659.0,control_center_agent,11.0,123.0,107.0
+6,,,3.0,96.0,household_agent_31,1055.0,659.0,control_center_agent,3.0,536.0,99.0
+7,,,3.0,96.0,household_agent_31,1055.0,659.0,control_center_agent,11.0,123.0,107.0
+8,,,4.0,96.0,household_agent_69,1093.0,659.0,control_center_agent,4.0,536.0,100.0
+9,,,4.0,96.0,household_agent_69,1093.0,659.0,control_center_agent,11.0,123.0,107.0
+10,,,5.0,96.0,household_agent_77,1101.0,659.0,control_center_agent,4.0,536.0,100.0
+11,,,5.0,96.0,household_agent_77,1101.0,659.0,control_center_agent,11.0,123.0,107.0
+12,,,6.0,96.0,household_agent_80,1104.0,659.0,control_center_agent,5.0,536.0,101.0
+13,,,6.0,96.0,household_agent_80,1104.0,659.0,control_center_agent,12.0,123.0,108.0
+14,,,7.0,96.0,generation_agent_21,1145.0,659.0,control_center_agent,5.0,536.0,101.0
+15,,,7.0,96.0,generation_agent_21,1145.0,659.0,control_center_agent,12.0,123.0,108.0
+16,,,8.0,96.0,generation_agent_57,1181.0,659.0,control_center_agent,6.0,536.0,102.0
+17,,,8.0,96.0,generation_agent_57,1181.0,659.0,control_center_agent,12.0,123.0,108.0
+18,,,9.0,96.0,generation_agent_64,1188.0,659.0,control_center_agent,6.0,536.0,102.0
+19,,,9.0,96.0,generation_agent_64,1188.0,659.0,control_center_agent,12.0,123.0,108.0
+20,,,10.0,96.0,generation_agent_67,1191.0,659.0,control_center_agent,7.0,536.0,103.0
+21,,,10.0,96.0,generation_agent_67,1191.0,659.0,control_center_agent,12.0,123.0,108.0
+22,,,11.0,96.0,generation_agent_89,1213.0,659.0,control_center_agent,7.0,536.0,103.0
+23,,,11.0,96.0,generation_agent_89,1213.0,659.0,control_center_agent,12.0,123.0,108.0
+24,,,12.0,96.0,generation_agent_92,1216.0,659.0,control_center_agent,8.0,536.0,104.0
+25,,,12.0,96.0,generation_agent_92,1216.0,659.0,control_center_agent,12.0,123.0,108.0
+26,,,13.0,96.0,grid_infrastructure_agent_10,1010.0,659.0,control_center_agent,8.0,536.0,104.0
+27,,,13.0,96.0,grid_infrastructure_agent_10,1010.0,659.0,control_center_agent,13.0,123.0,109.0
+28,,,14.0,96.0,storage_agent_5,1229.0,659.0,control_center_agent,9.0,536.0,105.0
+29,,,14.0,96.0,storage_agent_5,1229.0,659.0,control_center_agent,13.0,123.0,109.0
+30,,,15.0,96.0,storage_agent_8,1232.0,659.0,control_center_agent,9.0,536.0,105.0
+31,,,15.0,96.0,storage_agent_8,1232.0,659.0,control_center_agent,13.0,123.0,109.0
+32,,,16.0,96.0,storage_agent_25,1249.0,659.0,control_center_agent,10.0,536.0,106.0
+33,,,16.0,96.0,storage_agent_25,1249.0,659.0,control_center_agent,13.0,123.0,109.0
+34,,,17.0,96.0,storage_agent_46,1270.0,659.0,control_center_agent,10.0,536.0,106.0
+35,,,17.0,96.0,storage_agent_46,1270.0,659.0,control_center_agent,13.0,123.0,109.0
+36,,,18.0,96.0,storage_agent_55,1279.0,659.0,control_center_agent,11.0,536.0,107.0
+37,,,18.0,96.0,storage_agent_55,1279.0,659.0,control_center_agent,13.0,123.0,109.0
+38,,,19.0,96.0,storage_agent_56,1280.0,659.0,control_center_agent,11.0,536.0,107.0
+39,,,19.0,96.0,storage_agent_56,1280.0,659.0,control_center_agent,13.0,123.0,109.0
