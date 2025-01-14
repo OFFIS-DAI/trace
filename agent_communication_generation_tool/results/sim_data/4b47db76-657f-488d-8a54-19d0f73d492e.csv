@@ -1,0 +1,43 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2025-01-12 01:36:31.586812,,,,,,,,,
+1,Simulation configuration ID,4b47db76-657f-488d-8a54-19d0f73d492e,,,,,,,,,
+2,Network,SimbenchNetwork_LTE450_1-LV-semiurb4--1-no_sw,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 65 agents,,,,,,,,,
+4,Agent communication pattern,MarketParticipation,,,,,,,,,
+5,Trigger Type,TIME_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 50 B,upper bound = 200 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,900000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,CENTRALIZED,,,,,,,,,
+0,,,0.0,98.0,household_agent_6,83.0,market_agent,0.0,23.0,83.0,121.0
+1,,,1.0,98.0,household_agent_25,57.0,market_agent,0.0,25.0,57.0,123.0
+2,,,2.0,98.0,household_agent_43,177.0,market_agent,0.0,19.0,177.0,117.0
+3,,,3.0,98.0,household_agent_1,123.0,market_agent,0.0,22.0,123.0,120.0
+4,,,4.0,98.0,household_agent_42,141.0,market_agent,0.0,25.0,141.0,123.0
+5,,,5.0,98.0,household_agent_46,155.0,market_agent,0.0,23.0,155.0,121.0
+6,,,6.0,98.0,household_agent_14,195.0,market_agent,0.0,21.0,195.0,119.0
+7,,,7.0,98.0,household_agent_9,80.0,market_agent,0.0,22.0,80.0,120.0
+8,,,8.0,98.0,household_agent_52,158.0,market_agent,0.0,24.0,158.0,122.0
+9,,,9.0,98.0,household_agent_38,176.0,market_agent,0.0,26.0,176.0,124.0
+10,,,10.0,98.0,household_agent_34,101.0,market_agent,0.0,23.0,101.0,121.0
+11,,,11.0,98.0,household_agent_19,182.0,market_agent,0.0,20.0,182.0,118.0
+12,,,12.0,98.0,household_agent_44,130.0,market_agent,0.0,25.0,130.0,123.0
+13,,,13.0,98.0,household_agent_37,124.0,market_agent,0.0,22.0,124.0,120.0
+14,,,14.0,98.0,household_agent_29,153.0,market_agent,0.0,20.0,153.0,118.0
+15,,,100400.0,204.0,market_agent,123.0,household_agent_1,120.0,28.0,123.0,232.0
+16,,,100900.0,149.0,market_agent,83.0,household_agent_6,121.0,28.0,83.0,177.0
+17,,,101200.0,131.0,market_agent,80.0,household_agent_9,120.0,28.0,80.0,159.0
+18,,,101700.0,158.0,market_agent,195.0,household_agent_14,119.0,28.0,195.0,186.0
+19,,,102200.0,174.0,market_agent,182.0,household_agent_19,118.0,28.0,182.0,202.0
+20,,,102800.0,198.0,market_agent,57.0,household_agent_25,123.0,28.0,57.0,226.0
+21,,,103200.0,192.0,market_agent,153.0,household_agent_29,118.0,28.0,153.0,220.0
+22,,,103700.0,170.0,market_agent,101.0,household_agent_34,121.0,28.0,101.0,198.0
+23,,,104000.0,192.0,market_agent,124.0,household_agent_37,120.0,28.0,124.0,220.0
+24,,,104100.0,167.0,market_agent,176.0,household_agent_38,124.0,37.0,176.0,204.0
+25,,,104500.0,166.0,market_agent,141.0,household_agent_42,123.0,28.0,141.0,194.0
+26,,,104600.0,177.0,market_agent,177.0,household_agent_43,117.0,28.0,177.0,205.0
+27,,,104700.0,135.0,market_agent,130.0,household_agent_44,123.0,28.0,130.0,163.0
+28,,,104900.0,189.0,market_agent,155.0,household_agent_46,121.0,28.0,155.0,217.0
+29,,,105500.0,160.0,market_agent,158.0,household_agent_52,122.0,28.0,158.0,188.0

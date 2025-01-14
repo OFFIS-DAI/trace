@@ -1,0 +1,29 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2025-01-07 05:56:20.352928,,,,,,,,,
+1,Simulation configuration ID,506e2334-2f40-416d-aeec-d516b6270677,,,,,,,,,
+2,Network,SimbenchNetwork_5G_1-MV-urban--1-no_sw,,,,,,,,,
+3,Communication graph,Complete Overlay Topology with 324 agents,,,,,,,,,
+4,Agent communication pattern,MarketParticipation,,,,,,,,,
+5,Trigger Type,TIME_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 8 B,upper bound = 50 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,900000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,DECENTRALIZED,,,,,,,,,
+0,,,56.0,87.0,household_agent_6,40.0,household_agent_4,0.0,63.0,40.0,150.0
+1,,,57.0,87.0,household_agent_15,34.0,household_agent_4,0.0,74.0,34.0,161.0
+2,,,59.0,87.0,household_agent_62,33.0,household_agent_4,0.0,22057.0,33.0,22144.0
+3,,,60.0,87.0,generation_agent_6,10.0,household_agent_4,0.0,140.0,10.0,227.0
+4,,,65.0,87.0,generation_agent_81,38.0,household_agent_4,0.0,228.0,38.0,315.0
+5,,,66.0,87.0,generation_agent_88,38.0,household_agent_4,0.0,239.0,38.0,326.0
+6,,,67.0,87.0,storage_agent_29,36.0,household_agent_4,0.0,250.0,36.0,337.0
+7,,,69.0,87.0,storage_agent_77,33.0,household_agent_4,0.0,317.0,33.0,404.0
+8,,,102400.0,6389.0,household_agent_4,40.0,household_agent_6,150.0,59.0,40.0,6448.0
+9,,,103300.0,17053.0,household_agent_4,34.0,household_agent_15,161.0,59.0,34.0,17112.0
+10,,,108000.0,51659.0,household_agent_4,33.0,household_agent_62,22144.0,65.0,33.0,51724.0
+11,,,112400.0,3627.0,household_agent_4,10.0,generation_agent_6,227.0,53.0,10.0,3680.0
+12,,,119900.0,27013.0,household_agent_4,38.0,generation_agent_81,315.0,59.0,38.0,27072.0
+13,,,120600.0,10931.0,household_agent_4,38.0,generation_agent_88,326.0,59.0,38.0,10990.0
+14,,,124700.0,12117.0,household_agent_4,36.0,storage_agent_29,337.0,59.0,36.0,12176.0
+15,,,129500.0,14616.0,household_agent_4,33.0,storage_agent_77,404.0,53.0,33.0,14669.0

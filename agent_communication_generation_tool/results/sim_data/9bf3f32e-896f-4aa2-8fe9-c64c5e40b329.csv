@@ -1,0 +1,30 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2025-01-02 13:17:12.097785,,,,,,,,,
+1,Simulation configuration ID,9bf3f32e-896f-4aa2-8fe9-c64c5e40b329,,,,,,,,,
+2,Network,SimbenchNetwork_5G_1-MV-urban--1-no_sw,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 324 agents,,,,,,,,,
+4,Agent communication pattern,MarketParticipation,,,,,,,,,
+5,Trigger Type,TIME_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 8 B,upper bound = 50 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,900000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,CENTRALIZED,,,,,,,,,
+0,,,1.0,93.0,generation_agent_83,33.0,market_agent,0.0,30.0,33.0,123.0
+1,,,2.0,93.0,storage_agent_93,11.0,market_agent,0.0,24.0,11.0,117.0
+2,,,3.0,93.0,storage_agent_48,46.0,market_agent,0.0,31.0,46.0,124.0
+3,,,4.0,93.0,household_agent_93,13.0,market_agent,0.0,25.0,13.0,118.0
+4,,,5.0,93.0,storage_agent_56,47.0,market_agent,0.0,25.0,47.0,118.0
+5,,,6.0,93.0,storage_agent_71,25.0,market_agent,0.0,30.0,25.0,123.0
+6,,,10.0,93.0,generation_agent_87,31.0,market_agent,0.0,24.0,31.0,117.0
+7,,,11.0,93.0,generation_agent_22,45.0,market_agent,0.0,36.0,45.0,129.0
+8,,,12.0,93.0,storage_agent_24,17.0,market_agent,0.0,25.0,17.0,118.0
+9,,,13.0,93.0,generation_agent_74,11.0,market_agent,0.0,24.0,11.0,117.0
+10,,,111100.0,146.0,market_agent,13.0,household_agent_93,118.0,34.0,13.0,180.0
+11,,,119200.0,212.0,market_agent,11.0,generation_agent_74,117.0,22.0,11.0,234.0
+12,,,120100.0,221.0,market_agent,33.0,generation_agent_83,123.0,34.0,33.0,255.0
+13,,,120500.0,210.0,market_agent,31.0,generation_agent_87,117.0,28.0,31.0,238.0
+14,,,124200.0,204.0,market_agent,17.0,storage_agent_24,118.0,34.0,17.0,238.0
+15,,,128900.0,204.0,market_agent,25.0,storage_agent_71,123.0,34.0,25.0,238.0
+16,,,131100.0,208.0,market_agent,11.0,storage_agent_93,117.0,28.0,11.0,236.0

@@ -1,0 +1,13 @@
+,Parameter,Value,sender
+0,Start simulation,2025-01-04 07:55:57.070577,
+1,Simulation configuration ID,d0ecd97f-e308-4c0d-b335-397f869a37b8,
+2,Network,SimbenchNetwork_LTE_1-MVLV-rural-all-2-no_sw,
+3,Communication graph,Ring Overlay Topology with 330 agents,
+4,Agent communication pattern,MarketParticipation,
+5,Trigger Type,TIME_TRIGGERED,
+6,Data size generator,"In interval data size generator with lower bound = 8 B,upper bound = 50 B",
+7,Frequency,0,
+8,Simulation duration,900000,
+9,Communication mode,COMPLEX,
+10,System State,SystemState.NORMAL,
+11,Organizational structure,DECENTRALIZED,
