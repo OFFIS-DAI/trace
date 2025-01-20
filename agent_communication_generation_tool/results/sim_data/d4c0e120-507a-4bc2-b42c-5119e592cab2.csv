@@ -1,0 +1,24 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2025-01-17 14:58:57.672450,,,,,,,,,
+1,Simulation configuration ID,d4c0e120-507a-4bc2-b42c-5119e592cab2,,,,,,,,,
+2,Network,SimbenchNetwork_5G_1-MV-urban--1-no_sw,,,,,,,,,
+3,Communication graph,Complete Overlay Topology with 324 agents,,,,,,,,,
+4,Agent communication pattern,MarketParticipation,,,,,,,,,
+5,Trigger Type,TIME_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 50 B,upper bound = 200 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,900000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,DECENTRALIZED,,,,,,,,,
+0,,,56.0,34.0,household_agent_5,196.0,storage_agent_33,0.0,63.0,196.0,97.0
+1,,,58.0,34.0,household_agent_27,196.0,storage_agent_33,0.0,85.0,196.0,119.0
+2,,,62.0,34.0,generation_agent_29,67.0,storage_agent_33,0.0,163.0,67.0,197.0
+3,,,64.0,34.0,generation_agent_58,187.0,storage_agent_33,0.0,22113.0,187.0,22147.0
+4,,,66.0,34.0,generation_agent_72,131.0,storage_agent_33,0.0,230.0,131.0,264.0
+5,,,68.0,34.0,storage_agent_51,156.0,storage_agent_33,0.0,253.0,156.0,287.0
+6,,,102300.0,247589.0,storage_agent_33,196.0,household_agent_5,97.0,53.0,196.0,247642.0
+7,,,104500.0,224020.0,storage_agent_33,196.0,household_agent_27,119.0,65.0,196.0,224085.0
+8,,,114700.0,267816.0,storage_agent_33,67.0,generation_agent_29,197.0,59.0,67.0,267875.0
+9,,,119000.0,65183.0,storage_agent_33,131.0,generation_agent_72,264.0,53.0,131.0,65236.0
+10,,,126900.0,176197.0,storage_agent_33,156.0,storage_agent_51,287.0,59.0,156.0,176256.0

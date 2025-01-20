@@ -1,0 +1,83 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,receiverPort,packetSize_B,reply,replyAfter_ms,sender
+0,Start simulation,2025-01-14 18:59:17.250894,,,,,,,,
+1,Simulation configuration ID,fc0e76ab-679d-4bb5-8653-8177f2802a7f,,,,,,,,
+2,Network,SimbenchNetwork_5G_1-MVLV-rural-all-2-no_sw,,,,,,,,
+3,Communication graph,Complete Overlay Topology with 330 agents,,,,,,,,
+4,Agent communication pattern,MarketParticipation,,,,,,,,
+5,Trigger Type,TIME_TRIGGERED,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 50 B,upper bound = 200 B",,,,,,,,
+7,Frequency,0,,,,,,,,
+8,Simulation duration,900000,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,
+11,Organizational structure,DECENTRALIZED,,,,,,,,
+0,,,0.0,6.0,household_agent_12,1036.0,171.0,True,926.0,generation_agent_16
+1,,,1.0,6.0,household_agent_49,1073.0,51.0,True,761.0,generation_agent_16
+2,,,2.0,6.0,household_agent_53,1077.0,140.0,True,524.0,generation_agent_16
+3,,,3.0,6.0,household_agent_64,1088.0,172.0,True,771.0,generation_agent_16
+4,,,4.0,6.0,household_agent_73,1097.0,197.0,True,645.0,generation_agent_16
+5,,,5.0,6.0,household_agent_93,1117.0,195.0,True,708.0,generation_agent_16
+6,,,6.0,6.0,generation_agent_26,1150.0,72.0,True,153.0,generation_agent_16
+7,,,7.0,6.0,generation_agent_85,1209.0,96.0,True,405.0,generation_agent_16
+8,,,8.0,6.0,generation_agent_92,1216.0,105.0,True,861.0,generation_agent_16
+9,,,9.0,6.0,storage_agent_5,1229.0,62.0,True,598.0,generation_agent_16
+10,,,10.0,6.0,storage_agent_11,1235.0,196.0,True,505.0,generation_agent_16
+11,,,11.0,6.0,storage_agent_16,1240.0,94.0,True,277.0,generation_agent_16
+12,,,12.0,6.0,storage_agent_44,1268.0,67.0,True,820.0,generation_agent_16
+13,,,13.0,6.0,storage_agent_87,1311.0,62.0,True,372.0,generation_agent_16
+14,,,14.0,6.0,household_agent_12,1036.0,107.0,True,290.0,generation_agent_16
+15,,,15.0,6.0,household_agent_49,1073.0,115.0,True,805.0,generation_agent_16
+16,,,16.0,6.0,household_agent_53,1077.0,98.0,True,446.0,generation_agent_16
+17,,,17.0,6.0,household_agent_64,1088.0,170.0,True,890.0,generation_agent_16
+18,,,18.0,6.0,household_agent_73,1097.0,139.0,True,946.0,generation_agent_16
+19,,,19.0,6.0,household_agent_93,1117.0,128.0,True,836.0,generation_agent_16
+20,,,20.0,6.0,generation_agent_26,1150.0,159.0,True,595.0,generation_agent_16
+21,,,21.0,6.0,generation_agent_85,1209.0,77.0,True,172.0,generation_agent_16
+22,,,22.0,6.0,generation_agent_92,1216.0,140.0,True,704.0,generation_agent_16
+23,,,23.0,6.0,storage_agent_5,1229.0,125.0,True,955.0,generation_agent_16
+24,,,24.0,6.0,storage_agent_11,1235.0,84.0,True,311.0,generation_agent_16
+25,,,25.0,6.0,storage_agent_16,1240.0,120.0,True,509.0,generation_agent_16
+26,,,26.0,6.0,storage_agent_44,1268.0,129.0,True,488.0,generation_agent_16
+27,,,27.0,6.0,storage_agent_87,1311.0,83.0,True,411.0,generation_agent_16
+28,,,28.0,6.0,household_agent_12,1036.0,96.0,True,393.0,generation_agent_16
+29,,,29.0,6.0,household_agent_49,1073.0,100.0,True,436.0,generation_agent_16
+30,,,30.0,6.0,household_agent_53,1077.0,168.0,True,428.0,generation_agent_16
+31,,,31.0,6.0,household_agent_64,1088.0,162.0,True,287.0,generation_agent_16
+32,,,32.0,6.0,household_agent_73,1097.0,113.0,True,697.0,generation_agent_16
+33,,,33.0,6.0,household_agent_93,1117.0,82.0,True,863.0,generation_agent_16
+34,,,34.0,6.0,generation_agent_26,1150.0,90.0,True,363.0,generation_agent_16
+35,,,35.0,6.0,generation_agent_85,1209.0,54.0,True,982.0,generation_agent_16
+36,,,36.0,6.0,generation_agent_92,1216.0,70.0,True,201.0,generation_agent_16
+37,,,37.0,6.0,storage_agent_5,1229.0,169.0,True,720.0,generation_agent_16
+38,,,38.0,6.0,storage_agent_11,1235.0,61.0,True,354.0,generation_agent_16
+39,,,39.0,6.0,storage_agent_16,1240.0,56.0,True,106.0,generation_agent_16
+40,,,40.0,6.0,storage_agent_44,1268.0,175.0,True,253.0,generation_agent_16
+41,,,41.0,6.0,storage_agent_87,1311.0,197.0,True,813.0,generation_agent_16
+42,,,42.0,6.0,household_agent_12,1036.0,84.0,True,829.0,generation_agent_16
+43,,,43.0,6.0,household_agent_49,1073.0,53.0,True,898.0,generation_agent_16
+44,,,44.0,6.0,household_agent_53,1077.0,177.0,True,347.0,generation_agent_16
+45,,,45.0,6.0,household_agent_64,1088.0,85.0,True,242.0,generation_agent_16
+46,,,46.0,6.0,household_agent_73,1097.0,180.0,True,488.0,generation_agent_16
+47,,,47.0,6.0,household_agent_93,1117.0,149.0,True,541.0,generation_agent_16
+48,,,48.0,6.0,generation_agent_26,1150.0,160.0,True,717.0,generation_agent_16
+49,,,49.0,6.0,generation_agent_85,1209.0,72.0,True,862.0,generation_agent_16
+50,,,50.0,6.0,generation_agent_92,1216.0,182.0,True,853.0,generation_agent_16
+51,,,51.0,6.0,storage_agent_5,1229.0,187.0,True,257.0,generation_agent_16
+52,,,52.0,6.0,storage_agent_11,1235.0,120.0,True,723.0,generation_agent_16
+53,,,53.0,6.0,storage_agent_16,1240.0,110.0,True,134.0,generation_agent_16
+54,,,54.0,6.0,storage_agent_44,1268.0,51.0,True,577.0,generation_agent_16
+55,,,55.0,6.0,storage_agent_87,1311.0,118.0,True,492.0,generation_agent_16
+56,,,56.0,6.0,household_agent_12,1036.0,106.0,True,744.0,generation_agent_16
+57,,,57.0,6.0,household_agent_49,1073.0,112.0,True,664.0,generation_agent_16
+58,,,58.0,6.0,household_agent_53,1077.0,56.0,True,516.0,generation_agent_16
+59,,,59.0,6.0,household_agent_64,1088.0,119.0,True,271.0,generation_agent_16
+60,,,60.0,6.0,household_agent_73,1097.0,159.0,True,433.0,generation_agent_16
+61,,,61.0,6.0,household_agent_93,1117.0,55.0,True,186.0,generation_agent_16
+62,,,62.0,6.0,generation_agent_26,1150.0,94.0,True,361.0,generation_agent_16
+63,,,63.0,6.0,generation_agent_85,1209.0,91.0,True,865.0,generation_agent_16
+64,,,64.0,6.0,generation_agent_92,1216.0,66.0,True,480.0,generation_agent_16
+65,,,65.0,6.0,storage_agent_5,1229.0,90.0,True,880.0,generation_agent_16
+66,,,66.0,6.0,storage_agent_11,1235.0,64.0,True,504.0,generation_agent_16
+67,,,67.0,6.0,storage_agent_16,1240.0,76.0,True,624.0,generation_agent_16
+68,,,68.0,6.0,storage_agent_44,1268.0,181.0,True,222.0,generation_agent_16
+69,,,69.0,6.0,storage_agent_87,1311.0,197.0,True,452.0,generation_agent_16
