@@ -895,6 +895,7 @@ class VoltageRegulation(ComplexAgentCommunicationPattern):
         self.t_local_optimization_ms_range = t_local_optimization_ms_range
         super().__init__(simulation_duration_ms, communication_graph, TriggerType.TIME_TRIGGERED, data_size_generator,
                          organizational_structure)
+        self._num_agents_in_regulation = 10
 
     def generate_traffic_configuration_files_centralized(self):
         control_center_agent = self.get_control_center_agent()
@@ -902,6 +903,7 @@ class VoltageRegulation(ComplexAgentCommunicationPattern):
                 self.communication_graph.get_agents_by_type(LeafAgent.LeafAgentType.GRID_INFRASTRUCTURE_AGENT) +
                 self.communication_graph.get_agents_by_type(AggregatorAgent.AggregatorAgentType.PDC_AGENT))
         leaf_agents = self.communication_graph.get_agents_by_class(LeafAgent)
+        leaf_agents = random.sample(leaf_agents, self._num_agents_in_regulation) if len(leaf_agents) > self._num_agents_in_regulation else leaf_agents
 
         # send measurements from pmu/pdc agents to control center agent
         time_send = random.randint(0, 100)
@@ -936,6 +938,9 @@ class VoltageRegulation(ComplexAgentCommunicationPattern):
         pmu_pdc_agents = (
                 self.communication_graph.get_agents_by_type(LeafAgent.LeafAgentType.GRID_INFRASTRUCTURE_AGENT) +
                 self.communication_graph.get_agents_by_type(AggregatorAgent.AggregatorAgentType.PDC_AGENT))
+        pmu_pdc_agents = random.sample(pmu_pdc_agents, self._num_agents_in_regulation) \
+            if len(pmu_pdc_agents) > self._num_agents_in_regulation else pmu_pdc_agents
+
 
         # send measurements from pmu/pdc agents to control center agent
         time_send = random.randint(0, 100)
@@ -955,7 +960,8 @@ class VoltageRegulation(ComplexAgentCommunicationPattern):
         self.fill_config_for_non_sending_agents()
 
     def generate_traffic_configuration_files_decentralized(self):
-        bus_agents = self.communication_graph.get_agents_by_class(LeafAgent) #TODO: should be bus agents again
+        bus_agents = self.communication_graph.get_agents_by_type(LeafAgent.LeafAgentType.GRID_INFRASTRUCTURE_AGENT)
+        bus_agents = random.sample(bus_agents, 3) if len(bus_agents) > 3 else bus_agents
 
         # send measurements from pmu/pdc agents to control center agent
         time_send = random.randint(0, 100)
@@ -1213,7 +1219,7 @@ class PricingApplication(SimpleAgentCommunicationPattern):
         meter_agents = (self.communication_graph.get_agents_by_type(LeafAgent.LeafAgentType.HOUSEHOLD_AGENT) +
                         self.communication_graph.get_agents_by_type(LeafAgent.LeafAgentType.STORAGE_AGENT) +
                         self.communication_graph.get_agents_by_type(LeafAgent.LeafAgentType.GENERATION_AGENT))
-        meter_agents_sample = len(meter_agents) if len(meter_agents) < 50 else 50
+        meter_agents_sample = len(meter_agents) if len(meter_agents) < 20 else 20
         self.generate_broadcast_time_triggered_communication(one=market_agent,
                                                              many=random.sample(meter_agents, meter_agents_sample))
 
@@ -1269,7 +1275,7 @@ class VoltageReduction(SimpleAgentCommunicationPattern):
     def generate_traffic_configuration_files(self):
         control_center_agent = self.get_control_center_agent()
         leaf_agents = self.communication_graph.get_agents_by_class(LeafAgent)
-        leaf_agents = random.sample(leaf_agents, 50) if len(leaf_agents) > 50 else leaf_agents
+        leaf_agents = random.sample(leaf_agents, 20) if len(leaf_agents) > 20 else leaf_agents
 
         send_time = random.randint(0, 100)  # in the first 100 ms
 
@@ -1314,6 +1320,7 @@ class StorageApplication(SimpleAgentCommunicationPattern):
         control_center_agent = self.get_control_center_agent()
 
         storage_agents = self.communication_graph.get_agents_by_type(LeafAgent.LeafAgentType.STORAGE_AGENT)
+        storage_agents = random.sample(storage_agents, 20) if len(storage_agents) > 20 else storage_agents
 
         self.generate_broadcast_time_triggered_communication(one=control_center_agent,
                                                              many=storage_agents,
