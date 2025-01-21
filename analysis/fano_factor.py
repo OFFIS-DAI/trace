@@ -4,25 +4,28 @@ import os
 import plotly.express as px
 import plotly.io as pio
 import plotly.colors
+
 pio.kaleido.scope.mathjax = None
 
+# Directory for result files
 RESULT_DIR_NAME = '../agent_communication_generation_tool/results/sim_data'
 filepaths = [os.path.join(RESULT_DIR_NAME, f) for f in os.listdir(RESULT_DIR_NAME) if f.endswith('.csv')]
 
+# Initialize data structures
 application_to_fano_factor = {}
 results = []
 
+# Fano factor calculation and data aggregation
 for file in filepaths:
     data = pd.read_csv(file)
 
     if 'timeSend_ms' not in data:
         continue
 
-    # Extract application
+    # Extract application and structure
     application_rows = data[data['Parameter'] == 'Agent communication pattern']
     application = application_rows['Value'].values[0] if len(application_rows) > 0 else "Unknown Application"
 
-    # Extract organizational structure
     structure_rows = data[data['Parameter'] == 'Organizational structure']
     organizational_structure = structure_rows['Value'].values[0].lower() if len(structure_rows) > 0 else "simple"
 
@@ -64,7 +67,6 @@ for file in filepaths:
 
     # Create a complete Series with all time bins, filling missing bins with 0
     time_bins = np.arange(min_time, max_time + 1, 1)
-
     complete_message_counts = pd.Series(0, index=time_bins)
     complete_message_counts.update(message_counts)
 
@@ -93,12 +95,10 @@ for application, fano_factors in application_to_fano_factor.items():
         })
 
 df = pd.DataFrame(results)
-
-# Sort by Base Application and Structure for better grouping
 df.sort_values(by=["Base Application", "Structure"], inplace=True)
 
-# Visualization using Plotly
-fig = px.bar(
+# Original Fano Factor Plot
+fig_fano = px.bar(
     df,
     x="Base Application",
     y="Fano Factor Mean",
@@ -106,25 +106,23 @@ fig = px.bar(
     color="Structure",
     barmode="group",
     labels={"Base Application": "Base Application", "Fano Factor Mean": "Fano Factor"},
-    opacity=0.9,  # Make bars bolder
+    opacity=0.9,
     color_discrete_sequence=plotly.colors.qualitative.Antique
 )
 
-# Update layout for better readability
-fig.update_layout(
+fig_fano.update_layout(
     xaxis_title="",
     yaxis_title="Fano Factor (Log Scale)",
-    yaxis_type="log",  # Apply log scale
-    yaxis=dict(range=[-2, None]),  # Ensure lower limit for log scale
-    xaxis_tickangle=45,  # Rotate labels for base applications
-    font=dict(size=12),  # Bold fonts
+    yaxis_type="log",
+    yaxis=dict(range=[-2, None]),
+    xaxis_tickangle=45,
+    font=dict(size=12),
     title_font_size=18,
     legend=dict(title="Organizational Structure"),
-    margin=dict(l=100, r=40, t=80, b=80)  # Adjust margins
+    margin=dict(l=100, r=40, t=80, b=80)
 )
 
-# Add reference lines for Poisson process (Fano = 1) and CBR process (Fano = ~0)
-fig.add_shape(
+fig_fano.add_shape(
     type="line",
     x0=-0.5,
     x1=len(df["Base Application"].unique()) - 0.5,
@@ -132,20 +130,19 @@ fig.add_shape(
     y1=1,
     line=dict(color="gray", width=2, dash="dash"),
     xref="x",
-    yref="y",
-    name="Poisson Process (Fano = 1)"
+    yref="y"
 )
-fig.add_annotation(
+fig_fano.add_annotation(
     x=-0.5,
     y=1e-2,
     text="Poisson",
     showarrow=False,
     font=dict(color="gray", size=10, weight="bold"),
-    xanchor="right",  # Align text to the right
-    xshift=-20  # Shift text further left
+    xanchor="right",
+    xshift=-20
 )
 
-fig.add_shape(
+fig_fano.add_shape(
     type="line",
     x0=-0.5,
     x1=len(df["Base Application"].unique()) - 0.5,
@@ -153,22 +150,97 @@ fig.add_shape(
     y1=1e-2,
     line=dict(color="darkslategray", width=2, dash="dash"),
     xref="x",
-    yref="y",
-    name="CBR"
+    yref="y"
 )
-fig.add_annotation(
+fig_fano.add_annotation(
     x=-0.5,
     y=-2,
     text="CBR",
     showarrow=False,
     font=dict(color="darkslategray", size=10, weight="bold"),
-    xanchor="right",  # Align text to the right
-    xshift=-20  # Shift text further left
+    xanchor="right",
+    xshift=-20
 )
 
-# Adjust bar width for better spacing
-fig.update_traces(width=0.5)  # Increase the bar width for bold appearance
 
-# Save the figure to a PDF file
-output_pdf_path = "results/fano_factors.pdf"
-pio.write_image(fig, output_pdf_path, format="pdf", width=1000, height=400)
+def categorize_fano(fano):
+    if fano < 0.1:
+        return "F(w) ≈ 0"  # Use Unicode ≈
+    elif fano < 0.9:
+        return "F(w) < 1"
+    elif 0.9 <= fano <= 1.1:
+        return "F(w) ≈ 1"
+    elif fano > 1.1:
+        return "F(w) > 1"
+
+
+df["Fano Factor Category"] = df["Fano Factor Mean"].apply(categorize_fano)
+
+merged_df = pd.DataFrame()
+for file in filepaths:
+    data = pd.read_csv(file)
+    if "timeSend_ms" not in data or "delay_ms" not in data:
+        continue
+
+    application_rows = data[data["Parameter"] == "Agent communication pattern"]
+    application = application_rows["Value"].values[0] if len(application_rows) > 0 else "Unknown Application"
+
+    structure_rows = data[data["Parameter"] == "Organizational structure"]
+    organizational_structure = structure_rows["Value"].values[0].lower() if len(structure_rows) > 0 else "simple"
+
+    full_application = f"{application} ({organizational_structure})"
+    if full_application in df["Application"].values:
+        fano_mean = df.loc[df["Application"] == full_application, "Fano Factor Mean"].values[0]
+        fano_category = categorize_fano(fano_mean)
+
+        scenario_data = data[["timeSend_ms", "delay_ms"]].copy()
+        scenario_data["Application"] = full_application
+        scenario_data["Fano Factor Category"] = fano_category
+        merged_df = pd.concat([merged_df, scenario_data], ignore_index=True)
+
+agg_data = merged_df.groupby("Fano Factor Category").agg(
+    Delay_Mean=("delay_ms", "mean"),
+    Delay_Std=("delay_ms", "std"),
+    Count=("delay_ms", "size")
+).reset_index()
+
+# Define Fano factor category order
+fano_order = ["F(w) ≈ 0", "F(w) < 1", "F(w) ≈ 1", "F(w) > 1"]
+
+# Filter categories based on what is present in the data
+unique_categories = df["Fano Factor Category"].unique()
+print(unique_categories)
+filtered_order = [category for category in fano_order if category in unique_categories]
+
+print(filtered_order)
+
+# Map the order and sort the DataFrame
+df["Fano Category Order"] = df["Fano Factor Category"].map(lambda x: filtered_order.index(x))
+df.sort_values(by="Fano Category Order", inplace=True)
+
+
+fig_delay = px.bar(
+    agg_data,
+    x="Fano Factor Category",
+    y="Delay_Mean",
+    error_y="Delay_Std",
+    color="Fano Factor Category",
+    labels={"Delay_Mean": "Mean Delay (ms)", "Fano Factor Category": "Fano Factor Category"},
+    barmode="group",
+    category_orders={"Fano Factor Category": filtered_order},
+    # title="Dependencies Between Fano Factor Categories and Delay Times",
+    color_discrete_sequence=plotly.colors.qualitative.Prism
+)
+
+fig_delay.update_layout(
+    xaxis_title="Fano Factor Category",
+    yaxis_title="Mean Delay (ms)",
+    font=dict(size=12),
+    title_font_size=18,
+    margin=dict(l=50, r=50, t=80, b=50),
+    showlegend=False
+)
+
+# Save Plots
+fig_fano.write_image("results/fano_factors.pdf", format="pdf", width=1000, height=400)
+fig_delay.write_image("results/fano_vs_delay.pdf", format="pdf", width=400, height=400)
