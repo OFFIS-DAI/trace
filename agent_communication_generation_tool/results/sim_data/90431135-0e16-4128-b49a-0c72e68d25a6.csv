@@ -1,0 +1,58 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2025-01-22 09:56:43.167714,,,,,,,,,
+1,Simulation configuration ID,90431135-0e16-4128-b49a-0c72e68d25a6,,,,,,,,,
+2,Network,SimbenchNetwork_5G_1-MVLV-rural-all-2-no_sw,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 330 agents,,,,,,,,,
+4,Agent communication pattern,MarketParticipation,,,,,,,,,
+5,Trigger Type,TIME_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 200 B,upper bound = 1000 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,900000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,CENTRALIZED,,,,,,,,,
+0,,,0.0,35.0,generation_agent_99,289.0,market_agent,0.0,24.0,289.0,59.0
+1,,,1.0,35.0,storage_agent_32,510.0,market_agent,0.0,19.0,510.0,54.0
+2,,,2.0,35.0,household_agent_92,759.0,market_agent,0.0,25.0,536.0,60.0
+3,,,2.0,35.0,household_agent_92,759.0,market_agent,0.0,39.0,223.0,74.0
+4,,,3.0,35.0,storage_agent_18,222.0,market_agent,0.0,31.0,222.0,66.0
+5,,,4.0,35.0,generation_agent_28,337.0,market_agent,0.0,30.0,337.0,65.0
+6,,,6.0,35.0,storage_agent_11,443.0,market_agent,0.0,25.0,443.0,60.0
+7,,,7.0,35.0,household_agent_17,376.0,market_agent,0.0,25.0,376.0,60.0
+8,,,8.0,35.0,household_agent_94,647.0,market_agent,0.0,25.0,536.0,60.0
+9,,,8.0,35.0,household_agent_94,647.0,market_agent,0.0,39.0,111.0,74.0
+10,,,9.0,35.0,generation_agent_76,391.0,market_agent,0.0,24.0,391.0,59.0
+11,,,10.0,35.0,storage_agent_72,704.0,market_agent,0.0,30.0,536.0,65.0
+12,,,10.0,35.0,storage_agent_72,704.0,market_agent,0.0,50.0,168.0,85.0
+13,,,11.0,35.0,storage_agent_33,680.0,market_agent,0.0,19.0,536.0,54.0
+14,,,11.0,35.0,storage_agent_33,680.0,market_agent,0.0,33.0,144.0,68.0
+15,,,12.0,35.0,household_agent_4,518.0,market_agent,0.0,19.0,518.0,54.0
+16,,,13.0,35.0,household_agent_57,895.0,market_agent,0.0,31.0,536.0,66.0
+17,,,13.0,35.0,household_agent_57,895.0,market_agent,0.0,51.0,359.0,86.0
+18,,,14.0,35.0,storage_agent_40,592.0,market_agent,0.0,25.0,536.0,60.0
+19,,,14.0,35.0,storage_agent_40,592.0,market_agent,0.0,45.0,56.0,80.0
+20,,,102800.0,877.0,market_agent,518.0,household_agent_4,54.0,28.0,518.0,905.0
+21,,,104100.0,517.0,market_agent,376.0,household_agent_17,60.0,34.0,376.0,551.0
+22,,,111600.0,939.0,market_agent,759.0,household_agent_92,60.0,48.0,536.0,987.0
+23,,,111600.0,939.0,market_agent,759.0,household_agent_92,60.0,68.0,536.0,1007.0
+24,,,111601.0,953.0,market_agent,759.0,household_agent_92,74.0,74.0,446.0,1027.0
+25,,,111800.0,522.0,market_agent,647.0,household_agent_94,60.0,48.0,536.0,570.0
+26,,,111800.0,522.0,market_agent,647.0,household_agent_94,60.0,68.0,536.0,590.0
+27,,,111801.0,536.0,market_agent,647.0,household_agent_94,74.0,74.0,222.0,610.0
+28,,,115200.0,849.0,market_agent,337.0,generation_agent_28,65.0,40.0,337.0,889.0
+29,,,120000.0,738.0,market_agent,391.0,generation_agent_76,59.0,34.0,391.0,772.0
+30,,,122300.0,686.0,market_agent,289.0,generation_agent_99,59.0,28.0,289.0,714.0
+31,,,123500.0,887.0,market_agent,443.0,storage_agent_11,60.0,34.0,443.0,921.0
+32,,,125600.0,725.0,market_agent,510.0,storage_agent_32,54.0,28.0,510.0,753.0
+33,,,125700.0,379.0,market_agent,680.0,storage_agent_33,54.0,28.0,536.0,407.0
+34,,,125700.0,379.0,market_agent,680.0,storage_agent_33,54.0,48.0,144.0,427.0
+35,,,125701.0,393.0,market_agent,680.0,storage_agent_33,68.0,34.0,536.0,427.0
+36,,,125701.0,393.0,market_agent,680.0,storage_agent_33,68.0,54.0,144.0,447.0
+37,,,126400.0,621.0,market_agent,592.0,storage_agent_40,60.0,34.0,536.0,655.0
+38,,,126400.0,621.0,market_agent,592.0,storage_agent_40,60.0,54.0,56.0,675.0
+39,,,126401.0,641.0,market_agent,592.0,storage_agent_40,80.0,34.0,536.0,675.0
+40,,,126401.0,641.0,market_agent,592.0,storage_agent_40,80.0,54.0,56.0,695.0
+41,,,129600.0,647.0,market_agent,704.0,storage_agent_72,65.0,35.0,536.0,682.0
+42,,,129600.0,647.0,market_agent,704.0,storage_agent_72,65.0,55.0,168.0,702.0
+43,,,129601.0,667.0,market_agent,704.0,storage_agent_72,85.0,36.0,536.0,703.0
+44,,,129601.0,667.0,market_agent,704.0,storage_agent_72,85.0,56.0,168.0,723.0
