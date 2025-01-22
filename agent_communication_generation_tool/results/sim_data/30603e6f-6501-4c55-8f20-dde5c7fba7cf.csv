@@ -1,0 +1,29 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,receiverPort,packetSize_B_x,sender,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2025-01-21 21:41:06.252401,,,,,,,,,
+1,Simulation configuration ID,30603e6f-6501-4c55-8f20-dde5c7fba7cf,,,,,,,,,
+2,Network,SimbenchNetwork_Ethernet_1-LV-semiurb4--1-no_sw,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 67 agents,,,,,,,,,
+4,Agent communication pattern,VoltageRegulation,,,,,,,,,
+5,Trigger Type,TIME_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 50 B,upper bound = 200 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,CENTRALIZED,,,,,,,,,
+0,,,6.0,8539.0,household_agent_12,1015.0,97.0,control_center_agent,0.0,97.0,8539.0
+1,,,7.0,8539.0,grid_infrastructure_agent_0,1000.0,100.0,control_center_agent,0.0,100.0,8539.0
+2,,,8.0,8539.0,household_agent_41,1044.0,76.0,control_center_agent,1.0,76.0,8540.0
+3,,,9.0,8539.0,household_agent_40,1043.0,104.0,control_center_agent,1.0,104.0,8540.0
+4,,,10.0,8539.0,household_agent_30,1033.0,125.0,control_center_agent,1.0,125.0,8540.0
+5,,,11.0,8539.0,household_agent_26,1029.0,170.0,control_center_agent,1.0,170.0,8540.0
+6,,,12.0,8539.0,household_agent_5,1008.0,161.0,control_center_agent,1.0,161.0,8540.0
+7,,,13.0,8539.0,household_agent_20,1023.0,63.0,control_center_agent,1.0,63.0,8540.0
+8,,,14.0,8539.0,household_agent_19,1022.0,184.0,control_center_agent,2.0,184.0,8541.0
+9,,,15.0,8539.0,household_agent_52,1055.0,125.0,control_center_agent,2.0,125.0,8541.0
+10,,,0.0,43.0,control_center_agent,1060.0,143.0,grid_infrastructure_agent_0,0.0,143.0,43.0
+11,,,1.0,43.0,control_center_agent,1060.0,179.0,grid_infrastructure_agent_1,1.0,179.0,44.0
+12,,,2.0,43.0,control_center_agent,1060.0,171.0,grid_infrastructure_agent_2,1.0,171.0,44.0
+13,,,3.0,43.0,control_center_agent,1060.0,82.0,pdc_agent_0,1.0,82.0,44.0
+14,,,4.0,43.0,control_center_agent,1060.0,110.0,pdc_agent_1,0.0,110.0,43.0
+15,,,5.0,43.0,control_center_agent,1060.0,89.0,pdc_agent_2,0.0,89.0,43.0

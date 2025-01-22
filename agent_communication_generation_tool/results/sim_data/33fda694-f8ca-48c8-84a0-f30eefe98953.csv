@@ -1,0 +1,29 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2025-01-22 04:18:01.759408,,,,,,,,,
+1,Simulation configuration ID,33fda694-f8ca-48c8-84a0-f30eefe98953,,,,,,,,,
+2,Network,SimbenchNetwork_Ethernet_1-MV-urban--1-no_sw,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 326 agents,,,,,,,,,
+4,Agent communication pattern,VoltageRegulation,,,,,,,,,
+5,Trigger Type,TIME_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 200 B,upper bound = 1000 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,HIERARCHICAL,,,,,,,,,
+0,,,0.0,82.0,substation_agent_0,695.0,grid_infrastructure_agent_4,0.0,5.0,536.0,87.0
+1,,,0.0,82.0,substation_agent_0,695.0,grid_infrastructure_agent_4,0.0,6.0,159.0,88.0
+2,,,1.0,82.0,substation_agent_0,876.0,grid_infrastructure_agent_0,0.0,2.0,536.0,84.0
+3,,,1.0,82.0,substation_agent_0,876.0,grid_infrastructure_agent_0,0.0,5.0,340.0,87.0
+4,,,2.0,82.0,substation_agent_0,840.0,grid_infrastructure_agent_15,0.0,2.0,536.0,84.0
+5,,,2.0,82.0,substation_agent_0,840.0,grid_infrastructure_agent_15,0.0,3.0,304.0,85.0
+6,,,3.0,82.0,substation_agent_0,452.0,grid_infrastructure_agent_14,0.0,1.0,452.0,83.0
+7,,,4.0,82.0,substation_agent_0,332.0,grid_infrastructure_agent_8,0.0,2.0,332.0,84.0
+8,,,5.0,82.0,substation_agent_0,953.0,grid_infrastructure_agent_12,0.0,4.0,536.0,86.0
+9,,,5.0,82.0,substation_agent_0,953.0,grid_infrastructure_agent_12,0.0,6.0,417.0,88.0
+10,,,6.0,82.0,substation_agent_0,875.0,grid_infrastructure_agent_1,0.0,4.0,536.0,86.0
+11,,,6.0,82.0,substation_agent_0,875.0,grid_infrastructure_agent_1,0.0,6.0,339.0,88.0
+12,,,7.0,82.0,substation_agent_0,363.0,grid_infrastructure_agent_16,0.0,3.0,363.0,85.0
+13,,,8.0,82.0,substation_agent_0,486.0,grid_infrastructure_agent_2,0.0,5.0,486.0,87.0
+14,,,9.0,82.0,substation_agent_0,868.0,grid_infrastructure_agent_6,0.0,1.0,536.0,83.0
+15,,,9.0,82.0,substation_agent_0,868.0,grid_infrastructure_agent_6,0.0,3.0,332.0,85.0

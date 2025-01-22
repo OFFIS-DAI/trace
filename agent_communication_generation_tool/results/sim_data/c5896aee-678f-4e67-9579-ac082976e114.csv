@@ -1,0 +1,33 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2025-01-21 20:11:00.580729,,,,,,,,,
+1,Simulation configuration ID,c5896aee-678f-4e67-9579-ac082976e114,,,,,,,,,
+2,Network,SimbenchNetwork_Ethernet_1-MV-urban--1-no_sw,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 326 agents,,,,,,,,,
+4,Agent communication pattern,VoltageRegulation,,,,,,,,,
+5,Trigger Type,TIME_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 50 B,upper bound = 200 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,HIERARCHICAL,,,,,,,,,
+0,,,0.0,39.0,substation_agent_0,81.0,grid_infrastructure_agent_1,0.0,1.0,81.0,40.0
+1,,,1.0,39.0,substation_agent_0,55.0,grid_infrastructure_agent_2,0.0,1.0,55.0,40.0
+2,,,2.0,39.0,substation_agent_0,78.0,pdc_agent_2,0.0,1.0,78.0,40.0
+3,,,3.0,39.0,substation_agent_0,152.0,grid_infrastructure_agent_4,0.0,1.0,152.0,40.0
+4,,,4.0,39.0,substation_agent_0,99.0,grid_infrastructure_agent_7,0.0,0.0,99.0,39.0
+5,,,5.0,39.0,substation_agent_0,95.0,grid_infrastructure_agent_6,0.0,0.0,95.0,39.0
+6,,,6.0,39.0,substation_agent_0,51.0,pdc_agent_0,0.0,1.0,51.0,40.0
+7,,,7.0,39.0,substation_agent_0,78.0,grid_infrastructure_agent_14,0.0,0.0,78.0,39.0
+8,,,8.0,39.0,substation_agent_0,75.0,grid_infrastructure_agent_17,0.0,1.0,75.0,40.0
+9,,,9.0,39.0,substation_agent_0,139.0,grid_infrastructure_agent_15,0.0,1.0,139.0,40.0
+10,,,132300.0,189.0,grid_infrastructure_agent_6,95.0,substation_agent_0,39.0,0.0,95.0,189.0
+11,,,132301.0,1032.0,grid_infrastructure_agent_7,99.0,substation_agent_0,39.0,0.0,99.0,1032.0
+12,,,132302.0,606.0,grid_infrastructure_agent_14,78.0,substation_agent_0,39.0,0.0,78.0,606.0
+13,,,132303.0,505.0,pdc_agent_0,51.0,substation_agent_0,40.0,0.0,51.0,505.0
+14,,,132304.0,211.0,grid_infrastructure_agent_15,139.0,substation_agent_0,40.0,0.0,139.0,211.0
+15,,,132305.0,596.0,grid_infrastructure_agent_1,81.0,substation_agent_0,40.0,0.0,81.0,596.0
+16,,,132306.0,814.0,grid_infrastructure_agent_2,55.0,substation_agent_0,40.0,0.0,55.0,814.0
+17,,,132307.0,548.0,grid_infrastructure_agent_4,152.0,substation_agent_0,40.0,1.0,152.0,549.0
+18,,,132308.0,762.0,grid_infrastructure_agent_17,75.0,substation_agent_0,40.0,0.0,75.0,762.0
+19,,,132309.0,613.0,pdc_agent_2,78.0,substation_agent_0,40.0,0.0,78.0,613.0

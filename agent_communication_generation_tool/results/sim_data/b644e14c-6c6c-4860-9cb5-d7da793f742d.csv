@@ -1,0 +1,27 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,receiverPort,packetSize_B_x,sender,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2025-01-21 21:38:59.209291,,,,,,,,,
+1,Simulation configuration ID,b644e14c-6c6c-4860-9cb5-d7da793f742d,,,,,,,,,
+2,Network,SimbenchNetwork_LTE450_1-LV-semiurb4--1-no_sw,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 65 agents,,,,,,,,,
+4,Agent communication pattern,VoltageRegulation,,,,,,,,,
+5,Trigger Type,TIME_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 50 B,upper bound = 200 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,CENTRALIZED,,,,,,,,,
+0,,,4.0,3354.0,household_agent_34,1037.0,76.0,control_center_agent,19.0,76.0,3373.0
+1,,,5.0,3354.0,household_agent_32,1035.0,101.0,control_center_agent,26.0,101.0,3380.0
+2,,,6.0,3354.0,household_agent_6,1009.0,66.0,control_center_agent,19.0,66.0,3373.0
+3,,,7.0,3354.0,household_agent_40,1043.0,92.0,control_center_agent,24.0,92.0,3378.0
+4,,,8.0,3354.0,household_agent_11,1014.0,140.0,control_center_agent,20.0,140.0,3374.0
+5,,,9.0,3354.0,household_agent_26,1029.0,50.0,control_center_agent,25.0,50.0,3379.0
+6,,,10.0,3354.0,grid_infrastructure_agent_2,1002.0,97.0,control_center_agent,26.0,97.0,3380.0
+7,,,11.0,3354.0,household_agent_39,1042.0,77.0,control_center_agent,24.0,77.0,3378.0
+8,,,12.0,3354.0,household_agent_51,1054.0,126.0,control_center_agent,21.0,126.0,3375.0
+9,,,13.0,3354.0,household_agent_21,1024.0,87.0,control_center_agent,25.0,87.0,3379.0
+10,,,0.0,7.0,control_center_agent,1060.0,93.0,grid_infrastructure_agent_0,28.0,93.0,35.0
+11,,,1.0,7.0,control_center_agent,1060.0,58.0,grid_infrastructure_agent_1,28.0,58.0,35.0
+12,,,2.0,7.0,control_center_agent,1060.0,154.0,grid_infrastructure_agent_2,40.0,154.0,47.0
+13,,,3.0,7.0,control_center_agent,1060.0,199.0,pdc_agent_0,33.0,199.0,40.0

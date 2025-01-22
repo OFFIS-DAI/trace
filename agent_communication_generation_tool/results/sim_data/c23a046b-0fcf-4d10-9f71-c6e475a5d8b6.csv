@@ -1,0 +1,13 @@
+,Parameter,Value,sender
+0,Start simulation,2025-01-21 12:28:08.105198,
+1,Simulation configuration ID,c23a046b-0fcf-4d10-9f71-c6e475a5d8b6,
+2,Network,SimbenchNetwork_Ethernet_1-MV-urban--1-no_sw,
+3,Communication graph,Ring Overlay Topology with 326 agents,
+4,Agent communication pattern,VoltageRegulation,
+5,Trigger Type,TIME_TRIGGERED,
+6,Data size generator,"In interval data size generator with lower bound = 8 B,upper bound = 50 B",
+7,Frequency,0,
+8,Simulation duration,30000,
+9,Communication mode,COMPLEX,
+10,System State,SystemState.NORMAL,
+11,Organizational structure,DECENTRALIZED,

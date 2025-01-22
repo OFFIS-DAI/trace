@@ -1,0 +1,25 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2025-01-21 21:40:37.902765,,,,,,,,,
+1,Simulation configuration ID,a1ee7307-3092-4144-b4b0-514dc621a29d,,,,,,,,,
+2,Network,SimbenchNetwork_LTE450_1-LV-semiurb4--1-no_sw,,,,,,,,,
+3,Communication graph,Complete Overlay Topology with 65 agents,,,,,,,,,
+4,Agent communication pattern,VoltageRegulation,,,,,,,,,
+5,Trigger Type,TIME_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 50 B,upper bound = 200 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,DECENTRALIZED,,,,,,,,,
+0,,,0.0,100.0,grid_infrastructure_agent_1,71.0,grid_infrastructure_agent_0,0.0,44.0,71.0,144.0
+1,,,1.0,100.0,grid_infrastructure_agent_2,174.0,grid_infrastructure_agent_0,0.0,55.0,174.0,155.0
+2,,,2.0,100.0,grid_infrastructure_agent_0,146.0,grid_infrastructure_agent_1,0.0,47.0,146.0,147.0
+3,,,3.0,100.0,grid_infrastructure_agent_2,109.0,grid_infrastructure_agent_1,0.0,60.0,109.0,160.0
+4,,,4.0,100.0,grid_infrastructure_agent_0,190.0,grid_infrastructure_agent_2,0.0,68.0,190.0,168.0
+5,,,5.0,100.0,grid_infrastructure_agent_1,131.0,grid_infrastructure_agent_2,0.0,79.0,131.0,179.0
+6,,,100000.0,8458.0,grid_infrastructure_agent_1,146.0,grid_infrastructure_agent_0,147.0,47.0,146.0,8505.0
+7,,,100001.0,20619.0,grid_infrastructure_agent_2,190.0,grid_infrastructure_agent_0,168.0,54.0,190.0,20673.0
+8,,,100100.0,4025.0,grid_infrastructure_agent_0,71.0,grid_infrastructure_agent_1,144.0,47.0,71.0,4072.0
+9,,,100101.0,8874.0,grid_infrastructure_agent_2,131.0,grid_infrastructure_agent_1,179.0,53.0,131.0,8927.0
+10,,,100200.0,24898.0,grid_infrastructure_agent_0,174.0,grid_infrastructure_agent_2,155.0,54.0,174.0,24952.0
+11,,,100201.0,27539.0,grid_infrastructure_agent_1,109.0,grid_infrastructure_agent_2,160.0,53.0,109.0,27592.0

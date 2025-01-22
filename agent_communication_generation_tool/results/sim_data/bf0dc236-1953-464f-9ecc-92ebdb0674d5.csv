@@ -1,0 +1,52 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,receiverPort,packetSize_B_x,sender,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2025-01-22 05:03:03.574336,,,,,,,,,
+1,Simulation configuration ID,bf0dc236-1953-464f-9ecc-92ebdb0674d5,,,,,,,,,
+2,Network,SimbenchNetwork_Ethernet_1-MVLV-rural-all-2-no_sw,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 332 agents,,,,,,,,,
+4,Agent communication pattern,VoltageRegulation,,,,,,,,,
+5,Trigger Type,TIME_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 200 B,upper bound = 1000 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,CENTRALIZED,,,,,,,,,
+0,,,0.0,28.0,control_center_agent,1325.0,399.0,grid_infrastructure_agent_0,1.0,399.0,29.0
+1,,,1.0,28.0,control_center_agent,1325.0,408.0,grid_infrastructure_agent_1,3.0,408.0,31.0
+2,,,2.0,28.0,control_center_agent,1325.0,391.0,grid_infrastructure_agent_2,4.0,391.0,32.0
+3,,,3.0,28.0,control_center_agent,1325.0,453.0,grid_infrastructure_agent_3,7.0,453.0,35.0
+4,,,4.0,28.0,control_center_agent,1325.0,223.0,grid_infrastructure_agent_4,5.0,223.0,33.0
+5,,,5.0,28.0,control_center_agent,1325.0,990.0,grid_infrastructure_agent_5,9.0,536.0,37.0
+6,,,5.0,28.0,control_center_agent,1325.0,990.0,grid_infrastructure_agent_5,14.0,454.0,42.0
+7,,,6.0,28.0,control_center_agent,1325.0,704.0,grid_infrastructure_agent_6,2.0,536.0,30.0
+8,,,6.0,28.0,control_center_agent,1325.0,704.0,grid_infrastructure_agent_6,8.0,168.0,36.0
+9,,,7.0,28.0,control_center_agent,1325.0,315.0,grid_infrastructure_agent_7,7.0,315.0,35.0
+10,,,8.0,28.0,control_center_agent,1325.0,833.0,grid_infrastructure_agent_8,4.0,536.0,32.0
+11,,,8.0,28.0,control_center_agent,1325.0,833.0,grid_infrastructure_agent_8,10.0,297.0,38.0
+12,,,9.0,28.0,control_center_agent,1325.0,691.0,grid_infrastructure_agent_9,2.0,536.0,30.0
+13,,,9.0,28.0,control_center_agent,1325.0,691.0,grid_infrastructure_agent_9,8.0,155.0,36.0
+14,,,10.0,28.0,control_center_agent,1325.0,218.0,grid_infrastructure_agent_10,8.0,218.0,36.0
+15,,,11.0,28.0,control_center_agent,1325.0,778.0,grid_infrastructure_agent_11,11.0,536.0,39.0
+16,,,11.0,28.0,control_center_agent,1325.0,778.0,grid_infrastructure_agent_11,14.0,242.0,42.0
+17,,,12.0,28.0,control_center_agent,1325.0,412.0,grid_infrastructure_agent_12,10.0,412.0,38.0
+18,,,13.0,28.0,control_center_agent,1325.0,752.0,grid_infrastructure_agent_13,5.0,536.0,33.0
+19,,,13.0,28.0,control_center_agent,1325.0,752.0,grid_infrastructure_agent_13,12.0,216.0,40.0
+20,,,14.0,28.0,control_center_agent,1325.0,935.0,grid_infrastructure_agent_14,3.0,536.0,31.0
+21,,,14.0,28.0,control_center_agent,1325.0,935.0,grid_infrastructure_agent_14,10.0,399.0,38.0
+22,,,15.0,28.0,control_center_agent,1325.0,226.0,grid_infrastructure_agent_15,9.0,226.0,37.0
+23,,,16.0,28.0,control_center_agent,1325.0,753.0,grid_infrastructure_agent_16,11.0,536.0,39.0
+24,,,16.0,28.0,control_center_agent,1325.0,753.0,grid_infrastructure_agent_16,14.0,217.0,42.0
+25,,,17.0,28.0,control_center_agent,1325.0,868.0,grid_infrastructure_agent_17,13.0,536.0,41.0
+26,,,17.0,28.0,control_center_agent,1325.0,868.0,grid_infrastructure_agent_17,15.0,332.0,43.0
+27,,,18.0,28.0,control_center_agent,1325.0,393.0,grid_infrastructure_agent_18,6.0,393.0,34.0
+28,,,19.0,28.0,control_center_agent,1325.0,734.0,grid_infrastructure_agent_19,5.0,536.0,33.0
+29,,,19.0,28.0,control_center_agent,1325.0,734.0,grid_infrastructure_agent_19,11.0,198.0,39.0
+30,,,20.0,28.0,control_center_agent,1325.0,968.0,grid_infrastructure_agent_20,13.0,536.0,41.0
+31,,,20.0,28.0,control_center_agent,1325.0,968.0,grid_infrastructure_agent_20,15.0,432.0,43.0
+32,,,21.0,28.0,control_center_agent,1325.0,312.0,grid_infrastructure_agent_21,12.0,312.0,40.0
+33,,,22.0,28.0,control_center_agent,1325.0,265.0,grid_infrastructure_agent_22,12.0,265.0,40.0
+34,,,23.0,28.0,control_center_agent,1325.0,455.0,grid_infrastructure_agent_23,7.0,455.0,35.0
+35,,,24.0,28.0,control_center_agent,1325.0,479.0,pdc_agent_0,8.0,479.0,36.0
+36,,,25.0,28.0,control_center_agent,1325.0,479.0,pdc_agent_1,6.0,479.0,34.0
+37,,,26.0,28.0,control_center_agent,1325.0,863.0,pdc_agent_2,14.0,536.0,42.0
+38,,,26.0,28.0,control_center_agent,1325.0,863.0,pdc_agent_2,15.0,327.0,43.0

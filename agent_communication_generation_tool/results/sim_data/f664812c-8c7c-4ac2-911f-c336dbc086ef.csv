@@ -1,0 +1,25 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2025-01-21 22:15:36.709842,,,,,,,,,
+1,Simulation configuration ID,f664812c-8c7c-4ac2-911f-c336dbc086ef,,,,,,,,,
+2,Network,SimbenchNetwork_LTE450_1-MVLV-rural-all-2-no_sw,,,,,,,,,
+3,Communication graph,Complete Overlay Topology with 330 agents,,,,,,,,,
+4,Agent communication pattern,VoltageRegulation,,,,,,,,,
+5,Trigger Type,TIME_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 50 B,upper bound = 200 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,DECENTRALIZED,,,,,,,,,
+0,,,0.0,33.0,grid_infrastructure_agent_11,117.0,grid_infrastructure_agent_15,0.0,50.0,117.0,83.0
+1,,,1.0,33.0,grid_infrastructure_agent_22,86.0,grid_infrastructure_agent_15,0.0,61.0,86.0,94.0
+2,,,2.0,33.0,grid_infrastructure_agent_15,150.0,grid_infrastructure_agent_11,0.0,54.0,150.0,87.0
+3,,,3.0,33.0,grid_infrastructure_agent_22,162.0,grid_infrastructure_agent_11,0.0,88.0,162.0,121.0
+4,,,4.0,33.0,grid_infrastructure_agent_11,56.0,grid_infrastructure_agent_22,0.0,67.0,56.0,100.0
+5,,,5.0,33.0,grid_infrastructure_agent_15,133.0,grid_infrastructure_agent_22,0.0,80.0,133.0,113.0
+6,,,101100.0,20670.0,grid_infrastructure_agent_15,117.0,grid_infrastructure_agent_11,83.0,54.0,117.0,20724.0
+7,,,101101.0,2008.0,grid_infrastructure_agent_22,56.0,grid_infrastructure_agent_11,100.0,59.0,56.0,2067.0
+8,,,101500.0,2736.0,grid_infrastructure_agent_11,150.0,grid_infrastructure_agent_15,87.0,53.0,150.0,2789.0
+9,,,101501.0,17126.0,grid_infrastructure_agent_22,133.0,grid_infrastructure_agent_15,113.0,53.0,133.0,17179.0
+10,,,102200.0,11134.0,grid_infrastructure_agent_15,86.0,grid_infrastructure_agent_22,94.0,54.0,86.0,11188.0
+11,,,102201.0,7343.0,grid_infrastructure_agent_11,162.0,grid_infrastructure_agent_22,121.0,61.0,162.0,7404.0

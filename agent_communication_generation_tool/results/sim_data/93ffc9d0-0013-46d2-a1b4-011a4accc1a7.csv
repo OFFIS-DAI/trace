@@ -1,0 +1,25 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2025-01-22 00:28:19.378212,,,,,,,,,
+1,Simulation configuration ID,93ffc9d0-0013-46d2-a1b4-011a4accc1a7,,,,,,,,,
+2,Network,SimbenchNetwork_5G_1-MVLV-rural-all-2-no_sw,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 330 agents,,,,,,,,,
+4,Agent communication pattern,VoltageRegulation,,,,,,,,,
+5,Trigger Type,TIME_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 200 B,upper bound = 1000 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,HIERARCHICAL,,,,,,,,,
+0,,,0.0,9.0,substation_agent_0,896.0,grid_infrastructure_agent_23,0.0,64.0,536.0,73.0
+1,,,0.0,9.0,substation_agent_0,896.0,grid_infrastructure_agent_23,0.0,102.0,360.0,111.0
+2,,,1.0,9.0,substation_agent_0,475.0,grid_infrastructure_agent_13,0.0,53.0,475.0,62.0
+3,,,2.0,9.0,substation_agent_0,648.0,grid_infrastructure_agent_15,0.0,4053.0,536.0,4062.0
+4,,,2.0,9.0,substation_agent_0,648.0,grid_infrastructure_agent_15,0.0,4094.0,112.0,4103.0
+5,,,3.0,9.0,substation_agent_0,703.0,grid_infrastructure_agent_4,0.0,75.0,536.0,84.0
+6,,,3.0,9.0,substation_agent_0,703.0,grid_infrastructure_agent_4,0.0,113.0,167.0,122.0
+7,,,4.0,9.0,substation_agent_0,863.0,pdc_agent_0,0.0,4069.0,536.0,4078.0
+8,,,4.0,9.0,substation_agent_0,863.0,pdc_agent_0,0.0,4115.0,327.0,4124.0
+9,,,6.0,9.0,substation_agent_0,687.0,grid_infrastructure_agent_7,0.0,191.0,536.0,200.0
+10,,,7.0,9.0,substation_agent_0,989.0,grid_infrastructure_agent_16,0.0,4058.0,536.0,4067.0
+11,,,7.0,9.0,substation_agent_0,989.0,grid_infrastructure_agent_16,0.0,4106.0,453.0,4115.0

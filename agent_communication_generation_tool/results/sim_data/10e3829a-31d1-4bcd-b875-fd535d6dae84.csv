@@ -1,0 +1,25 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2025-01-21 16:17:27.681089,,,,,,,,,
+1,Simulation configuration ID,10e3829a-31d1-4bcd-b875-fd535d6dae84,,,,,,,,,
+2,Network,SimbenchNetwork_Ethernet_1-LV-semiurb4--1-no_sw,,,,,,,,,
+3,Communication graph,Complete Overlay Topology with 67 agents,,,,,,,,,
+4,Agent communication pattern,VoltageRegulation,,,,,,,,,
+5,Trigger Type,TIME_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 8 B,upper bound = 50 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,DECENTRALIZED,,,,,,,,,
+0,,,0.0,58.0,grid_infrastructure_agent_1,41.0,grid_infrastructure_agent_0,0.0,0.0,41.0,58.0
+1,,,1.0,58.0,grid_infrastructure_agent_2,42.0,grid_infrastructure_agent_0,0.0,0.0,42.0,58.0
+2,,,2.0,58.0,grid_infrastructure_agent_0,20.0,grid_infrastructure_agent_1,0.0,0.0,20.0,58.0
+3,,,3.0,58.0,grid_infrastructure_agent_2,11.0,grid_infrastructure_agent_1,0.0,0.0,11.0,58.0
+4,,,4.0,58.0,grid_infrastructure_agent_0,27.0,grid_infrastructure_agent_2,0.0,0.0,27.0,58.0
+5,,,5.0,58.0,grid_infrastructure_agent_1,37.0,grid_infrastructure_agent_2,0.0,0.0,37.0,58.0
+6,,,100000.0,18894.0,grid_infrastructure_agent_1,20.0,grid_infrastructure_agent_0,58.0,0.0,20.0,18894.0
+7,,,100001.0,21014.0,grid_infrastructure_agent_2,27.0,grid_infrastructure_agent_0,58.0,0.0,27.0,21014.0
+8,,,100100.0,18959.0,grid_infrastructure_agent_0,41.0,grid_infrastructure_agent_1,58.0,0.0,41.0,18959.0
+9,,,100101.0,4078.0,grid_infrastructure_agent_2,37.0,grid_infrastructure_agent_1,58.0,0.0,37.0,4078.0
+10,,,100200.0,10151.0,grid_infrastructure_agent_1,11.0,grid_infrastructure_agent_2,58.0,0.0,11.0,10151.0
+11,,,100201.0,21300.0,grid_infrastructure_agent_0,42.0,grid_infrastructure_agent_2,58.0,0.0,42.0,21300.0

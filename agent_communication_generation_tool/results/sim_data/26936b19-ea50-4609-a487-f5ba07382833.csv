@@ -1,0 +1,39 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2025-01-22 02:42:25.115020,,,,,,,,,
+1,Simulation configuration ID,26936b19-ea50-4609-a487-f5ba07382833,,,,,,,,,
+2,Network,SimbenchNetwork_LTE_1-MV-urban--1-no_sw,,,,,,,,,
+3,Communication graph,Star Overlay Topology with 324 agents,,,,,,,,,
+4,Agent communication pattern,VoltageRegulation,,,,,,,,,
+5,Trigger Type,TIME_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 200 B,upper bound = 1000 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,HIERARCHICAL,,,,,,,,,
+0,,,0.0,29.0,substation_agent_0,910.0,grid_infrastructure_agent_7,0.0,93.0,536.0,122.0
+1,,,0.0,29.0,substation_agent_0,910.0,grid_infrastructure_agent_7,0.0,138.0,374.0,167.0
+2,,,1.0,29.0,substation_agent_0,811.0,grid_infrastructure_agent_16,0.0,96.0,536.0,125.0
+3,,,1.0,29.0,substation_agent_0,811.0,grid_infrastructure_agent_16,0.0,143.0,275.0,172.0
+4,,,3.0,29.0,substation_agent_0,413.0,grid_infrastructure_agent_10,0.0,59.0,413.0,88.0
+5,,,6.0,29.0,substation_agent_0,499.0,grid_infrastructure_agent_3,0.0,91.0,499.0,120.0
+6,,,7.0,29.0,substation_agent_0,703.0,grid_infrastructure_agent_14,0.0,73.0,536.0,102.0
+7,,,7.0,29.0,substation_agent_0,703.0,grid_infrastructure_agent_14,0.0,111.0,167.0,140.0
+8,,,8.0,29.0,substation_agent_0,220.0,grid_infrastructure_agent_2,0.0,76.0,220.0,105.0
+9,,,9.0,29.0,substation_agent_0,427.0,pdc_agent_0,0.0,82.0,427.0,111.0
+10,,,132300.0,28672.0,grid_infrastructure_agent_10,413.0,substation_agent_0,88.0,55.0,413.0,28727.0
+11,,,132301.0,7392.0,grid_infrastructure_agent_14,703.0,substation_agent_0,102.0,57.0,536.0,7449.0
+12,,,132301.0,7392.0,grid_infrastructure_agent_14,703.0,substation_agent_0,102.0,98.0,167.0,7490.0
+13,,,132302.0,10047.0,grid_infrastructure_agent_2,220.0,substation_agent_0,105.0,55.0,220.0,10102.0
+14,,,132303.0,1317.0,pdc_agent_0,427.0,substation_agent_0,111.0,55.0,427.0,1372.0
+15,,,132304.0,28080.0,grid_infrastructure_agent_3,499.0,substation_agent_0,120.0,56.0,499.0,28136.0
+16,,,132305.0,15516.0,grid_infrastructure_agent_7,910.0,substation_agent_0,122.0,61.0,536.0,15577.0
+17,,,132305.0,15516.0,grid_infrastructure_agent_7,910.0,substation_agent_0,122.0,107.0,374.0,15623.0
+18,,,132306.0,16160.0,grid_infrastructure_agent_16,811.0,substation_agent_0,125.0,58.0,536.0,16218.0
+19,,,132306.0,16160.0,grid_infrastructure_agent_16,811.0,substation_agent_0,125.0,100.0,275.0,16260.0
+20,,,132307.0,7430.0,grid_infrastructure_agent_14,703.0,substation_agent_0,140.0,64.0,536.0,7494.0
+21,,,132307.0,7430.0,grid_infrastructure_agent_14,703.0,substation_agent_0,140.0,102.0,167.0,7532.0
+22,,,132308.0,15561.0,grid_infrastructure_agent_7,910.0,substation_agent_0,167.0,70.0,536.0,15631.0
+23,,,132308.0,15561.0,grid_infrastructure_agent_7,910.0,substation_agent_0,167.0,120.0,374.0,15681.0
+24,,,132309.0,16207.0,grid_infrastructure_agent_16,811.0,substation_agent_0,172.0,57.0,536.0,16264.0
+25,,,132309.0,16207.0,grid_infrastructure_agent_16,811.0,substation_agent_0,172.0,96.0,275.0,16303.0

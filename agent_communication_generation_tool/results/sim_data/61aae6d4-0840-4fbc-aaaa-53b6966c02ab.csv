@@ -1,0 +1,25 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,packetSize_B_x,sender,calculationStart_ms,delay_ms,packetSize_B_y,receivingTime_ms
+0,Start simulation,2025-01-21 19:25:12.334650,,,,,,,,,
+1,Simulation configuration ID,61aae6d4-0840-4fbc-aaaa-53b6966c02ab,,,,,,,,,
+2,Network,SimbenchNetwork_LTE_1-MVLV-rural-all-2-no_sw,,,,,,,,,
+3,Communication graph,Complete Overlay Topology with 330 agents,,,,,,,,,
+4,Agent communication pattern,VoltageRegulation,,,,,,,,,
+5,Trigger Type,TIME_TRIGGERED,,,,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 50 B,upper bound = 200 B",,,,,,,,,
+7,Frequency,0,,,,,,,,,
+8,Simulation duration,30000,,,,,,,,,
+9,Communication mode,COMPLEX,,,,,,,,,
+10,System State,SystemState.NORMAL,,,,,,,,,
+11,Organizational structure,DECENTRALIZED,,,,,,,,,
+0,,,0.0,86.0,grid_infrastructure_agent_1,160.0,grid_infrastructure_agent_18,0.0,58.0,160.0,144.0
+1,,,1.0,86.0,grid_infrastructure_agent_10,116.0,grid_infrastructure_agent_18,0.0,84.0,116.0,170.0
+2,,,2.0,86.0,grid_infrastructure_agent_10,127.0,grid_infrastructure_agent_1,0.0,56.0,127.0,142.0
+3,,,3.0,86.0,grid_infrastructure_agent_18,116.0,grid_infrastructure_agent_1,0.0,68.0,116.0,154.0
+4,,,4.0,86.0,grid_infrastructure_agent_1,175.0,grid_infrastructure_agent_10,0.0,79.0,175.0,165.0
+5,,,5.0,86.0,grid_infrastructure_agent_18,174.0,grid_infrastructure_agent_10,0.0,135.0,174.0,221.0
+6,,,100100.0,163.0,grid_infrastructure_agent_18,160.0,grid_infrastructure_agent_1,144.0,78.0,160.0,241.0
+7,,,100101.0,166.0,grid_infrastructure_agent_10,175.0,grid_infrastructure_agent_1,165.0,62.0,175.0,228.0
+8,,,101000.0,177.0,grid_infrastructure_agent_1,127.0,grid_infrastructure_agent_10,142.0,73.0,127.0,250.0
+9,,,101001.0,185.0,grid_infrastructure_agent_18,116.0,grid_infrastructure_agent_10,170.0,77.0,116.0,262.0
+10,,,101800.0,249.0,grid_infrastructure_agent_1,116.0,grid_infrastructure_agent_18,154.0,55.0,116.0,304.0
+11,,,101801.0,227.0,grid_infrastructure_agent_10,174.0,grid_infrastructure_agent_18,221.0,54.0,174.0,281.0
