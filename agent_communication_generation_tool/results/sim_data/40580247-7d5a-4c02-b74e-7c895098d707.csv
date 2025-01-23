@@ -1,0 +1,105 @@
+,Parameter,Value,msgId,timeSend_ms,receiver,receiverPort,packetSize_B,sender
+0,Start simulation,2025-01-23 06:22:05.796695,,,,,,
+1,Simulation configuration ID,40580247-7d5a-4c02-b74e-7c895098d707,,,,,,
+2,Network,SimbenchNetwork_LTE450_1-MVLV-rural-all-2-no_sw,,,,,,
+3,Communication graph,Ring Overlay Topology with 330 agents,,,,,,
+4,Agent communication pattern,MarketParticipation,,,,,,
+5,Trigger Type,TIME_TRIGGERED,,,,,,
+6,Data size generator,"In interval data size generator with lower bound = 200 B,upper bound = 1000 B",,,,,,
+7,Frequency,0,,,,,,
+8,Simulation duration,900000,,,,,,
+9,Communication mode,COMPLEX,,,,,,
+10,System State,SystemState.NORMAL,,,,,,
+11,Organizational structure,HIERARCHICAL,,,,,,
+0,,,0.0,19.0,aggregator_agent,1324.0,770.0,market_agent
+0,,,1.0,109.0,household_agent_40,1064.0,634.0,aggregator_agent
+1,,,2.0,109.0,household_agent_31,1055.0,787.0,aggregator_agent
+2,,,3.0,109.0,storage_agent_81,1305.0,532.0,aggregator_agent
+3,,,4.0,109.0,storage_agent_9,1233.0,804.0,aggregator_agent
+4,,,5.0,109.0,household_agent_82,1106.0,696.0,aggregator_agent
+5,,,6.0,109.0,storage_agent_92,1316.0,430.0,aggregator_agent
+6,,,7.0,109.0,storage_agent_14,1238.0,741.0,aggregator_agent
+7,,,8.0,109.0,storage_agent_78,1302.0,611.0,aggregator_agent
+8,,,9.0,109.0,generation_agent_86,1210.0,389.0,aggregator_agent
+9,,,10.0,109.0,household_agent_92,1116.0,431.0,aggregator_agent
+10,,,11.0,109.0,generation_agent_46,1170.0,663.0,aggregator_agent
+11,,,12.0,109.0,generation_agent_58,1182.0,949.0,aggregator_agent
+12,,,13.0,109.0,storage_agent_62,1286.0,966.0,aggregator_agent
+13,,,14.0,109.0,household_agent_0,1024.0,277.0,aggregator_agent
+14,,,15.0,109.0,household_agent_86,1110.0,601.0,aggregator_agent
+15,,,16.0,131.0,household_agent_40,1064.0,255.0,aggregator_agent
+16,,,17.0,131.0,household_agent_31,1055.0,775.0,aggregator_agent
+17,,,18.0,131.0,storage_agent_81,1305.0,626.0,aggregator_agent
+18,,,19.0,131.0,storage_agent_9,1233.0,788.0,aggregator_agent
+19,,,20.0,131.0,household_agent_82,1106.0,788.0,aggregator_agent
+20,,,21.0,131.0,storage_agent_92,1316.0,701.0,aggregator_agent
+21,,,22.0,131.0,storage_agent_14,1238.0,638.0,aggregator_agent
+22,,,23.0,131.0,storage_agent_78,1302.0,402.0,aggregator_agent
+23,,,24.0,131.0,generation_agent_86,1210.0,837.0,aggregator_agent
+24,,,25.0,131.0,household_agent_92,1116.0,586.0,aggregator_agent
+25,,,26.0,131.0,generation_agent_46,1170.0,460.0,aggregator_agent
+26,,,27.0,131.0,generation_agent_58,1182.0,651.0,aggregator_agent
+27,,,28.0,131.0,storage_agent_62,1286.0,658.0,aggregator_agent
+28,,,29.0,131.0,household_agent_0,1024.0,618.0,aggregator_agent
+29,,,30.0,131.0,household_agent_86,1110.0,737.0,aggregator_agent
+30,,,31.0,159.0,household_agent_40,1064.0,303.0,aggregator_agent
+31,,,32.0,159.0,household_agent_31,1055.0,271.0,aggregator_agent
+32,,,33.0,159.0,storage_agent_81,1305.0,531.0,aggregator_agent
+33,,,34.0,159.0,storage_agent_9,1233.0,928.0,aggregator_agent
+34,,,35.0,159.0,household_agent_82,1106.0,230.0,aggregator_agent
+35,,,36.0,159.0,storage_agent_92,1316.0,452.0,aggregator_agent
+36,,,37.0,159.0,storage_agent_14,1238.0,851.0,aggregator_agent
+37,,,38.0,159.0,storage_agent_78,1302.0,800.0,aggregator_agent
+38,,,39.0,159.0,generation_agent_86,1210.0,815.0,aggregator_agent
+39,,,40.0,159.0,household_agent_92,1116.0,733.0,aggregator_agent
+40,,,41.0,159.0,generation_agent_46,1170.0,923.0,aggregator_agent
+41,,,42.0,159.0,generation_agent_58,1182.0,251.0,aggregator_agent
+42,,,43.0,159.0,storage_agent_62,1286.0,287.0,aggregator_agent
+43,,,44.0,159.0,household_agent_0,1024.0,660.0,aggregator_agent
+44,,,45.0,159.0,household_agent_86,1110.0,440.0,aggregator_agent
+45,,,46.0,222.0,household_agent_40,1064.0,726.0,aggregator_agent
+46,,,47.0,222.0,household_agent_31,1055.0,501.0,aggregator_agent
+47,,,48.0,222.0,storage_agent_81,1305.0,549.0,aggregator_agent
+48,,,49.0,222.0,storage_agent_9,1233.0,226.0,aggregator_agent
+49,,,50.0,222.0,household_agent_82,1106.0,407.0,aggregator_agent
+50,,,51.0,222.0,storage_agent_92,1316.0,376.0,aggregator_agent
+51,,,52.0,222.0,storage_agent_14,1238.0,832.0,aggregator_agent
+52,,,53.0,222.0,storage_agent_78,1302.0,563.0,aggregator_agent
+53,,,54.0,222.0,generation_agent_86,1210.0,855.0,aggregator_agent
+54,,,55.0,222.0,household_agent_92,1116.0,673.0,aggregator_agent
+55,,,56.0,222.0,generation_agent_46,1170.0,796.0,aggregator_agent
+56,,,57.0,222.0,generation_agent_58,1182.0,308.0,aggregator_agent
+57,,,58.0,222.0,storage_agent_62,1286.0,427.0,aggregator_agent
+58,,,59.0,222.0,household_agent_0,1024.0,348.0,aggregator_agent
+59,,,60.0,222.0,household_agent_86,1110.0,938.0,aggregator_agent
+60,,,61.0,314.0,household_agent_40,1064.0,261.0,aggregator_agent
+61,,,62.0,314.0,household_agent_31,1055.0,847.0,aggregator_agent
+62,,,63.0,314.0,storage_agent_81,1305.0,367.0,aggregator_agent
+63,,,64.0,314.0,storage_agent_9,1233.0,401.0,aggregator_agent
+64,,,65.0,314.0,household_agent_82,1106.0,402.0,aggregator_agent
+65,,,66.0,314.0,storage_agent_92,1316.0,567.0,aggregator_agent
+66,,,67.0,314.0,storage_agent_14,1238.0,826.0,aggregator_agent
+67,,,68.0,314.0,storage_agent_78,1302.0,715.0,aggregator_agent
+68,,,69.0,314.0,generation_agent_86,1210.0,865.0,aggregator_agent
+69,,,70.0,314.0,household_agent_92,1116.0,329.0,aggregator_agent
+70,,,71.0,314.0,generation_agent_46,1170.0,332.0,aggregator_agent
+71,,,72.0,314.0,generation_agent_58,1182.0,505.0,aggregator_agent
+72,,,73.0,314.0,storage_agent_62,1286.0,275.0,aggregator_agent
+73,,,74.0,314.0,household_agent_0,1024.0,946.0,aggregator_agent
+74,,,75.0,314.0,household_agent_86,1110.0,284.0,aggregator_agent
+75,,,76.0,399.0,household_agent_40,1064.0,736.0,aggregator_agent
+76,,,77.0,399.0,household_agent_31,1055.0,292.0,aggregator_agent
+77,,,78.0,399.0,storage_agent_81,1305.0,583.0,aggregator_agent
+78,,,79.0,399.0,storage_agent_9,1233.0,719.0,aggregator_agent
+79,,,80.0,399.0,household_agent_82,1106.0,260.0,aggregator_agent
+80,,,81.0,399.0,storage_agent_92,1316.0,422.0,aggregator_agent
+81,,,82.0,399.0,storage_agent_14,1238.0,402.0,aggregator_agent
+82,,,83.0,399.0,storage_agent_78,1302.0,637.0,aggregator_agent
+83,,,84.0,399.0,generation_agent_86,1210.0,600.0,aggregator_agent
+84,,,85.0,399.0,household_agent_92,1116.0,805.0,aggregator_agent
+85,,,86.0,399.0,generation_agent_46,1170.0,599.0,aggregator_agent
+86,,,87.0,399.0,generation_agent_58,1182.0,842.0,aggregator_agent
+87,,,88.0,399.0,storage_agent_62,1286.0,387.0,aggregator_agent
+88,,,89.0,399.0,household_agent_0,1024.0,512.0,aggregator_agent
+89,,,90.0,399.0,household_agent_86,1110.0,298.0,aggregator_agent
+90,,,91.0,454.0,market_agent,1326.0,880.0,aggregator_agent
